@@ -10,7 +10,13 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack{
-            DefaultCard()
+            WeatherCard(weatherType: .Sunny)
+            WeatherCard(weatherType: .Cloudy)
+            WeatherCard(weatherType: .Rainy)
+            HStack{
+                DefaultCard()
+                DefaultCard()
+            }
             Text("x")
         }
     }

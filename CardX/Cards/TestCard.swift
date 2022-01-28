@@ -27,12 +27,15 @@ struct DefaultCard: View {
                         .foregroundColor(.secondary)
                 }
                 .layoutPriority(100)
-                //将VStack 推到左侧
                 Spacer()
             }
             .padding()
         }
         .cornerRadius(20)
+        .background(
+            RoundedRectangle(cornerRadius: 20)
+                .fill(.white)
+                .shadow(radius: 10))
         .padding([.top, .horizontal])
     }
 }

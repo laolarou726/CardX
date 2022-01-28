@@ -11,7 +11,13 @@
 		421DA1F527A22FFF0073A877 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421DA1F427A22FFF0073A877 /* ContentView.swift */; };
 		421DA1F727A230000073A877 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 421DA1F627A230000073A877 /* Assets.xcassets */; };
 		421DA1FA27A230000073A877 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 421DA1F927A230000073A877 /* Preview Assets.xcassets */; };
-		421DA21D27A231B00073A877 /* DefaultCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421DA21C27A231B00073A877 /* DefaultCard.swift */; };
+		421DA21D27A231B00073A877 /* TestCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421DA21C27A231B00073A877 /* TestCard.swift */; };
+		4228F17427A363F900C10336 /* WeatherCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4228F17327A363F900C10336 /* WeatherCard.swift */; };
+		4228F17827A3661D00C10336 /* SunnyShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4228F17727A3661D00C10336 /* SunnyShape.swift */; };
+		429D751E27A36F5900A71D27 /* CloudyShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429D751D27A36F5900A71D27 /* CloudyShape.swift */; };
+		429D752127A3733600A71D27 /* WeatherTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429D752027A3733600A71D27 /* WeatherTypes.swift */; };
+		429D752327A3769D00A71D27 /* RainyShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429D752227A3769D00A71D27 /* RainyShape.swift */; };
+		429D752627A376BE00A71D27 /* RandomHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429D752527A376BE00A71D27 /* RandomHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,7 +26,13 @@
 		421DA1F427A22FFF0073A877 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		421DA1F627A230000073A877 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		421DA1F927A230000073A877 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		421DA21C27A231B00073A877 /* DefaultCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCard.swift; sourceTree = "<group>"; tabWidth = 1; };
+		421DA21C27A231B00073A877 /* TestCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCard.swift; sourceTree = "<group>"; tabWidth = 1; };
+		4228F17327A363F900C10336 /* WeatherCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCard.swift; sourceTree = "<group>"; };
+		4228F17727A3661D00C10336 /* SunnyShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunnyShape.swift; sourceTree = "<group>"; };
+		429D751D27A36F5900A71D27 /* CloudyShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudyShape.swift; sourceTree = "<group>"; };
+		429D752027A3733600A71D27 /* WeatherTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTypes.swift; sourceTree = "<group>"; };
+		429D752227A3769D00A71D27 /* RainyShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainyShape.swift; sourceTree = "<group>"; };
+		429D752527A376BE00A71D27 /* RandomHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,11 +65,13 @@
 		421DA1F127A22FFF0073A877 /* CardX */ = {
 			isa = PBXGroup;
 			children = (
+				429D752427A376B100A71D27 /* Helper */,
+				429D751F27A3732700A71D27 /* Models */,
+				4228F17227A363D100C10336 /* Cards */,
 				421DA1F227A22FFF0073A877 /* CardXApp.swift */,
 				421DA1F427A22FFF0073A877 /* ContentView.swift */,
 				421DA1F627A230000073A877 /* Assets.xcassets */,
 				421DA1F827A230000073A877 /* Preview Content */,
-				421DA21C27A231B00073A877 /* DefaultCard.swift */,
 			);
 			path = CardX;
 			sourceTree = "<group>";
@@ -68,6 +82,50 @@
 				421DA1F927A230000073A877 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4228F17227A363D100C10336 /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				4228F17627A3660700C10336 /* Weather */,
+				421DA21C27A231B00073A877 /* TestCard.swift */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		4228F17627A3660700C10336 /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				429D751C27A36F3B00A71D27 /* Shape */,
+				4228F17327A363F900C10336 /* WeatherCard.swift */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
+		429D751C27A36F3B00A71D27 /* Shape */ = {
+			isa = PBXGroup;
+			children = (
+				4228F17727A3661D00C10336 /* SunnyShape.swift */,
+				429D751D27A36F5900A71D27 /* CloudyShape.swift */,
+				429D752227A3769D00A71D27 /* RainyShape.swift */,
+			);
+			path = Shape;
+			sourceTree = "<group>";
+		};
+		429D751F27A3732700A71D27 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				429D752027A3733600A71D27 /* WeatherTypes.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		429D752427A376B100A71D27 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				429D752527A376BE00A71D27 /* RandomHelper.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,9 +198,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				421DA21D27A231B00073A877 /* DefaultCard.swift in Sources */,
+				4228F17827A3661D00C10336 /* SunnyShape.swift in Sources */,
+				421DA21D27A231B00073A877 /* TestCard.swift in Sources */,
 				421DA1F527A22FFF0073A877 /* ContentView.swift in Sources */,
+				429D752127A3733600A71D27 /* WeatherTypes.swift in Sources */,
+				429D752627A376BE00A71D27 /* RandomHelper.swift in Sources */,
+				4228F17427A363F900C10336 /* WeatherCard.swift in Sources */,
 				421DA1F327A22FFF0073A877 /* CardXApp.swift in Sources */,
+				429D751E27A36F5900A71D27 /* CloudyShape.swift in Sources */,
+				429D752327A3769D00A71D27 /* RainyShape.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
