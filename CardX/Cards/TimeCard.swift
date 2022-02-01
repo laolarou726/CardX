@@ -36,26 +36,19 @@ struct TimeCard: View {
             .padding()
             ZStack{
                 Circle()
-                    .stroke(Color.black, lineWidth: 2)
-                    .frame(width: 125, height: 125, alignment: .center)
-                ForEach(Range(0...11)){i in
-                    Circle()
-                        .frame(maxWidth: 5)
-                        .foregroundColor(.black)
-                        .offset(y: -61)
-                        .rotationEffect(.degrees(Double(i*30)))
-                }
+                    .stroke(Color.black, lineWidth: 3)
+                    .frame(width: 75, height: 75, alignment: .center)
                 Rectangle()
                     .fill(Color.black)
-                    .frame(width: 60,height: 2)
-                    .offset(x:29)
+                    .frame(width: 30,height: 3)
+                    .offset(x:14)
                 
                 Rectangle()
                     .fill(Color.black)
-                    .frame(width: 2,height: 40)
-                    .offset(y:-20)
+                    .frame(width: 3,height: 25)
+                    .offset(y:-12)
             }
-            .offset(x:75)
+            .offset(x:120)
         }
         .cornerRadius(20)
         .background(
