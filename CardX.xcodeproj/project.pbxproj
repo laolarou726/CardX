@@ -18,6 +18,10 @@
 		429D752127A3733600A71D27 /* WeatherTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429D752027A3733600A71D27 /* WeatherTypes.swift */; };
 		429D752327A3769D00A71D27 /* RainyShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429D752227A3769D00A71D27 /* RainyShape.swift */; };
 		429D752627A376BE00A71D27 /* RandomHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429D752527A376BE00A71D27 /* RandomHelper.swift */; };
+		42A3119027AC9F1900DA096A /* BriefTextControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A3118F27AC9F1900DA096A /* BriefTextControl.swift */; };
+		42A3119227ACA03B00DA096A /* CountDownText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A3119127ACA03B00DA096A /* CountDownText.swift */; };
+		42A3119727ACADB900DA096A /* CountDownCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A3119627ACADB900DA096A /* CountDownCard.swift */; };
+		42A3119927ACAE2200DA096A /* CountDownTexts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A3119827ACAE2200DA096A /* CountDownTexts.swift */; };
 		EC4ED35427A8A55B00E32232 /* TimeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4ED35327A8A55B00E32232 /* TimeCard.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +38,10 @@
 		429D752027A3733600A71D27 /* WeatherTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTypes.swift; sourceTree = "<group>"; };
 		429D752227A3769D00A71D27 /* RainyShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainyShape.swift; sourceTree = "<group>"; };
 		429D752527A376BE00A71D27 /* RandomHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomHelper.swift; sourceTree = "<group>"; };
+		42A3118F27AC9F1900DA096A /* BriefTextControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BriefTextControl.swift; sourceTree = "<group>"; };
+		42A3119127ACA03B00DA096A /* CountDownText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownText.swift; sourceTree = "<group>"; };
+		42A3119627ACADB900DA096A /* CountDownCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownCard.swift; sourceTree = "<group>"; };
+		42A3119827ACAE2200DA096A /* CountDownTexts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownTexts.swift; sourceTree = "<group>"; };
 		EC4ED35327A8A55B00E32232 /* TimeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,9 +97,11 @@
 		4228F17227A363D100C10336 /* Cards */ = {
 			isa = PBXGroup;
 			children = (
+				42A3119327ACA1D600DA096A /* DaysCountDown */,
 				4228F17627A3660700C10336 /* Weather */,
 				421DA21C27A231B00073A877 /* TestCard.swift */,
 				EC4ED35327A8A55B00E32232 /* TimeCard.swift */,
+				42A3119627ACADB900DA096A /* CountDownCard.swift */,
 			);
 			path = Cards;
 			sourceTree = "<group>";
@@ -101,6 +111,7 @@
 			children = (
 				429D751C27A36F3B00A71D27 /* Shape */,
 				4228F17327A363F900C10336 /* WeatherCard.swift */,
+				42A3118F27AC9F1900DA096A /* BriefTextControl.swift */,
 			);
 			path = Weather;
 			sourceTree = "<group>";
@@ -129,6 +140,15 @@
 				429D752527A376BE00A71D27 /* RandomHelper.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		42A3119327ACA1D600DA096A /* DaysCountDown */ = {
+			isa = PBXGroup;
+			children = (
+				42A3119127ACA03B00DA096A /* CountDownText.swift */,
+				42A3119827ACAE2200DA096A /* CountDownTexts.swift */,
+			);
+			path = DaysCountDown;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,11 +223,15 @@
 			files = (
 				4228F17827A3661D00C10336 /* SunnyShape.swift in Sources */,
 				421DA21D27A231B00073A877 /* TestCard.swift in Sources */,
+				42A3119727ACADB900DA096A /* CountDownCard.swift in Sources */,
 				421DA1F527A22FFF0073A877 /* ContentView.swift in Sources */,
+				42A3119927ACAE2200DA096A /* CountDownTexts.swift in Sources */,
 				429D752127A3733600A71D27 /* WeatherTypes.swift in Sources */,
 				429D752627A376BE00A71D27 /* RandomHelper.swift in Sources */,
 				4228F17427A363F900C10336 /* WeatherCard.swift in Sources */,
+				42A3119027AC9F1900DA096A /* BriefTextControl.swift in Sources */,
 				421DA1F327A22FFF0073A877 /* CardXApp.swift in Sources */,
+				42A3119227ACA03B00DA096A /* CountDownText.swift in Sources */,
 				429D751E27A36F5900A71D27 /* CloudyShape.swift in Sources */,
 				EC4ED35427A8A55B00E32232 /* TimeCard.swift in Sources */,
 				429D752327A3769D00A71D27 /* RainyShape.swift in Sources */,

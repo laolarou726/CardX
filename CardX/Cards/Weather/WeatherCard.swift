@@ -16,27 +16,7 @@ struct WeatherCard: View {
                 Spacer()
                 getWeatherShape()
             }
-            HStack{
-                VStack(alignment: .leading) {
-                    Spacer()
-                        .frame(height: 20)
-                    Text("MC")
-                        .font(.headline)
-                        .foregroundColor(.secondary)
-                    Text("TEST")
-                        .font(.title)
-                        .fontWeight(.black)
-                        .foregroundColor(.primary)
-                        .lineLimit(3)
-                    Text("TEST")
-                        .foregroundColor(.secondary)
-                    Spacer()
-                        .frame(height: 20)
-                }
-                .layoutPriority(100)
-                Spacer()
-            }
-            .padding()
+            BriefTextControl(upperText: "test", title: "test", bottomText: "test")
         }
         .cornerRadius(20)
         .background(

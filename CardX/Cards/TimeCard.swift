@@ -13,27 +13,7 @@ struct TimeCard: View {
             HStack{
                 Spacer()
             }
-            HStack{
-                VStack(alignment: .leading) {
-                    Spacer()
-                        .frame(height: 20)
-                    Text(Locale.current.localizedString(forRegionCode: Locale.current.regionCode!) ?? "")
-                        .font(.headline)
-                        .foregroundColor(.secondary)
-                    Text(Date.now, format: .dateTime.hour().minute())
-                        .font(.title)
-                        .fontWeight(.black)
-                        .foregroundColor(.primary)
-                        .lineLimit(3)
-                    Text(Date.now, format: .dateTime.day().month().year())
-                        .foregroundColor(.secondary)
-                    Spacer()
-                        .frame(height: 20)
-                }
-                .layoutPriority(100)
-                Spacer()
-            }
-            .padding()
+            BriefTextControl(upperText: "test", title: "test", bottomText: "test")
             ZStack{
                 Circle()
                     .stroke(Color.black, lineWidth: 2)

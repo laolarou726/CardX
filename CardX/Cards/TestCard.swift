@@ -13,23 +13,7 @@ struct DefaultCard: View {
             Image("Image")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-            HStack{
-                VStack(alignment: .leading) {
-                    Text("MC")
-                        .font(.headline)
-                        .foregroundColor(.secondary)
-                    Text("TEST")
-                        .font(.title)
-                        .fontWeight(.black)
-                        .foregroundColor(.primary)
-                        .lineLimit(3)
-                    Text("TEST")
-                        .foregroundColor(.secondary)
-                }
-                .layoutPriority(100)
-                Spacer()
-            }
-            .padding()
+            BriefTextControl(upperText: "test", title: "test", bottomText: "test")
         }
         .cornerRadius(20)
         .background(
