@@ -9,15 +9,18 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack{
-            WeatherCard(weatherType: .Sunny)
-            WeatherCard(weatherType: .Cloudy)
-            WeatherCard(weatherType: .Rainy)
-            HStack{
-                DefaultCard()
-                DefaultCard()
+        ScrollView{
+            VStack{
+                CountDownCard()
+                WeatherCard(weatherType: .Sunny)
+                WeatherCard(weatherType: .Cloudy)
+                WeatherCard(weatherType: .Rainy)
+                HStack{
+                    DefaultCard()
+                    DefaultCard()
+                }
+                Text("x")
             }
-            Text("x")
         }
     }
 }

@@ -13,7 +13,7 @@ struct TimeCard: View {
             HStack{
                 Spacer()
             }
-            BriefTextControl(upperText: "test", title: "test", bottomText: "test")
+            todayText()
             ZStack{
                 Circle()
                     .stroke(Color.black, lineWidth: 3)
@@ -36,6 +36,24 @@ struct TimeCard: View {
                 .fill(.white)
                 .shadow(radius: 10))
         .padding([.top, .horizontal])
+    }
+    
+    func todayText() -> some View{
+        let now = Date()
+        let locale = Locale.current
+        let formatter = DateFormatter()
+
+        formatter.dateFormat = "EEEE, MMM d"
+        
+        let date = formatter.string(from: Date.now).uppercased()
+        
+        formatter.locale = locale
+        formatter.dateFormat = "h:mm a"
+        
+        let time = formatter.string(from: now)
+        let location = locale.localizedString(forRegionCode: locale.regionCode!)!
+
+        return BriefTextControl(upperText: location, title: time, bottomText: date)
     }
 }
 
