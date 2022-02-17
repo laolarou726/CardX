@@ -12,6 +12,7 @@ struct ContentView: View {
         ScrollView{
             VStack{
                 CountDownCard()
+                RandomWordCard()
                 WeatherCard(weatherType: .Sunny)
                 WeatherCard(weatherType: .Cloudy)
                 WeatherCard(weatherType: .Rainy)

@@ -22,7 +22,7 @@ struct CountDownCard: View {
                     Spacer()
                 }
                 HStack{
-                    CountDownTexts(number: 200, unit: "Days")
+                    CountDownTexts(number: 100, unit: "Days")
                     Spacer()
                 }
             }

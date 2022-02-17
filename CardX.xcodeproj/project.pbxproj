@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36A56189C5B47474E748F0D6 /* Pods_CardX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3FC716AF3B40708766B8F91 /* Pods_CardX.framework */; };
 		421DA1F327A22FFF0073A877 /* CardXApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421DA1F227A22FFF0073A877 /* CardXApp.swift */; };
 		421DA1F527A22FFF0073A877 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421DA1F427A22FFF0073A877 /* ContentView.swift */; };
 		421DA1F727A230000073A877 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 421DA1F627A230000073A877 /* Assets.xcassets */; };
@@ -14,6 +15,9 @@
 		421DA21D27A231B00073A877 /* TestCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421DA21C27A231B00073A877 /* TestCard.swift */; };
 		4228F17427A363F900C10336 /* WeatherCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4228F17327A363F900C10336 /* WeatherCard.swift */; };
 		4228F17827A3661D00C10336 /* SunnyShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4228F17727A3661D00C10336 /* SunnyShape.swift */; };
+		428C626F27BDC8EE0038D15F /* RandomWordCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428C626E27BDC8EE0038D15F /* RandomWordCard.swift */; };
+		428C627227BDCF140038D15F /* RandomWordCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428C627127BDCF140038D15F /* RandomWordCardViewModel.swift */; };
+		428C627427BDD0700038D15F /* RandomWordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428C627327BDD0700038D15F /* RandomWordModel.swift */; };
 		429D751E27A36F5900A71D27 /* CloudyShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429D751D27A36F5900A71D27 /* CloudyShape.swift */; };
 		429D752127A3733600A71D27 /* WeatherTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429D752027A3733600A71D27 /* WeatherTypes.swift */; };
 		429D752327A3769D00A71D27 /* RainyShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429D752227A3769D00A71D27 /* RainyShape.swift */; };
@@ -34,6 +38,9 @@
 		421DA21C27A231B00073A877 /* TestCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCard.swift; sourceTree = "<group>"; tabWidth = 1; };
 		4228F17327A363F900C10336 /* WeatherCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCard.swift; sourceTree = "<group>"; };
 		4228F17727A3661D00C10336 /* SunnyShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunnyShape.swift; sourceTree = "<group>"; };
+		428C626E27BDC8EE0038D15F /* RandomWordCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomWordCard.swift; sourceTree = "<group>"; };
+		428C627127BDCF140038D15F /* RandomWordCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomWordCardViewModel.swift; sourceTree = "<group>"; };
+		428C627327BDD0700038D15F /* RandomWordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomWordModel.swift; sourceTree = "<group>"; };
 		429D751D27A36F5900A71D27 /* CloudyShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudyShape.swift; sourceTree = "<group>"; };
 		429D752027A3733600A71D27 /* WeatherTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTypes.swift; sourceTree = "<group>"; };
 		429D752227A3769D00A71D27 /* RainyShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainyShape.swift; sourceTree = "<group>"; };
@@ -42,7 +49,10 @@
 		42A3119127ACA03B00DA096A /* CountDownText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownText.swift; sourceTree = "<group>"; };
 		42A3119627ACADB900DA096A /* CountDownCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownCard.swift; sourceTree = "<group>"; };
 		42A3119827ACAE2200DA096A /* CountDownTexts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownTexts.swift; sourceTree = "<group>"; };
+		4C72F282627C7898B2985075 /* Pods-CardX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardX.debug.xcconfig"; path = "Target Support Files/Pods-CardX/Pods-CardX.debug.xcconfig"; sourceTree = "<group>"; };
+		C3FC716AF3B40708766B8F91 /* Pods_CardX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CardX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC4ED35327A8A55B00E32232 /* TimeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCard.swift; sourceTree = "<group>"; };
+		F44970FBB2DE9F5668705927 /* Pods-CardX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardX.release.xcconfig"; path = "Target Support Files/Pods-CardX/Pods-CardX.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,17 +60,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36A56189C5B47474E748F0D6 /* Pods_CardX.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D94FCD519CA08B44AD07B69 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4C72F282627C7898B2985075 /* Pods-CardX.debug.xcconfig */,
+				F44970FBB2DE9F5668705927 /* Pods-CardX.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		421DA1E627A22FFF0073A877 = {
 			isa = PBXGroup;
 			children = (
 				421DA1F127A22FFF0073A877 /* CardX */,
 				421DA1F027A22FFF0073A877 /* Products */,
+				0D94FCD519CA08B44AD07B69 /* Pods */,
+				BAE316611966821190AF233C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,6 +97,7 @@
 		421DA1F127A22FFF0073A877 /* CardX */ = {
 			isa = PBXGroup;
 			children = (
+				428C627027BDCA400038D15F /* ViewModels */,
 				429D752427A376B100A71D27 /* Helper */,
 				429D751F27A3732700A71D27 /* Models */,
 				4228F17227A363D100C10336 /* Cards */,
@@ -102,6 +125,7 @@
 				421DA21C27A231B00073A877 /* TestCard.swift */,
 				EC4ED35327A8A55B00E32232 /* TimeCard.swift */,
 				42A3119627ACADB900DA096A /* CountDownCard.swift */,
+				428C626E27BDC8EE0038D15F /* RandomWordCard.swift */,
 			);
 			path = Cards;
 			sourceTree = "<group>";
@@ -114,6 +138,14 @@
 				42A3118F27AC9F1900DA096A /* BriefTextControl.swift */,
 			);
 			path = Weather;
+			sourceTree = "<group>";
+		};
+		428C627027BDCA400038D15F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				428C627127BDCF140038D15F /* RandomWordCardViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		429D751C27A36F3B00A71D27 /* Shape */ = {
@@ -130,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				429D752027A3733600A71D27 /* WeatherTypes.swift */,
+				428C627327BDD0700038D15F /* RandomWordModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -151,6 +184,14 @@
 			path = DaysCountDown;
 			sourceTree = "<group>";
 		};
+		BAE316611966821190AF233C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3FC716AF3B40708766B8F91 /* Pods_CardX.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -158,9 +199,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 421DA21327A230000073A877 /* Build configuration list for PBXNativeTarget "CardX" */;
 			buildPhases = (
+				9DD219EE5833400B4E8439A7 /* [CP] Check Pods Manifest.lock */,
 				421DA1EB27A22FFF0073A877 /* Sources */,
 				421DA1EC27A22FFF0073A877 /* Frameworks */,
 				421DA1ED27A22FFF0073A877 /* Resources */,
+				0E78C64FAA3CF6BB87F46ACA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -216,6 +259,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0E78C64FAA3CF6BB87F46ACA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CardX/Pods-CardX-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CardX/Pods-CardX-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CardX/Pods-CardX-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DD219EE5833400B4E8439A7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CardX-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		421DA1EB27A22FFF0073A877 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -230,7 +315,10 @@
 				429D752627A376BE00A71D27 /* RandomHelper.swift in Sources */,
 				4228F17427A363F900C10336 /* WeatherCard.swift in Sources */,
 				42A3119027AC9F1900DA096A /* BriefTextControl.swift in Sources */,
+				428C626F27BDC8EE0038D15F /* RandomWordCard.swift in Sources */,
 				421DA1F327A22FFF0073A877 /* CardXApp.swift in Sources */,
+				428C627227BDCF140038D15F /* RandomWordCardViewModel.swift in Sources */,
+				428C627427BDD0700038D15F /* RandomWordModel.swift in Sources */,
 				42A3119227ACA03B00DA096A /* CountDownText.swift in Sources */,
 				429D751E27A36F5900A71D27 /* CloudyShape.swift in Sources */,
 				EC4ED35427A8A55B00E32232 /* TimeCard.swift in Sources */,
@@ -359,6 +447,7 @@
 		};
 		421DA21427A230000073A877 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C72F282627C7898B2985075 /* Pods-CardX.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -388,6 +477,7 @@
 		};
 		421DA21527A230000073A877 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F44970FBB2DE9F5668705927 /* Pods-CardX.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
