@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		36A56189C5B47474E748F0D6 /* Pods_CardX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3FC716AF3B40708766B8F91 /* Pods_CardX.framework */; };
+		421BA58527CEFB1800F3C264 /* RandomQuoteCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421BA58427CEFB1800F3C264 /* RandomQuoteCard.swift */; };
+		421BA58827CF004400F3C264 /* SwiftUIVisualEffects in Frameworks */ = {isa = PBXBuildFile; productRef = 421BA58727CF004400F3C264 /* SwiftUIVisualEffects */; };
+		421BA58B27CF037E00F3C264 /* RandomQuoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421BA58A27CF037E00F3C264 /* RandomQuoteModel.swift */; };
+		421BA58D27CF03D700F3C264 /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421BA58C27CF03D700F3C264 /* ContentModel.swift */; };
+		421BA58F27CF050300F3C264 /* CopyRightModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421BA58E27CF050300F3C264 /* CopyRightModel.swift */; };
+		421BA59127CF057A00F3C264 /* RandomQuoteCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421BA59027CF057A00F3C264 /* RandomQuoteCardViewModel.swift */; };
 		421DA1F327A22FFF0073A877 /* CardXApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421DA1F227A22FFF0073A877 /* CardXApp.swift */; };
 		421DA1F527A22FFF0073A877 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421DA1F427A22FFF0073A877 /* ContentView.swift */; };
 		421DA1F727A230000073A877 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 421DA1F627A230000073A877 /* Assets.xcassets */; };
@@ -30,6 +36,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		421BA58427CEFB1800F3C264 /* RandomQuoteCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomQuoteCard.swift; sourceTree = "<group>"; };
+		421BA58A27CF037E00F3C264 /* RandomQuoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomQuoteModel.swift; sourceTree = "<group>"; };
+		421BA58C27CF03D700F3C264 /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
+		421BA58E27CF050300F3C264 /* CopyRightModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyRightModel.swift; sourceTree = "<group>"; };
+		421BA59027CF057A00F3C264 /* RandomQuoteCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomQuoteCardViewModel.swift; sourceTree = "<group>"; };
 		421DA1EF27A22FFF0073A877 /* CardX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		421DA1F227A22FFF0073A877 /* CardXApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardXApp.swift; sourceTree = "<group>"; };
 		421DA1F427A22FFF0073A877 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -61,6 +72,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				36A56189C5B47474E748F0D6 /* Pods_CardX.framework in Frameworks */,
+				421BA58827CF004400F3C264 /* SwiftUIVisualEffects in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +86,16 @@
 				F44970FBB2DE9F5668705927 /* Pods-CardX.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		421BA58927CF036800F3C264 /* RandomQuote */ = {
+			isa = PBXGroup;
+			children = (
+				421BA58A27CF037E00F3C264 /* RandomQuoteModel.swift */,
+				421BA58C27CF03D700F3C264 /* ContentModel.swift */,
+				421BA58E27CF050300F3C264 /* CopyRightModel.swift */,
+			);
+			path = RandomQuote;
 			sourceTree = "<group>";
 		};
 		421DA1E627A22FFF0073A877 = {
@@ -126,6 +148,7 @@
 				EC4ED35327A8A55B00E32232 /* TimeCard.swift */,
 				42A3119627ACADB900DA096A /* CountDownCard.swift */,
 				428C626E27BDC8EE0038D15F /* RandomWordCard.swift */,
+				421BA58427CEFB1800F3C264 /* RandomQuoteCard.swift */,
 			);
 			path = Cards;
 			sourceTree = "<group>";
@@ -144,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				428C627127BDCF140038D15F /* RandomWordCardViewModel.swift */,
+				421BA59027CF057A00F3C264 /* RandomQuoteCardViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -161,6 +185,7 @@
 		429D751F27A3732700A71D27 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				421BA58927CF036800F3C264 /* RandomQuote */,
 				429D752027A3733600A71D27 /* WeatherTypes.swift */,
 				428C627327BDD0700038D15F /* RandomWordModel.swift */,
 			);
@@ -210,6 +235,9 @@
 			dependencies = (
 			);
 			name = CardX;
+			packageProductDependencies = (
+				421BA58727CF004400F3C264 /* SwiftUIVisualEffects */,
+			);
 			productName = CardX;
 			productReference = 421DA1EF27A22FFF0073A877 /* CardX.app */;
 			productType = "com.apple.product-type.application";
@@ -238,6 +266,9 @@
 				Base,
 			);
 			mainGroup = 421DA1E627A22FFF0073A877;
+			packageReferences = (
+				421BA58627CF004400F3C264 /* XCRemoteSwiftPackageReference "swiftui-visual-effects" */,
+			);
 			productRefGroup = 421DA1F027A22FFF0073A877 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -313,14 +344,19 @@
 				42A3119927ACAE2200DA096A /* CountDownTexts.swift in Sources */,
 				429D752127A3733600A71D27 /* WeatherTypes.swift in Sources */,
 				429D752627A376BE00A71D27 /* RandomHelper.swift in Sources */,
+				421BA58F27CF050300F3C264 /* CopyRightModel.swift in Sources */,
 				4228F17427A363F900C10336 /* WeatherCard.swift in Sources */,
 				42A3119027AC9F1900DA096A /* BriefTextControl.swift in Sources */,
+				421BA58527CEFB1800F3C264 /* RandomQuoteCard.swift in Sources */,
+				421BA58B27CF037E00F3C264 /* RandomQuoteModel.swift in Sources */,
+				421BA59127CF057A00F3C264 /* RandomQuoteCardViewModel.swift in Sources */,
 				428C626F27BDC8EE0038D15F /* RandomWordCard.swift in Sources */,
 				421DA1F327A22FFF0073A877 /* CardXApp.swift in Sources */,
 				428C627227BDCF140038D15F /* RandomWordCardViewModel.swift in Sources */,
 				428C627427BDD0700038D15F /* RandomWordModel.swift in Sources */,
 				42A3119227ACA03B00DA096A /* CountDownText.swift in Sources */,
 				429D751E27A36F5900A71D27 /* CloudyShape.swift in Sources */,
+				421BA58D27CF03D700F3C264 /* ContentModel.swift in Sources */,
 				EC4ED35427A8A55B00E32232 /* TimeCard.swift in Sources */,
 				429D752327A3769D00A71D27 /* RainyShape.swift in Sources */,
 			);
@@ -527,6 +563,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		421BA58627CF004400F3C264 /* XCRemoteSwiftPackageReference "swiftui-visual-effects" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lucasbrown/swiftui-visual-effects.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		421BA58727CF004400F3C264 /* SwiftUIVisualEffects */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 421BA58627CF004400F3C264 /* XCRemoteSwiftPackageReference "swiftui-visual-effects" */;
+			productName = SwiftUIVisualEffects;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 421DA1E727A22FFF0073A877 /* Project object */;
 }

@@ -11,6 +11,7 @@ struct ContentView: View {
     var body: some View {
         ScrollView{
             VStack{
+                RandomQuoteCard()
                 CountDownCard()
                 RandomWordCard()
                 WeatherCard(weatherType: .Sunny)
