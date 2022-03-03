@@ -14,9 +14,7 @@ struct ContentView: View {
                 RandomQuoteCard()
                 CountDownCard()
                 RandomWordCard()
-                WeatherCard(weatherType: .Sunny)
-                WeatherCard(weatherType: .Cloudy)
-                WeatherCard(weatherType: .Rainy)
+                WeatherCard()
                 HStack{
                     DefaultCard()
                     DefaultCard()
