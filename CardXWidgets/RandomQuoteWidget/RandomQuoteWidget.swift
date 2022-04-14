@@ -13,31 +13,25 @@ struct RandomQuoteWidgetEntryView : View {
     var entry: RandomQuoteTimelineProvider.Entry
     
     var body: some View {
-        ZStack{
-            Image(uiImage: self.entry.imgData)
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .blur(radius: 20)
-            HStack{
+        HStack{
+            Spacer()
+            VStack(alignment: .leading) {
                 Spacer()
-                VStack(alignment: .leading) {
-                    Spacer()
-                    Text((self.entry.quote.contents?.quotes?[0].author) ?? "unknown")
-                        .font(.caption)
-                        .foregroundColor(.secondary)
-                    Text((self.entry.quote.contents?.quotes?[0].date) ?? "1970-00-00")
-                        .font(.footnote)
-                        .foregroundColor(.secondary)
-                    Text((self.entry.quote.contents?.quotes?[0].quote) ?? "hmm...I can't find any quote.")
-                        .font(.body)
-                        .fontWeight(.black)
-                        .lineLimit(4)
-                    Spacer()
-                }
-                .layoutPriority(100)
+                Text((self.entry.quote.contents?.quotes?[0].author) ?? "unknown")
+                    .font(.footnote)
+                Text((self.entry.quote.contents?.quotes?[0].date) ?? "1970-00-00")
+                    .font(.footnote)
+                Text((self.entry.quote.contents?.quotes?[0].quote) ?? "hmm...I can't find any quote.")
+                    .fontWeight(.black)
+                    .blendMode(.overlay)
                 Spacer()
             }
+            Spacer()
         }
+        .background(Image(uiImage: self.entry.imgData)
+            .resizable()
+            .aspectRatio(contentMode: .fill)
+            .blur(radius: 10))
     }
 }
 

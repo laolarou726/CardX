@@ -38,6 +38,14 @@
 		42A3119227ACA03B00DA096A /* CountDownText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A3119127ACA03B00DA096A /* CountDownText.swift */; };
 		42A3119727ACADB900DA096A /* CountDownCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A3119627ACADB900DA096A /* CountDownCard.swift */; };
 		42A3119927ACAE2200DA096A /* CountDownTexts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A3119827ACAE2200DA096A /* CountDownTexts.swift */; };
+		42C0F5592807C20100DEF9C4 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C0F5582807C20100DEF9C4 /* ColorExtension.swift */; };
+		42C0F55A2807C22800DEF9C4 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C0F5582807C20100DEF9C4 /* ColorExtension.swift */; };
+		42C0F5632807D5C100DEF9C4 /* HistoryDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C0F55F2807D52F00DEF9C4 /* HistoryDataModel.swift */; };
+		42C0F5642807D5C400DEF9C4 /* TodayInHistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C0F55D2807D4BE00DEF9C4 /* TodayInHistoryModel.swift */; };
+		42C0F5652807D5C600DEF9C4 /* LinkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C0F5612807D5B300DEF9C4 /* LinkModel.swift */; };
+		42C0F5672807D61700DEF9C4 /* TodayInHistoryWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C0F5662807D61700DEF9C4 /* TodayInHistoryWidget.swift */; };
+		42C0F5692807D63100DEF9C4 /* TodayInHistoryEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C0F5682807D63100DEF9C4 /* TodayInHistoryEntry.swift */; };
+		42C0F56B2807D64200DEF9C4 /* TodayInHistoryTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C0F56A2807D64100DEF9C4 /* TodayInHistoryTimelineProvider.swift */; };
 		42DE98E928078938007F4DC7 /* SunnyShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4228F17727A3661D00C10336 /* SunnyShape.swift */; };
 		42DE98EA28078938007F4DC7 /* CloudyShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429D751D27A36F5900A71D27 /* CloudyShape.swift */; };
 		42DE98EB28078938007F4DC7 /* RainyShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429D752227A3769D00A71D27 /* RainyShape.swift */; };
@@ -61,6 +69,10 @@
 		42DE990928079E96007F4DC7 /* MovieRecommendEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DE990828079E96007F4DC7 /* MovieRecommendEntry.swift */; };
 		42DE990C2807A1DC007F4DC7 /* MovieDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DE990B2807A1DC007F4DC7 /* MovieDataModel.swift */; };
 		42DE990E2807A26C007F4DC7 /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DE990D2807A26C007F4DC7 /* MovieModel.swift */; };
+		42DE99122807B856007F4DC7 /* UselessFactsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DE99112807B856007F4DC7 /* UselessFactsModel.swift */; };
+		42DE99142807B94B007F4DC7 /* UselessFactsWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DE99132807B94A007F4DC7 /* UselessFactsWidget.swift */; };
+		42DE99162807B95B007F4DC7 /* UselessFactsEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DE99152807B95B007F4DC7 /* UselessFactsEntry.swift */; };
+		42DE99182807B969007F4DC7 /* UselessFactsTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DE99172807B969007F4DC7 /* UselessFactsTimelineProvider.swift */; };
 		C039551B9D70CC26EB404E35 /* Pods_CardXWidgetsExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 420A4E5D547E0D47B293784B /* Pods_CardXWidgetsExtension.framework */; };
 		EC4ED35427A8A55B00E32232 /* TimeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4ED35327A8A55B00E32232 /* TimeCard.swift */; };
 /* End PBXBuildFile section */
@@ -136,6 +148,13 @@
 		42A3119127ACA03B00DA096A /* CountDownText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownText.swift; sourceTree = "<group>"; };
 		42A3119627ACADB900DA096A /* CountDownCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownCard.swift; sourceTree = "<group>"; };
 		42A3119827ACAE2200DA096A /* CountDownTexts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownTexts.swift; sourceTree = "<group>"; };
+		42C0F5582807C20100DEF9C4 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		42C0F55D2807D4BE00DEF9C4 /* TodayInHistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayInHistoryModel.swift; sourceTree = "<group>"; };
+		42C0F55F2807D52F00DEF9C4 /* HistoryDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDataModel.swift; sourceTree = "<group>"; };
+		42C0F5612807D5B300DEF9C4 /* LinkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkModel.swift; sourceTree = "<group>"; };
+		42C0F5662807D61700DEF9C4 /* TodayInHistoryWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayInHistoryWidget.swift; sourceTree = "<group>"; };
+		42C0F5682807D63100DEF9C4 /* TodayInHistoryEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayInHistoryEntry.swift; sourceTree = "<group>"; };
+		42C0F56A2807D64100DEF9C4 /* TodayInHistoryTimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayInHistoryTimelineProvider.swift; sourceTree = "<group>"; };
 		42DE98F528078A00007F4DC7 /* WeatherWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherWidget.swift; sourceTree = "<group>"; };
 		42DE98F828078AC1007F4DC7 /* WeatherTimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTimelineProvider.swift; sourceTree = "<group>"; };
 		42DE98FA28078AF2007F4DC7 /* WeatherEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherEntry.swift; sourceTree = "<group>"; };
@@ -146,6 +165,10 @@
 		42DE990828079E96007F4DC7 /* MovieRecommendEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRecommendEntry.swift; sourceTree = "<group>"; };
 		42DE990B2807A1DC007F4DC7 /* MovieDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDataModel.swift; sourceTree = "<group>"; };
 		42DE990D2807A26C007F4DC7 /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
+		42DE99112807B856007F4DC7 /* UselessFactsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UselessFactsModel.swift; sourceTree = "<group>"; };
+		42DE99132807B94A007F4DC7 /* UselessFactsWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UselessFactsWidget.swift; sourceTree = "<group>"; };
+		42DE99152807B95B007F4DC7 /* UselessFactsEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UselessFactsEntry.swift; sourceTree = "<group>"; };
+		42DE99172807B969007F4DC7 /* UselessFactsTimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UselessFactsTimelineProvider.swift; sourceTree = "<group>"; };
 		4C72F282627C7898B2985075 /* Pods-CardX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardX.debug.xcconfig"; path = "Target Support Files/Pods-CardX/Pods-CardX.debug.xcconfig"; sourceTree = "<group>"; };
 		C3FC716AF3B40708766B8F91 /* Pods_CardX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CardX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC4ED35327A8A55B00E32232 /* TimeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCard.swift; sourceTree = "<group>"; };
@@ -288,13 +311,16 @@
 		4278D19F27F585F800CFD523 /* CardXWidgets */ = {
 			isa = PBXGroup;
 			children = (
-				42DE98FC28078D42007F4DC7 /* WidgetLocationManager.swift */,
-				42DE990F2807A333007F4DC7 /* Helpers */,
+				42C0F55B2807D44600DEF9C4 /* TodayInHistoryWidget */,
+				42DE99102807B83B007F4DC7 /* UselessFactsWidget */,
 				42DE990228079E01007F4DC7 /* MovieRecommendWidget */,
 				42DE98E7280788FE007F4DC7 /* WeatherWidget */,
 				42429ADF27F6178D00E8C21D /* RandomQuoteWidget */,
 				4278D1AF27F586B500CFD523 /* RandomWordWidget */,
+				42C0F5572807C1F400DEF9C4 /* Extensions */,
+				42DE990F2807A333007F4DC7 /* Helpers */,
 				4278D1A027F585F800CFD523 /* CardXWidgets.swift */,
+				42DE98FC28078D42007F4DC7 /* WidgetLocationManager.swift */,
 				4278D1A227F585F800CFD523 /* CardXWidgets.intentdefinition */,
 				4278D1A327F585FA00CFD523 /* Assets.xcassets */,
 				4278D1A527F585FA00CFD523 /* Info.plist */,
@@ -341,6 +367,35 @@
 			path = DaysCountDown;
 			sourceTree = "<group>";
 		};
+		42C0F5572807C1F400DEF9C4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				42C0F5582807C20100DEF9C4 /* ColorExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		42C0F55B2807D44600DEF9C4 /* TodayInHistoryWidget */ = {
+			isa = PBXGroup;
+			children = (
+				42C0F55C2807D4AC00DEF9C4 /* Models */,
+				42C0F5662807D61700DEF9C4 /* TodayInHistoryWidget.swift */,
+				42C0F5682807D63100DEF9C4 /* TodayInHistoryEntry.swift */,
+				42C0F56A2807D64100DEF9C4 /* TodayInHistoryTimelineProvider.swift */,
+			);
+			path = TodayInHistoryWidget;
+			sourceTree = "<group>";
+		};
+		42C0F55C2807D4AC00DEF9C4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				42C0F55D2807D4BE00DEF9C4 /* TodayInHistoryModel.swift */,
+				42C0F55F2807D52F00DEF9C4 /* HistoryDataModel.swift */,
+				42C0F5612807D5B300DEF9C4 /* LinkModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		42DE98E7280788FE007F4DC7 /* WeatherWidget */ = {
 			isa = PBXGroup;
 			children = (
@@ -380,6 +435,17 @@
 				429D752527A376BE00A71D27 /* RandomHelper.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		42DE99102807B83B007F4DC7 /* UselessFactsWidget */ = {
+			isa = PBXGroup;
+			children = (
+				42DE99112807B856007F4DC7 /* UselessFactsModel.swift */,
+				42DE99132807B94A007F4DC7 /* UselessFactsWidget.swift */,
+				42DE99152807B95B007F4DC7 /* UselessFactsEntry.swift */,
+				42DE99172807B969007F4DC7 /* UselessFactsTimelineProvider.swift */,
+			);
+			path = UselessFactsWidget;
 			sourceTree = "<group>";
 		};
 		BAE316611966821190AF233C /* Frameworks */ = {
@@ -580,6 +646,7 @@
 				4278D1A727F585FA00CFD523 /* CardXWidgets.intentdefinition in Sources */,
 				421DA1F327A22FFF0073A877 /* CardXApp.swift in Sources */,
 				42A3119227ACA03B00DA096A /* CountDownText.swift in Sources */,
+				42C0F5592807C20100DEF9C4 /* ColorExtension.swift in Sources */,
 				EC4ED35427A8A55B00E32232 /* TimeCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -590,11 +657,16 @@
 			files = (
 				42DE990C2807A1DC007F4DC7 /* MovieDataModel.swift in Sources */,
 				42DE98E928078938007F4DC7 /* SunnyShape.swift in Sources */,
+				42DE99182807B969007F4DC7 /* UselessFactsTimelineProvider.swift in Sources */,
+				42C0F56B2807D64200DEF9C4 /* TodayInHistoryTimelineProvider.swift in Sources */,
 				4278D1A127F585F800CFD523 /* CardXWidgets.swift in Sources */,
 				42429AED27F618E600E8C21D /* RandomQuoteTimelineProvider.swift in Sources */,
+				42DE99122807B856007F4DC7 /* UselessFactsModel.swift in Sources */,
+				42C0F5632807D5C100DEF9C4 /* HistoryDataModel.swift in Sources */,
 				42429AE327F6180200E8C21D /* RandomQuoteModel.swift in Sources */,
 				4278D1B327F586EF00CFD523 /* BriefTextControl.swift in Sources */,
 				42DE98F328078946007F4DC7 /* CloudModel.swift in Sources */,
+				42DE99142807B94B007F4DC7 /* UselessFactsWidget.swift in Sources */,
 				42DE990E2807A26C007F4DC7 /* MovieModel.swift in Sources */,
 				42DE98ED2807893E007F4DC7 /* WeatherTypes.swift in Sources */,
 				42429AE527F6180200E8C21D /* CopyRightModel.swift in Sources */,
@@ -604,17 +676,23 @@
 				42DE98F928078AC1007F4DC7 /* WeatherTimelineProvider.swift in Sources */,
 				42429AEE27F618E900E8C21D /* RandomQuoteWidget.swift in Sources */,
 				42DE98F028078946007F4DC7 /* CoordinateModel.swift in Sources */,
+				42C0F55A2807C22800DEF9C4 /* ColorExtension.swift in Sources */,
 				42DE990928079E96007F4DC7 /* MovieRecommendEntry.swift in Sources */,
+				42C0F5652807D5C600DEF9C4 /* LinkModel.swift in Sources */,
 				4278D1B027F586D800CFD523 /* RandomWordModel.swift in Sources */,
 				42DE98FD28078D42007F4DC7 /* WidgetLocationManager.swift in Sources */,
+				42DE99162807B95B007F4DC7 /* UselessFactsEntry.swift in Sources */,
 				42DE98FE28078E7E007F4DC7 /* WeatherHelper.swift in Sources */,
 				42429AEC27F618E200E8C21D /* RandomQuoteEntry.swift in Sources */,
 				4278D1B927F6130D00CFD523 /* RandomWordTimelineProvider.swift in Sources */,
 				42DE990728079E81007F4DC7 /* MovieRecommendWidget.swift in Sources */,
 				42DE98EE28078946007F4DC7 /* WeatherModel.swift in Sources */,
+				42C0F5672807D61700DEF9C4 /* TodayInHistoryWidget.swift in Sources */,
 				4278D1A627F585FA00CFD523 /* CardXWidgets.intentdefinition in Sources */,
+				42C0F5692807D63100DEF9C4 /* TodayInHistoryEntry.swift in Sources */,
 				42DE98EA28078938007F4DC7 /* CloudyShape.swift in Sources */,
 				42DE98FF28079170007F4DC7 /* RandomHelper.swift in Sources */,
+				42C0F5642807D5C400DEF9C4 /* TodayInHistoryModel.swift in Sources */,
 				42DE98EF28078946007F4DC7 /* MainModel.swift in Sources */,
 				42DE98EB28078938007F4DC7 /* RainyShape.swift in Sources */,
 				42DE98F228078946007F4DC7 /* WindModel.swift in Sources */,

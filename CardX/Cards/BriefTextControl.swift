@@ -14,21 +14,21 @@ struct BriefTextControl: View {
     
     var body: some View {
         HStack{
+            Spacer()
             VStack(alignment: .leading) {
                 Spacer()
-                    .frame(height: 20)
                 Text(upperText)
                     .font(.headline)
                     .foregroundColor(.secondary)
                 Text(title)
-                    .font(.title)
                     .fontWeight(.black)
                     .foregroundColor(.primary)
                     .lineLimit(3)
+                    .font(.system(size: 500))
+                    .minimumScaleFactor(0.01)
                 Text(bottomText)
-                    .foregroundColor(.secondary)
+                    .font(.footnote)
                 Spacer()
-                    .frame(height: 20)
             }
             .layoutPriority(100)
             Spacer()

@@ -37,13 +37,7 @@ struct RandomQuoteTimelineProvider: IntentTimelineProvider {
                     var entry = RandomQuoteEntry(date: Date(), quote: result!, imgData: UIImage(imageLiteralResourceName: "Image"), configuration: configuration)
                     let imgUrl = result?.contents?.quotes?[0].background
                     
-                    if(imgUrl == nil){
-                        let timeline = Timeline(entries: [entry], policy: .atEnd)
-                        completion(timeline)
-                        return
-                    }
-                    
-                    AF.request(imgUrl!).responseData {
+                    AF.request(imgUrl ?? "-").responseData {
                         response in
                         
                         if(response.error != nil || response.response?.statusCode != 200)

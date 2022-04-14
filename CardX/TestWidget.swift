@@ -10,59 +10,38 @@ import SwiftUI
 struct TestWidget: View {
     var body: some View {
         ZStack{
-            HStack{
+            Image("Image-1")
+                .resizable()
+                .blur(radius: 10)
+            Rectangle()
+                .background(.secondary)
+                .opacity(0.2)
+            VStack(alignment: .leading){
                 Spacer()
-                Image("t")
-                    .resizable()
-                    .shadow(radius: 10)
-                    .cornerRadius(8)
-                    .frame(width: 84.25, height: 125)
-                VStack(alignment: .leading){
-                    Spacer()
-                    HStack{
-                        Text("Movie | USA")
-                            .font(.footnote)
-                        Spacer()
-                        Text("1994")
-                            .font(.footnote)
-                            .padding([.trailing])
-                    }
-                    Text("The Shawshank Redemption")
+                HStack{
+                    Text("Today")
+                        .fontWeight(.heavy)
+                        .foregroundColor(.white)
+                        .padding(.horizontal, 5)
+                        .background(.pink)
+                    Text("In")
                         .bold()
-                        .lineLimit(2)
-                    Text("Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.")
-                        .font(.subheadline)
-                        .foregroundColor(.secondary)
-                        .lineLimit(2)
-                    HStack{
-                        Text("142 mins")
-                            .font(.system(size: 10))
-                        Spacer()
-                        ZStack{
-                            Text("IMDB 9.3")
-                                .foregroundColor(.white)
-                                .font(.system(size: 10))
-                                .padding([.leading, .trailing], 4)
-                                .padding([.top, .bottom], 1)
-                        }
-                        .background(
-                            RoundedRectangle(cornerRadius: 5)
-                            .fill(.blue))
-                        ZStack{
-                            Text("Rotten 91%")
-                                .foregroundColor(.white)
-                                .font(.system(size: 10))
-                                .padding([.leading, .trailing], 4)
-                                .padding([.top, .bottom], 1)
-                        }
-                        .background(
-                            RoundedRectangle(cornerRadius: 5)
-                            .fill(.pink))
-                        .padding([.trailing])
-                    }
-                    Spacer()
+                    Text("History")
+                        .bold()
                 }
-                .padding([.horizontal], 4)
+                .padding(.leading)
+                VStack(alignment: .leading){
+                    Text("43 BC")
+                        .font(.footnote)
+                        .padding(.leading)
+                        .padding(.top, 3)
+                        .foregroundColor(.secondary)
+                    Text("Battle of Forum Gallorum between the forces of Mark Antony, and legions loyal to the Roman Senate under the overall command of consul Gaius Pansa.")
+                        .font(.subheadline)
+                        .fontWeight(.heavy)
+                        .blendMode(.overlay)
+                        .padding(.horizontal)
+                }
                 Spacer()
             }
         }
