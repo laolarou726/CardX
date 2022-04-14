@@ -8,5 +8,10 @@ target 'CardX' do
   # Pods for CardX
   pod 'Alamofire', '~> 5.5'
   pod 'HandyJSON', '~> 5.0.2'
+  pod 'Alamofire-Synchronous', '~> 4.0.1'
+
+  target 'CardXWidgetsExtension' do
+        inherit! :search_paths
+  end
 
 end

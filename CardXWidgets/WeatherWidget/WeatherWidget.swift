@@ -1,60 +1,53 @@
 //
-//  WeatherCard.swift
+//  WeatherWidget.swift
 //  CardX
 //
-//  Created by 罗麟瑞 on 2022/1/27.
+//  Created by 罗麟瑞 on 2022/4/13.
 //
 
 import SwiftUI
+import WidgetKit
 
-struct WeatherCard: View {
-    @ObservedObject var vm = WeatherCardViewModel()
+struct WeatherWidgetEntryView: View {
+    var entry: WeatherTimelineProvider.Entry
     
     var body: some View {
         ZStack{
             HStack{
                 Spacer()
-                getWeatherShape(weatherType: self.vm.weatherType)
+                getWeatherShape(weatherType: self.entry.weatherType)
             }
             HStack{
                 VStack(alignment: .leading) {
                     Spacer()
                         .frame(height: 5)
-                    Text(self.vm.location)
+                    Text(self.entry.location)
                         .font(.title2)
                         .foregroundColor(.accentColor)
                         .padding([.vertical], 2)
                     HStack{
-                        AsyncImage(
-                            url: URL(string: self.vm.weatherIconUrl),
-                            content: {image in
-                                image
-                                    .resizable()
-                                    .frame(width: 30, height: 30)
-                            },
-                            placeholder: {
-                                Text("-")
-                                    .foregroundColor(.secondary)
-                            })
-                        Text(self.vm.weatherDescription)
+                        Image(uiImage: self.entry.weatherImg)
+                            .resizable()
+                            .frame(width: 30, height: 30)
+                        Text(self.entry.weatherDescription)
                             .font(.caption)
                             .foregroundColor(.secondary)
                     }
                     HStack{
-                        Text("\(self.vm.feelLikeTemp, specifier: "%.1f") °C")
+                        Text("\(self.entry.feelLikeTemp, specifier: "%.1f") °C")
                             .font(.title)
                             .fontWeight(.bold)
-                        Text("(\(self.vm.minTemp, specifier: "%.1f") / \(self.vm.maxTemp, specifier: "%.1f"))")
+                        Text("(\(self.entry.minTemp, specifier: "%.1f") / \(self.entry.maxTemp, specifier: "%.1f"))")
                             .font(.caption2)
                     }
                     HStack{
-                        Text("\(self.vm.humidity, specifier: "%.1f") %")
+                        Text("\(self.entry.humidity, specifier: "%.1f") %")
                             .font(.subheadline)
                             .foregroundColor(.secondary)
                             .lineLimit(3)
                         Text("|")
                             .foregroundColor(.secondary)
-                        Text("\(self.vm.windSpeed, specifier: "%.1f") m/s")
+                        Text("\(self.entry.windSpeed, specifier: "%.1f") m/s")
                             .font(.subheadline)
                             .foregroundColor(.secondary)
                             .lineLimit(3)
@@ -66,15 +59,6 @@ struct WeatherCard: View {
                 Spacer()
             }
             .padding()
-        }
-        .cornerRadius(20)
-        .background(
-            RoundedRectangle(cornerRadius: 20)
-                .fill(.white)
-                .shadow(radius: 10))
-        .padding([.top, .horizontal])
-        .onAppear{
-            self.vm.refreshData()
         }
     }
     
@@ -94,8 +78,22 @@ struct WeatherCard: View {
     }
 }
 
-struct WeatherCard_Previews: PreviewProvider {
+struct WeatherWidget: Widget {
+    let kind: String = "WeatherWidget"
+
+    var body: some WidgetConfiguration {
+        IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: WeatherTimelineProvider()) { entry in
+            WeatherWidgetEntryView(entry: entry)
+        }
+        .supportedFamilies([.systemMedium, .systemLarge])
+        .configurationDisplayName("Current Weather")
+        .description("Display a random quote  from the web.")
+    }
+}
+
+struct WeatherWidget_Previews: PreviewProvider {
     static var previews: some View {
-        WeatherCard()
+        WeatherWidgetEntryView(entry: WeatherEntry(date: Date(), configuration: ConfigurationIntent()))
+            .previewContext(WidgetPreviewContext(family: .systemMedium))
     }
 }
