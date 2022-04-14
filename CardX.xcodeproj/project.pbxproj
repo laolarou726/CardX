@@ -46,6 +46,18 @@
 		42C0F5672807D61700DEF9C4 /* TodayInHistoryWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C0F5662807D61700DEF9C4 /* TodayInHistoryWidget.swift */; };
 		42C0F5692807D63100DEF9C4 /* TodayInHistoryEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C0F5682807D63100DEF9C4 /* TodayInHistoryEntry.swift */; };
 		42C0F56B2807D64200DEF9C4 /* TodayInHistoryTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C0F56A2807D64100DEF9C4 /* TodayInHistoryTimelineProvider.swift */; };
+		42C0F56E280884B800DEF9C4 /* RandomMusicWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C0F56D280884B800DEF9C4 /* RandomMusicWidget.swift */; };
+		42C0F570280884C400DEF9C4 /* RandomMusicEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C0F56F280884C400DEF9C4 /* RandomMusicEntry.swift */; };
+		42C0F572280884D800DEF9C4 /* RandomMusicTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C0F571280884D800DEF9C4 /* RandomMusicTimelineProvider.swift */; };
+		42C0F57B28088ABC00DEF9C4 /* RandomMusicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C0F57A28088ABC00DEF9C4 /* RandomMusicModel.swift */; };
+		42C0F581280893C500DEF9C4 /* TrackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C0F580280893C500DEF9C4 /* TrackModel.swift */; };
+		42C0F58428089D0D00DEF9C4 /* 3270Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42C0F58328089D0D00DEF9C4 /* 3270Medium.ttf */; };
+		42C0F58528089D8000DEF9C4 /* 3270Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42C0F58328089D0D00DEF9C4 /* 3270Medium.ttf */; };
+		42C0F58828089E9000DEF9C4 /* RandomPhotoEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C0F58728089E9000DEF9C4 /* RandomPhotoEntry.swift */; };
+		42C0F58A28089EA300DEF9C4 /* RandomPhotoTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C0F58928089EA300DEF9C4 /* RandomPhotoTimelineProvider.swift */; };
+		42C0F58C28089EAF00DEF9C4 /* RandomPhotoWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C0F58B28089EAF00DEF9C4 /* RandomPhotoWidget.swift */; };
+		42C0F58F2808A10600DEF9C4 /* RandomPhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C0F58E2808A10600DEF9C4 /* RandomPhotoModel.swift */; };
+		42C0F5912808A18500DEF9C4 /* ExifModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C0F5902808A18500DEF9C4 /* ExifModel.swift */; };
 		42DE98E928078938007F4DC7 /* SunnyShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4228F17727A3661D00C10336 /* SunnyShape.swift */; };
 		42DE98EA28078938007F4DC7 /* CloudyShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429D751D27A36F5900A71D27 /* CloudyShape.swift */; };
 		42DE98EB28078938007F4DC7 /* RainyShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429D752227A3769D00A71D27 /* RainyShape.swift */; };
@@ -155,6 +167,17 @@
 		42C0F5662807D61700DEF9C4 /* TodayInHistoryWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayInHistoryWidget.swift; sourceTree = "<group>"; };
 		42C0F5682807D63100DEF9C4 /* TodayInHistoryEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayInHistoryEntry.swift; sourceTree = "<group>"; };
 		42C0F56A2807D64100DEF9C4 /* TodayInHistoryTimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayInHistoryTimelineProvider.swift; sourceTree = "<group>"; };
+		42C0F56D280884B800DEF9C4 /* RandomMusicWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomMusicWidget.swift; sourceTree = "<group>"; };
+		42C0F56F280884C400DEF9C4 /* RandomMusicEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomMusicEntry.swift; sourceTree = "<group>"; };
+		42C0F571280884D800DEF9C4 /* RandomMusicTimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomMusicTimelineProvider.swift; sourceTree = "<group>"; };
+		42C0F57A28088ABC00DEF9C4 /* RandomMusicModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomMusicModel.swift; sourceTree = "<group>"; };
+		42C0F580280893C500DEF9C4 /* TrackModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackModel.swift; sourceTree = "<group>"; };
+		42C0F58328089D0D00DEF9C4 /* 3270Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = 3270Medium.ttf; sourceTree = "<group>"; };
+		42C0F58728089E9000DEF9C4 /* RandomPhotoEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomPhotoEntry.swift; sourceTree = "<group>"; };
+		42C0F58928089EA300DEF9C4 /* RandomPhotoTimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomPhotoTimelineProvider.swift; sourceTree = "<group>"; };
+		42C0F58B28089EAF00DEF9C4 /* RandomPhotoWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomPhotoWidget.swift; sourceTree = "<group>"; };
+		42C0F58E2808A10600DEF9C4 /* RandomPhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomPhotoModel.swift; sourceTree = "<group>"; };
+		42C0F5902808A18500DEF9C4 /* ExifModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExifModel.swift; sourceTree = "<group>"; };
 		42DE98F528078A00007F4DC7 /* WeatherWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherWidget.swift; sourceTree = "<group>"; };
 		42DE98F828078AC1007F4DC7 /* WeatherTimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTimelineProvider.swift; sourceTree = "<group>"; };
 		42DE98FA28078AF2007F4DC7 /* WeatherEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherEntry.swift; sourceTree = "<group>"; };
@@ -311,12 +334,15 @@
 		4278D19F27F585F800CFD523 /* CardXWidgets */ = {
 			isa = PBXGroup;
 			children = (
+				42C0F58628089E7D00DEF9C4 /* RandomPhotoWidget */,
+				42C0F56C2808849F00DEF9C4 /* RandomMusicWidget */,
 				42C0F55B2807D44600DEF9C4 /* TodayInHistoryWidget */,
 				42DE99102807B83B007F4DC7 /* UselessFactsWidget */,
 				42DE990228079E01007F4DC7 /* MovieRecommendWidget */,
 				42DE98E7280788FE007F4DC7 /* WeatherWidget */,
 				42429ADF27F6178D00E8C21D /* RandomQuoteWidget */,
 				4278D1AF27F586B500CFD523 /* RandomWordWidget */,
+				42C0F58228089CE500DEF9C4 /* Resources */,
 				42C0F5572807C1F400DEF9C4 /* Extensions */,
 				42DE990F2807A333007F4DC7 /* Helpers */,
 				4278D1A027F585F800CFD523 /* CardXWidgets.swift */,
@@ -392,6 +418,54 @@
 				42C0F55D2807D4BE00DEF9C4 /* TodayInHistoryModel.swift */,
 				42C0F55F2807D52F00DEF9C4 /* HistoryDataModel.swift */,
 				42C0F5612807D5B300DEF9C4 /* LinkModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		42C0F56C2808849F00DEF9C4 /* RandomMusicWidget */ = {
+			isa = PBXGroup;
+			children = (
+				42C0F573280884DD00DEF9C4 /* Models */,
+				42C0F56D280884B800DEF9C4 /* RandomMusicWidget.swift */,
+				42C0F56F280884C400DEF9C4 /* RandomMusicEntry.swift */,
+				42C0F571280884D800DEF9C4 /* RandomMusicTimelineProvider.swift */,
+			);
+			path = RandomMusicWidget;
+			sourceTree = "<group>";
+		};
+		42C0F573280884DD00DEF9C4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				42C0F57A28088ABC00DEF9C4 /* RandomMusicModel.swift */,
+				42C0F580280893C500DEF9C4 /* TrackModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		42C0F58228089CE500DEF9C4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				42C0F58328089D0D00DEF9C4 /* 3270Medium.ttf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		42C0F58628089E7D00DEF9C4 /* RandomPhotoWidget */ = {
+			isa = PBXGroup;
+			children = (
+				42C0F58D2808A0F200DEF9C4 /* Models */,
+				42C0F58728089E9000DEF9C4 /* RandomPhotoEntry.swift */,
+				42C0F58928089EA300DEF9C4 /* RandomPhotoTimelineProvider.swift */,
+				42C0F58B28089EAF00DEF9C4 /* RandomPhotoWidget.swift */,
+			);
+			path = RandomPhotoWidget;
+			sourceTree = "<group>";
+		};
+		42C0F58D2808A0F200DEF9C4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				42C0F58E2808A10600DEF9C4 /* RandomPhotoModel.swift */,
+				42C0F5902808A18500DEF9C4 /* ExifModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -555,6 +629,7 @@
 			files = (
 				421DA1FA27A230000073A877 /* Preview Assets.xcassets in Resources */,
 				421DA1F727A230000073A877 /* Assets.xcassets in Resources */,
+				42C0F58528089D8000DEF9C4 /* 3270Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -563,6 +638,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4278D1A427F585FA00CFD523 /* Assets.xcassets in Resources */,
+				42C0F58428089D0D00DEF9C4 /* 3270Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -668,6 +744,7 @@
 				42DE98F328078946007F4DC7 /* CloudModel.swift in Sources */,
 				42DE99142807B94B007F4DC7 /* UselessFactsWidget.swift in Sources */,
 				42DE990E2807A26C007F4DC7 /* MovieModel.swift in Sources */,
+				42C0F581280893C500DEF9C4 /* TrackModel.swift in Sources */,
 				42DE98ED2807893E007F4DC7 /* WeatherTypes.swift in Sources */,
 				42429AE527F6180200E8C21D /* CopyRightModel.swift in Sources */,
 				42DE98F128078946007F4DC7 /* SysModel.swift in Sources */,
@@ -676,11 +753,15 @@
 				42DE98F928078AC1007F4DC7 /* WeatherTimelineProvider.swift in Sources */,
 				42429AEE27F618E900E8C21D /* RandomQuoteWidget.swift in Sources */,
 				42DE98F028078946007F4DC7 /* CoordinateModel.swift in Sources */,
+				42C0F58828089E9000DEF9C4 /* RandomPhotoEntry.swift in Sources */,
+				42C0F5912808A18500DEF9C4 /* ExifModel.swift in Sources */,
 				42C0F55A2807C22800DEF9C4 /* ColorExtension.swift in Sources */,
 				42DE990928079E96007F4DC7 /* MovieRecommendEntry.swift in Sources */,
 				42C0F5652807D5C600DEF9C4 /* LinkModel.swift in Sources */,
 				4278D1B027F586D800CFD523 /* RandomWordModel.swift in Sources */,
+				42C0F572280884D800DEF9C4 /* RandomMusicTimelineProvider.swift in Sources */,
 				42DE98FD28078D42007F4DC7 /* WidgetLocationManager.swift in Sources */,
+				42C0F56E280884B800DEF9C4 /* RandomMusicWidget.swift in Sources */,
 				42DE99162807B95B007F4DC7 /* UselessFactsEntry.swift in Sources */,
 				42DE98FE28078E7E007F4DC7 /* WeatherHelper.swift in Sources */,
 				42429AEC27F618E200E8C21D /* RandomQuoteEntry.swift in Sources */,
@@ -691,13 +772,18 @@
 				4278D1A627F585FA00CFD523 /* CardXWidgets.intentdefinition in Sources */,
 				42C0F5692807D63100DEF9C4 /* TodayInHistoryEntry.swift in Sources */,
 				42DE98EA28078938007F4DC7 /* CloudyShape.swift in Sources */,
+				42C0F570280884C400DEF9C4 /* RandomMusicEntry.swift in Sources */,
+				42C0F58F2808A10600DEF9C4 /* RandomPhotoModel.swift in Sources */,
 				42DE98FF28079170007F4DC7 /* RandomHelper.swift in Sources */,
 				42C0F5642807D5C400DEF9C4 /* TodayInHistoryModel.swift in Sources */,
 				42DE98EF28078946007F4DC7 /* MainModel.swift in Sources */,
 				42DE98EB28078938007F4DC7 /* RainyShape.swift in Sources */,
+				42C0F58C28089EAF00DEF9C4 /* RandomPhotoWidget.swift in Sources */,
 				42DE98F228078946007F4DC7 /* WindModel.swift in Sources */,
+				42C0F58A28089EA300DEF9C4 /* RandomPhotoTimelineProvider.swift in Sources */,
 				42DE98F728078A92007F4DC7 /* WeatherWidget.swift in Sources */,
 				4278D1B527F5870A00CFD523 /* RandomWordWidget.swift in Sources */,
+				42C0F57B28088ABC00DEF9C4 /* RandomMusicModel.swift in Sources */,
 				42429AE427F6180200E8C21D /* ContentModel.swift in Sources */,
 				42DE98F428078946007F4DC7 /* WeatherResponseModel.swift in Sources */,
 				42DE98FB28078AF2007F4DC7 /* WeatherEntry.swift in Sources */,

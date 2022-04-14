@@ -24,5 +24,7 @@ struct CardXWidgets2: WidgetBundle {
     var body: some Widget {
         UselessFactsWidget()
         TodayInHistoryWidget()
+        RandomMusicWidget()
+        RandomPhotoWidget()
     }
 }

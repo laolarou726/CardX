@@ -10,41 +10,34 @@ import SwiftUI
 struct TestWidget: View {
     var body: some View {
         ZStack{
-            Image("Image-1")
+            Image("Image")
                 .resizable()
-                .blur(radius: 10)
-            Rectangle()
-                .background(.secondary)
-                .opacity(0.2)
-            VStack(alignment: .leading){
+                .aspectRatio(contentMode: .fill)
+                .padding(-40)
+                .blur(radius: 20)
+            VStack{
                 Spacer()
-                HStack{
-                    Text("Today")
-                        .fontWeight(.heavy)
-                        .foregroundColor(.white)
-                        .padding(.horizontal, 5)
-                        .background(.pink)
-                    Text("In")
-                        .bold()
-                    Text("History")
-                        .bold()
+                HStack(alignment: .bottom){
+                    Rectangle()
+                        .fill(Color(hex: "#fff"))
+                        .frame(width: 40, height: 8)
+                        .padding([.leading, .bottom])
+                        .shadow(radius: 10)
+                    Spacer()
+                    VStack(alignment: .trailing){
+                        Spacer()
+                        Text("SONY, ILCE-7M2")
+                            .font(Font.custom("IBM 3270", size: 10))
+                            .foregroundColor(.orange)
+                            .shadow(color: .red, radius: 2)
+                            .padding([.trailing, .bottom])
+                    }
                 }
-                .padding(.leading)
-                VStack(alignment: .leading){
-                    Text("43 BC")
-                        .font(.footnote)
-                        .padding(.leading)
-                        .padding(.top, 3)
-                        .foregroundColor(.secondary)
-                    Text("Battle of Forum Gallorum between the forces of Mark Antony, and legions loyal to the Roman Senate under the overall command of consul Gaius Pansa.")
-                        .font(.subheadline)
-                        .fontWeight(.heavy)
-                        .blendMode(.overlay)
-                        .padding(.horizontal)
-                }
-                Spacer()
+                .frame(height: 30)
             }
         }
+        .clipped()
+        .cornerRadius(20)
         .background(
             RoundedRectangle(cornerRadius: 20)
                 .fill(.white)
