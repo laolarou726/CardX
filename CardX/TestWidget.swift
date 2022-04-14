@@ -10,30 +10,29 @@ import SwiftUI
 struct TestWidget: View {
     var body: some View {
         ZStack{
-            Image("Image")
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .padding(-40)
-                .blur(radius: 20)
-            VStack{
+            VStack(alignment: .leading){
                 Spacer()
-                HStack(alignment: .bottom){
-                    Rectangle()
-                        .fill(Color(hex: "#fff"))
-                        .frame(width: 40, height: 8)
-                        .padding([.leading, .bottom])
-                        .shadow(radius: 10)
-                    Spacer()
-                    VStack(alignment: .trailing){
-                        Spacer()
-                        Text("SONY, ILCE-7M2")
-                            .font(Font.custom("IBM 3270", size: 10))
-                            .foregroundColor(.orange)
-                            .shadow(color: .red, radius: 2)
-                            .padding([.trailing, .bottom])
-                    }
+                HStack{
+                    Image("Covid_Icon")
+                        .resizable()
+                        .frame(width: 30, height: 30)
+                    Text("Global COVID Status")
+                        .font(.title)
                 }
-                .frame(height: 30)
+                .padding(.leading)
+                VStack(alignment: .leading){
+                    Text("Total Death: 213")
+                    Text("Total Comfirm: 23")
+                    Text("Remaining Health: 1123")
+                }
+                .padding()
+                MultiProgressBar([
+                    (213, Color(hex: "#ef5350"), "Comfirm"),
+                    (23, .secondary, "Death"),
+                    (1123, Color(hex: "#536dfe"), "Health")
+                ])
+                .padding([.horizontal, .bottom])
+                Spacer()
             }
         }
         .clipped()
