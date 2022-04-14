@@ -26,7 +26,7 @@ struct MultiProgressBar: View {
     }
     
     var body: some View {
-        VStack{
+        VStack(alignment: .leading){
             GeometryReader { geometry in
                 ZStack(alignment: .leading) {
                     Rectangle()
@@ -45,26 +45,26 @@ struct MultiProgressBar: View {
                 }
             }
             .cornerRadius(5)
-            .frame(height: 20)
+            .frame(height: 10)
             
-            ScrollView(.horizontal) {
-                HStack(spacing: 10) {
-                    ForEach(0..<self.values.count, id: \.self) {
-                        index in
-                        
-                        let value = self.values[index]
-                        
-                        HStack{
-                            Rectangle()
-                                .fill(value.1)
-                                .cornerRadius(2)
-                                .frame(width: 14, height: 14)
-                            Text(value.2)
-                        }
+            LazyHStack(spacing: 10) {
+                ForEach(0..<self.values.count, id: \.self) {
+                    index in
+                    
+                    let value = self.values[index]
+                    
+                    HStack{
+                        Rectangle()
+                            .fill(value.1)
+                            .cornerRadius(2)
+                            .frame(width: 10, height: 10)
+                        Text(value.2)
+                            .font(.footnote)
                     }
                 }
             }
         }
+        .frame(height: 50)
     }
 }
 

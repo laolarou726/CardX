@@ -26,5 +26,6 @@ struct CardXWidgets2: WidgetBundle {
         TodayInHistoryWidget()
         RandomMusicWidget()
         RandomPhotoWidget()
+        CovidDataWidget()
     }
 }

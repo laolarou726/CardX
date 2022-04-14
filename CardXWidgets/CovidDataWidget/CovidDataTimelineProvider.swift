@@ -8,6 +8,7 @@
 import Foundation
 import Intents
 import WidgetKit
+import SwiftUI
 import Alamofire
 
 struct CovidDataTimelineProvider: IntentTimelineProvider {
@@ -43,15 +44,15 @@ struct CovidDataTimelineProvider: IntentTimelineProvider {
                     for data in result!{
                         totalDeath += data?.actuals?.deaths ?? 0
                         totalComfirm += data?.actuals?.cases ?? 0
-                        totalHealth += (data?.population ?? 0) - (data?.actuals?.deaths ?? 0 + data?.actuals?.cases ?? 0)
+                        totalHealth += (data?.population ?? 0) - ((data?.actuals?.deaths ?? 0) + (data?.actuals?.cases ?? 0))
                     }
                     
                     var entry = CovidDataEntry(date: Date(), configuration: configuration)
                     
                     entry.values = [
-                        (totalDeath, .secondary, "Death"),
-                        (totalComfirm, Color(hex: "#ef5350"), "Comfirm"),
-                        (totalHealth, Color(hex: "#536dfe"), "Health")
+                        (Double(totalDeath), .secondary, "Death"),
+                        (Double(totalComfirm), Color(hex: "#ef5350"), "Comfirm"),
+                        (Double(totalHealth), Color(hex: "#536dfe"), "Health")
                     ]
                     
                     let timeline = Timeline(entries: [entry], policy: .atEnd)

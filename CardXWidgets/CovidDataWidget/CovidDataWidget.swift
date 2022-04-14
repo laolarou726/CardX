@@ -21,25 +21,25 @@ struct CovidDataWidgetEntryView : View {
                     .resizable()
                     .frame(width: 30, height: 30)
                 Text("Global COVID Status")
-                    .font(.title)
+                    .font(.title2)
             }
-            .padding(.leading)
+            .padding()
             
             if(self.widgetFamily == .systemLarge || self.widgetFamily == .systemExtraLarge){
-                VStack(alignment: .leading){
+                LazyVStack(alignment: .leading){
                     ForEach(0..<self.entry.values.count, id: \.self){
                         index in
                         
                         let data = self.entry.values[index]
                         
-                        Text("Total \(data.2): \(data.0)")
+                        Label("Total \(data.2): \(Int(data.0))", systemImage: "person.crop.circle")
                     }
                 }
                 .padding()
             }
             
             MultiProgressBar(self.entry.values)
-            .padding([.horizontal, .bottom])
+                .padding([.horizontal, .bottom])
             Spacer()
         }
     }
@@ -61,6 +61,6 @@ struct CovidDataWidget: Widget {
 struct CovidDataWidget_Previews: PreviewProvider {
     static var previews: some View {
         CovidDataWidgetEntryView(entry: CovidDataEntry(date: Date(), configuration: ConfigurationIntent()))
-            .previewContext(WidgetPreviewContext(family: .systemSmall))
+            .previewContext(WidgetPreviewContext(family: .systemMedium))
     }
 }
