@@ -9,8 +9,8 @@ import Foundation
 import HandyJSON
 
 class RandomWordModel : HandyJSON{
-    var word: String? = "-"
-    var definition: String? = "-"
+    var word: String? = "unknown"
+    var definition: String? = "unknown means unknown"
     var pronunciation: String? = "[-]"
     
     required init() {}

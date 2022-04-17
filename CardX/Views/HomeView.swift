@@ -128,7 +128,7 @@ struct HomeView: View {
                                         .foregroundColor(.white)
                                 }
                                 .padding()
-                                Text("Here are the list of the widgets we are currently supported:")
+                                Text("Here is the list of the widgets we are currently supported:")
                                     .foregroundColor(.white)
                                     .padding(.leading)
                                 
