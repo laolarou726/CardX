@@ -22,6 +22,8 @@
 		42429AEC27F618E200E8C21D /* RandomQuoteEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42429AEA27F6186B00E8C21D /* RandomQuoteEntry.swift */; };
 		42429AED27F618E600E8C21D /* RandomQuoteTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42429AE827F6185600E8C21D /* RandomQuoteTimelineProvider.swift */; };
 		42429AEE27F618E900E8C21D /* RandomQuoteWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42429AE027F617BC00E8C21D /* RandomQuoteWidget.swift */; };
+		42485EF8280C85D9006E90A1 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42485EF7280C85D9006E90A1 /* BlurView.swift */; };
+		42485EFA280C86F5006E90A1 /* HomePageSupportedWidgetsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42485EF9280C86F5006E90A1 /* HomePageSupportedWidgetsModel.swift */; };
 		4278D19C27F585F800CFD523 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4278D19B27F585F800CFD523 /* WidgetKit.framework */; };
 		4278D19E27F585F800CFD523 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4278D19D27F585F800CFD523 /* SwiftUI.framework */; };
 		4278D1A127F585F800CFD523 /* CardXWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4278D1A027F585F800CFD523 /* CardXWidgets.swift */; };
@@ -34,6 +36,11 @@
 		4278D1B527F5870A00CFD523 /* RandomWordWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4278D1B427F5870A00CFD523 /* RandomWordWidget.swift */; };
 		4278D1B727F612A600CFD523 /* RandomWordEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4278D1B627F612A600CFD523 /* RandomWordEntry.swift */; };
 		4278D1B927F6130D00CFD523 /* RandomWordTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4278D1B827F6130D00CFD523 /* RandomWordTimelineProvider.swift */; };
+		428156F0280BCBD800DABD1C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428156EF280BCBD800DABD1C /* HomeView.swift */; };
+		428156F2280BCC0C00DABD1C /* UsageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428156F1280BCC0C00DABD1C /* UsageView.swift */; };
+		428156F4280BCC2900DABD1C /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428156F3280BCC2900DABD1C /* AboutView.swift */; };
+		428156F6280BD92500DABD1C /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428156F5280BD92500DABD1C /* WebView.swift */; };
+		428156F9280BEE8B00DABD1C /* HomePageCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428156F8280BEE8B00DABD1C /* HomePageCardModel.swift */; };
 		42A3119027AC9F1900DA096A /* BriefTextControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A3118F27AC9F1900DA096A /* BriefTextControl.swift */; };
 		42A3119227ACA03B00DA096A /* CountDownText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A3119127ACA03B00DA096A /* CountDownText.swift */; };
 		42A3119727ACADB900DA096A /* CountDownCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A3119627ACADB900DA096A /* CountDownCard.swift */; };
@@ -148,6 +155,8 @@
 		42429AE027F617BC00E8C21D /* RandomQuoteWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomQuoteWidget.swift; sourceTree = "<group>"; };
 		42429AE827F6185600E8C21D /* RandomQuoteTimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomQuoteTimelineProvider.swift; sourceTree = "<group>"; };
 		42429AEA27F6186B00E8C21D /* RandomQuoteEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomQuoteEntry.swift; sourceTree = "<group>"; };
+		42485EF7280C85D9006E90A1 /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		42485EF9280C86F5006E90A1 /* HomePageSupportedWidgetsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageSupportedWidgetsModel.swift; sourceTree = "<group>"; };
 		4278D19A27F585F800CFD523 /* CardXWidgetsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CardXWidgetsExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		4278D19B27F585F800CFD523 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		4278D19D27F585F800CFD523 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
@@ -158,6 +167,11 @@
 		4278D1B427F5870A00CFD523 /* RandomWordWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomWordWidget.swift; sourceTree = "<group>"; };
 		4278D1B627F612A600CFD523 /* RandomWordEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomWordEntry.swift; sourceTree = "<group>"; };
 		4278D1B827F6130D00CFD523 /* RandomWordTimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomWordTimelineProvider.swift; sourceTree = "<group>"; };
+		428156EF280BCBD800DABD1C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		428156F1280BCC0C00DABD1C /* UsageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsageView.swift; sourceTree = "<group>"; };
+		428156F3280BCC2900DABD1C /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		428156F5280BD92500DABD1C /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		428156F8280BEE8B00DABD1C /* HomePageCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageCardModel.swift; sourceTree = "<group>"; };
 		428C627327BDD0700038D15F /* RandomWordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomWordModel.swift; sourceTree = "<group>"; };
 		429D751D27A36F5900A71D27 /* CloudyShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudyShape.swift; sourceTree = "<group>"; };
 		429D752027A3733600A71D27 /* WeatherTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTypes.swift; sourceTree = "<group>"; };
@@ -288,10 +302,13 @@
 				4228F17227A363D100C10336 /* Cards */,
 				421DA1F227A22FFF0073A877 /* CardXApp.swift */,
 				421DA1F427A22FFF0073A877 /* ContentView.swift */,
+				428156EE280BCBC300DABD1C /* Views */,
 				421DA1F627A230000073A877 /* Assets.xcassets */,
 				421DA1F827A230000073A877 /* Preview Content */,
 				42DE9900280795F7007F4DC7 /* TestWidget.swift */,
 				42C0F5922808BD0000DEF9C4 /* MultiProgressBar.swift */,
+				428156F5280BD92500DABD1C /* WebView.swift */,
+				42485EF7280C85D9006E90A1 /* BlurView.swift */,
 			);
 			path = CardX;
 			sourceTree = "<group>";
@@ -307,6 +324,7 @@
 		4228F17227A363D100C10336 /* Cards */ = {
 			isa = PBXGroup;
 			children = (
+				428156F7280BEDDE00DABD1C /* Models */,
 				42A3118F27AC9F1900DA096A /* BriefTextControl.swift */,
 				42A3119327ACA1D600DA096A /* DaysCountDown */,
 				421DA21C27A231B00073A877 /* TestCard.swift */,
@@ -378,6 +396,25 @@
 				4278D1B827F6130D00CFD523 /* RandomWordTimelineProvider.swift */,
 			);
 			path = RandomWordWidget;
+			sourceTree = "<group>";
+		};
+		428156EE280BCBC300DABD1C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				428156EF280BCBD800DABD1C /* HomeView.swift */,
+				428156F1280BCC0C00DABD1C /* UsageView.swift */,
+				428156F3280BCC2900DABD1C /* AboutView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		428156F7280BEDDE00DABD1C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				428156F8280BEE8B00DABD1C /* HomePageCardModel.swift */,
+				42485EF9280C86F5006E90A1 /* HomePageSupportedWidgetsModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		429D751C27A36F3B00A71D27 /* Shape */ = {
@@ -749,8 +786,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				421DA21D27A231B00073A877 /* TestCard.swift in Sources */,
+				428156F6280BD92500DABD1C /* WebView.swift in Sources */,
 				42DE9901280795F7007F4DC7 /* TestWidget.swift in Sources */,
+				428156F0280BCBD800DABD1C /* HomeView.swift in Sources */,
 				42A3119727ACADB900DA096A /* CountDownCard.swift in Sources */,
+				42485EF8280C85D9006E90A1 /* BlurView.swift in Sources */,
+				428156F4280BCC2900DABD1C /* AboutView.swift in Sources */,
+				42485EFA280C86F5006E90A1 /* HomePageSupportedWidgetsModel.swift in Sources */,
+				428156F2280BCC0C00DABD1C /* UsageView.swift in Sources */,
 				421DA1F527A22FFF0073A877 /* ContentView.swift in Sources */,
 				42A3119927ACAE2200DA096A /* CountDownTexts.swift in Sources */,
 				42A3119027AC9F1900DA096A /* BriefTextControl.swift in Sources */,
@@ -759,6 +802,7 @@
 				421DA1F327A22FFF0073A877 /* CardXApp.swift in Sources */,
 				42A3119227ACA03B00DA096A /* CountDownText.swift in Sources */,
 				42C0F5592807C20100DEF9C4 /* ColorExtension.swift in Sources */,
+				428156F9280BEE8B00DABD1C /* HomePageCardModel.swift in Sources */,
 				EC4ED35427A8A55B00E32232 /* TimeCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

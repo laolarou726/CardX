@@ -44,7 +44,7 @@ struct RandomQuoteWidget: Widget {
         }
         .supportedFamilies([.systemMedium, .systemLarge])
         .configurationDisplayName("Random Quote")
-        .description("Display a random quote  from the web.")
+        .description("Display a random quote from the web.")
     }
 }
 

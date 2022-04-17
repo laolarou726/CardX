@@ -71,8 +71,8 @@ struct RandomMusicWidget: Widget {
             RandomMusicWidgetEntryView(entry: entry)
         }
         .supportedFamilies([.systemMedium, .systemLarge])
-        .configurationDisplayName("Random Music")
-        .description("Display a random quote  from the web.")
+        .configurationDisplayName("Billboard Music")
+        .description("Randomly pick a music from Billboard recommandation list.")
     }
 }
 

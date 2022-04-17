@@ -39,7 +39,7 @@ struct UselessFactsWidget: Widget {
         }
         .supportedFamilies([.systemMedium, .systemLarge, .systemExtraLarge])
         .configurationDisplayName("Useless Facts")
-        .description("Display a random word from the web.")
+        .description("Some fun facts from the web!")
     }
 }
 

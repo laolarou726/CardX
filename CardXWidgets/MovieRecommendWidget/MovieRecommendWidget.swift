@@ -82,7 +82,7 @@ struct MovieRecommendWidget: Widget {
         }
         .supportedFamilies([.systemMedium])
         .configurationDisplayName("Movie Recommend")
-        .description("xx")
+        .description("Display a random movie from IMDB recommandation database.")
     }
 }
 

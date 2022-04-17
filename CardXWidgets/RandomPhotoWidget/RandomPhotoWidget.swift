@@ -57,8 +57,8 @@ struct RandomPhotoWidget: Widget {
             RandomPhotoWidgetEntryView(entry: entry)
         }
         .supportedFamilies([.systemSmall, .systemMedium, .systemLarge, .systemExtraLarge])
-        .configurationDisplayName("Random Photo")
-        .description("Display a random quote  from the web.")
+        .configurationDisplayName("Unsplash Photos")
+        .description("Display a random photo from the Unsplash.")
     }
 }
 

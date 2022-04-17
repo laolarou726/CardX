@@ -8,16 +8,30 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var selectedTab = 0;
+    
     var body: some View {
-        ScrollView{
-            VStack{
-                CountDownCard()
-                HStack{
-                    DefaultCard()
-                    DefaultCard()
+        TabView(selection: $selectedTab){
+            HomeView()
+                .tabItem{
+                    Image(systemName: "house")
+                    Text("Home")
                 }
-                Text("x")
-            }
+                .tag(0)
+            
+            UsageView()
+                .tabItem{
+                    Image(systemName: "books.vertical.fill")
+                    Text("Usage")
+                }
+                .tag(0)
+            
+            AboutView()
+                .tabItem{
+                    Image(systemName: "info.circle")
+                    Text("About")
+                }
+                .tag(1)
         }
     }
 }

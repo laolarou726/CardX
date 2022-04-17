@@ -87,7 +87,7 @@ struct WeatherWidget: Widget {
         }
         .supportedFamilies([.systemMedium, .systemLarge])
         .configurationDisplayName("Current Weather")
-        .description("Display a random quote  from the web.")
+        .description("Display today's weather.")
     }
 }
 

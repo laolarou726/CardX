@@ -66,7 +66,7 @@ struct TodayInHistoryWidget: Widget {
         }
         .supportedFamilies([.systemMedium, .systemLarge, .systemExtraLarge])
         .configurationDisplayName("Today In History")
-        .description("Display a random word from the web.")
+        .description("Today in history!")
     }
 }
 
