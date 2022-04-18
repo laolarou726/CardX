@@ -6,9 +6,9 @@ target 'CardX' do
   use_frameworks!
 
   # Pods for CardX
+  pod 'ExytePopupView'
   pod 'Alamofire', '~> 5.5'
   pod 'HandyJSON', '~> 5.0.2'
-  pod 'Alamofire-Synchronous', '~> 4.0.1'
 
   target 'CardXWidgetsExtension' do
         inherit! :search_paths

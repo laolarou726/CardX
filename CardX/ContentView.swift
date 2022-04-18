@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var isPresented = false
+    @State var isVisible = true
     @State private var selectedTab = 0;
     
     var body: some View {
@@ -32,6 +34,20 @@ struct ContentView: View {
                     Text("About")
                 }
                 .tag(1)
+        }
+        .opacity(!isVisible ? 1 : 0)
+        .fullScreenCover(isPresented: $isPresented, content: {
+            StartupView()
+        })
+        .onAppear{
+            self.isPresented = true
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+                withAnimation(.easeInOut(duration: 0.45)){
+                    self.isPresented = false
+                    self.isVisible = false
+                }
+            }
         }
     }
 }

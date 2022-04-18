@@ -6,24 +6,27 @@
 //
 
 import SwiftUI
+import ExytePopupView
 import SwiftUIVisualEffects
 
 struct HomeView: View {
+    @State private var widgetName = ""
+    @State private var isPopupOpen = false
     @Environment(\.openURL) var openURL
     
     let cardModels: [HomePageCardModel] = [
         HomePageCardModel("star.fill",
-                         ["Intro", "to", "widget"],
+                          ["Intro", "to", "widget"],
                           [.yellow, .orange],
-                         "https://support.apple.com/en-us/HT207122"),
+                          "https://support.apple.com/en-us/HT207122"),
         HomePageCardModel("ipad",
-                         ["Use", "on", "iPad"],
+                          ["Use", "on", "iPad"],
                           [.green, .cyan],
-                         "https://support.apple.com/en-us/HT211328"),
+                          "https://support.apple.com/en-us/HT211328"),
         HomePageCardModel("square.stack",
-                         ["Widget", "features"],
+                          ["Widget", "features"],
                           [.pink, .red],
-                         "https://eshop.macsales.com/blog/78194-ios-15-feature-roundup-widgets/")
+                          "https://eshop.macsales.com/blog/78194-ios-15-feature-roundup-widgets/")
     ]
     
     let supportedWidgetsModel: [HomePageSupportedWidgetsModel] = [
@@ -32,7 +35,7 @@ struct HomeView: View {
             "Covid Data Widget"]),
         HomePageSupportedWidgetsModel("Random things", [
             "Random Music Widget",
-            "Random Movie Widget",
+            "Movie Recommend Widget",
             "Random Photo Widget",
             "Random Word Widget",
             "Random Quote Widget"]),
@@ -81,9 +84,10 @@ struct HomeView: View {
                                 }
                             }
                         }
+                        .ignoresSafeArea()
                         .padding(30)
                     }
-                    .padding([.top, .horizontal])
+                    .padding([.top])
                     
                     ZStack{
                         HStack{
@@ -145,6 +149,10 @@ struct HomeView: View {
                                                 let widget  = item.items[i]
                                                 
                                                 Text(widget)
+                                                    .onTapGesture{
+                                                        self.isPopupOpen = true
+                                                        self.widgetName = widget.filter({!$0.isWhitespace})
+                                                    }
                                             }
                                         }
                                         .listRowBackground(BlurView(style: .light))
@@ -172,6 +180,11 @@ struct HomeView: View {
                 }
             }
             .navigationTitle("Home")
+            .popup(isPresented: $isPopupOpen, type: .toast, position: .bottom){
+                DraggableCardView(topPadding: 300, fixedHeight: true) {
+                    WidgetDetailView(widgetName: $widgetName)
+                }
+            }
         }
     }
 }
