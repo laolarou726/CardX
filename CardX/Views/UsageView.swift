@@ -10,7 +10,13 @@ import SwiftUI
 struct UsageView: View {
     var body: some View {
         NavigationView{
-            VStack(alignment: .leading){
+            ZStack{
+                VStack(alignment: .center){
+                    ProgressView()
+                    Text("loading")
+                        .foregroundColor(.secondary)
+                        .padding()
+                }
                 WebView(url: URL(string: "https://support.apple.com/en-il/HT207122")!)
                     .background(.clear)
             }

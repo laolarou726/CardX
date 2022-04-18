@@ -12,7 +12,10 @@ struct WebView : UIViewRepresentable {
     var url: URL
     
     func makeUIView(context: Context) -> WKWebView {
-        return WKWebView()
+        let view = WKWebView()
+        view.isOpaque = false
+        
+        return view
     }
     
     func updateUIView(_ webView: WKWebView, context: Context) {
