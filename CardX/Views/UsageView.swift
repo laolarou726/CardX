@@ -22,6 +22,7 @@ struct UsageView: View {
             }
             .navigationTitle("How to use")
         }
+        .navigationViewStyle(.stack)
     }
 }
 

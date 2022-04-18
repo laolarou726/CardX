@@ -186,6 +186,7 @@ struct HomeView: View {
                 }
             }
         }
+        .navigationViewStyle(.stack)
     }
 }
 

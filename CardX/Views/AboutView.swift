@@ -87,6 +87,7 @@ struct AboutView: View {
             }
             .navigationTitle("About")
         }
+        .navigationViewStyle(.stack)
     }
 }
 
