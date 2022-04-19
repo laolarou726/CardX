@@ -2,9 +2,9 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>UIBackgroundModes</key>
-	<array>
-		<string>location</string>
-	</array>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Use location service to acquire locale weather info in widgets</string>
+	<key>NSLocationUsageDescription</key>
+	<string>Use location service to acquire locale weather info in widgets</string>
 </dict>
 </plist>
