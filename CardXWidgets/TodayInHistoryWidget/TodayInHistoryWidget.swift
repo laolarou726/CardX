@@ -73,6 +73,6 @@ struct TodayInHistoryWidget: Widget {
 struct TodayInHistoryWidget_Previews: PreviewProvider {
     static var previews: some View {
         TodayInHistoryWidgetEntryView(entry: TodayInHistoryEntry(date: Date(), configuration: ConfigurationIntent()))
-            .previewContext(WidgetPreviewContext(family: .systemSmall))
+            .previewContext(WidgetPreviewContext(family: .systemMedium))
     }
 }

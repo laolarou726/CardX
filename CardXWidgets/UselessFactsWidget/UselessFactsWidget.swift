@@ -46,6 +46,6 @@ struct UselessFactsWidget: Widget {
 struct UselessFactsWidget_Previews: PreviewProvider {
     static var previews: some View {
         UselessFactsWidgetEntryView(entry: UselessFactsEntry(date: Date(), configuration: ConfigurationIntent()))
-            .previewContext(WidgetPreviewContext(family: .systemSmall))
+            .previewContext(WidgetPreviewContext(family: .systemMedium))
     }
 }
