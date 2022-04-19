@@ -47,12 +47,12 @@ struct TodayInHistoryWidgetEntryView : View {
                 Image("Image-1")
                     .resizable()
                     .aspectRatio(contentMode: .fill)
-                    .padding(-20)
+                    .padding(-40)
                     .blur(radius: 10)
                 Rectangle()
                     .fill(.black)
                     .opacity(0.3)
-                    .padding(-20)
+                    .padding(-40)
             })
     }
 }

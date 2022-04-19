@@ -9,13 +9,10 @@
 /* Begin PBXBuildFile section */
 		36A56189C5B47474E748F0D6 /* Pods_CardX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3FC716AF3B40708766B8F91 /* Pods_CardX.framework */; };
 		421BA58827CF004400F3C264 /* SwiftUIVisualEffects in Frameworks */ = {isa = PBXBuildFile; productRef = 421BA58727CF004400F3C264 /* SwiftUIVisualEffects */; };
-		421BA59627D09F0500F3C264 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 421BA59527D09F0500F3C264 /* MapKit.framework */; };
-		421BA5A927D0AF3A00F3C264 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 421BA5A827D0AF3A00F3C264 /* CoreLocation.framework */; };
 		421DA1F327A22FFF0073A877 /* CardXApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421DA1F227A22FFF0073A877 /* CardXApp.swift */; };
 		421DA1F527A22FFF0073A877 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421DA1F427A22FFF0073A877 /* ContentView.swift */; };
 		421DA1F727A230000073A877 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 421DA1F627A230000073A877 /* Assets.xcassets */; };
 		421DA1FA27A230000073A877 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 421DA1F927A230000073A877 /* Preview Assets.xcassets */; };
-		421DA21D27A231B00073A877 /* TestCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421DA21C27A231B00073A877 /* TestCard.swift */; };
 		4231A1A0280CEA1700D3276F /* StartupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4231A19F280CEA1700D3276F /* StartupView.swift */; };
 		4231A1A2280CF76F00D3276F /* DraggableCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4231A1A1280CF76F00D3276F /* DraggableCardView.swift */; };
 		4231A1A5280D065E00D3276F /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4231A1A4280D065E00D3276F /* ViewExtension.swift */; };
@@ -93,7 +90,6 @@
 		42DE98FD28078D42007F4DC7 /* WidgetLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DE98FC28078D42007F4DC7 /* WidgetLocationManager.swift */; };
 		42DE98FE28078E7E007F4DC7 /* WeatherHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421BA5A627D0A61D00F3C264 /* WeatherHelper.swift */; };
 		42DE98FF28079170007F4DC7 /* RandomHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429D752527A376BE00A71D27 /* RandomHelper.swift */; };
-		42DE9901280795F7007F4DC7 /* TestWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DE9900280795F7007F4DC7 /* TestWidget.swift */; };
 		42DE990628079E7F007F4DC7 /* MovieRecommendTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DE990528079E7F007F4DC7 /* MovieRecommendTimelineProvider.swift */; };
 		42DE990728079E81007F4DC7 /* MovieRecommendWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DE990328079E60007F4DC7 /* MovieRecommendWidget.swift */; };
 		42DE990928079E96007F4DC7 /* MovieRecommendEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DE990828079E96007F4DC7 /* MovieRecommendEntry.swift */; };
@@ -138,7 +134,6 @@
 		421BA58A27CF037E00F3C264 /* RandomQuoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomQuoteModel.swift; sourceTree = "<group>"; };
 		421BA58C27CF03D700F3C264 /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
 		421BA58E27CF050300F3C264 /* CopyRightModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyRightModel.swift; sourceTree = "<group>"; };
-		421BA59427D09F0500F3C264 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		421BA59527D09F0500F3C264 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		421BA59827D0A16D00F3C264 /* CoordinateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinateModel.swift; sourceTree = "<group>"; };
 		421BA59A27D0A1AD00F3C264 /* WeatherResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResponseModel.swift; sourceTree = "<group>"; };
@@ -154,12 +149,12 @@
 		421DA1F427A22FFF0073A877 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		421DA1F627A230000073A877 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		421DA1F927A230000073A877 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		421DA21C27A231B00073A877 /* TestCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCard.swift; sourceTree = "<group>"; tabWidth = 1; };
 		4228F17727A3661D00C10336 /* SunnyShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunnyShape.swift; sourceTree = "<group>"; };
 		4231A19F280CEA1700D3276F /* StartupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupView.swift; sourceTree = "<group>"; };
 		4231A1A1280CF76F00D3276F /* DraggableCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggableCardView.swift; sourceTree = "<group>"; };
 		4231A1A4280D065E00D3276F /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 		4231A1A6280D091300D3276F /* WidgetDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetDetailView.swift; sourceTree = "<group>"; };
+		4231A1E0280F222C00D3276F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		42429AE027F617BC00E8C21D /* RandomQuoteWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomQuoteWidget.swift; sourceTree = "<group>"; };
 		42429AE827F6185600E8C21D /* RandomQuoteTimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomQuoteTimelineProvider.swift; sourceTree = "<group>"; };
 		42429AEA27F6186B00E8C21D /* RandomQuoteEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomQuoteEntry.swift; sourceTree = "<group>"; };
@@ -217,7 +212,6 @@
 		42DE98F828078AC1007F4DC7 /* WeatherTimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTimelineProvider.swift; sourceTree = "<group>"; };
 		42DE98FA28078AF2007F4DC7 /* WeatherEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherEntry.swift; sourceTree = "<group>"; };
 		42DE98FC28078D42007F4DC7 /* WidgetLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetLocationManager.swift; sourceTree = "<group>"; };
-		42DE9900280795F7007F4DC7 /* TestWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestWidget.swift; sourceTree = "<group>"; };
 		42DE990328079E60007F4DC7 /* MovieRecommendWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRecommendWidget.swift; sourceTree = "<group>"; };
 		42DE990528079E7F007F4DC7 /* MovieRecommendTimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRecommendTimelineProvider.swift; sourceTree = "<group>"; };
 		42DE990828079E96007F4DC7 /* MovieRecommendEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRecommendEntry.swift; sourceTree = "<group>"; };
@@ -238,9 +232,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				421BA5A927D0AF3A00F3C264 /* CoreLocation.framework in Frameworks */,
 				36A56189C5B47474E748F0D6 /* Pods_CardX.framework in Frameworks */,
-				421BA59627D09F0500F3C264 /* MapKit.framework in Frameworks */,
 				421BA58827CF004400F3C264 /* SwiftUIVisualEffects in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,7 +298,7 @@
 		421DA1F127A22FFF0073A877 /* CardX */ = {
 			isa = PBXGroup;
 			children = (
-				421BA59427D09F0500F3C264 /* Info.plist */,
+				4231A1E0280F222C00D3276F /* Info.plist */,
 				4228F17227A363D100C10336 /* Cards */,
 				421DA1F227A22FFF0073A877 /* CardXApp.swift */,
 				421DA1F427A22FFF0073A877 /* ContentView.swift */,
@@ -314,7 +306,6 @@
 				421DA1F627A230000073A877 /* Assets.xcassets */,
 				421DA1F827A230000073A877 /* Preview Content */,
 				4231A1A3280D065200D3276F /* Extensions */,
-				42DE9900280795F7007F4DC7 /* TestWidget.swift */,
 				42C0F5922808BD0000DEF9C4 /* MultiProgressBar.swift */,
 				428156F5280BD92500DABD1C /* WebView.swift */,
 				42485EF7280C85D9006E90A1 /* BlurView.swift */,
@@ -337,7 +328,6 @@
 				428156F7280BEDDE00DABD1C /* Models */,
 				42A3118F27AC9F1900DA096A /* BriefTextControl.swift */,
 				42A3119327ACA1D600DA096A /* DaysCountDown */,
-				421DA21C27A231B00073A877 /* TestCard.swift */,
 				EC4ED35327A8A55B00E32232 /* TimeCard.swift */,
 				42A3119627ACADB900DA096A /* CountDownCard.swift */,
 			);
@@ -805,9 +795,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				421DA21D27A231B00073A877 /* TestCard.swift in Sources */,
 				428156F6280BD92500DABD1C /* WebView.swift in Sources */,
-				42DE9901280795F7007F4DC7 /* TestWidget.swift in Sources */,
 				428156F0280BCBD800DABD1C /* HomeView.swift in Sources */,
 				42A3119727ACADB900DA096A /* CountDownCard.swift in Sources */,
 				42485EF8280C85D9006E90A1 /* BlurView.swift in Sources */,
@@ -1041,8 +1029,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CardX/Info.plist;
-				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Allow access to location to get weather data.";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Allow access to location to get weather data.";
+				INFOPLIST_KEY_NSLocationUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
@@ -1075,8 +1062,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CardX/Info.plist;
-				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Allow access to location to get weather data.";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Allow access to location to get weather data.";
+				INFOPLIST_KEY_NSLocationUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
