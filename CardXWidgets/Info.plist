@@ -2,20 +2,16 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>UIAppFonts</key>
-	<array>
-		<string>3270Medium.ttf</string>
-	</array>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>Weather widget needs to acquire location information to display the locale weather.</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Weather widget needs to acquire location information to display the locale weather.</string>
-	<key>NSWidgetWantsLocation</key>
-	<true/>
 	<key>NSExtension</key>
 	<dict>
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.widgetkit-extension</string>
 	</dict>
+	<key>NSWidgetWantsLocation</key>
+	<true/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>3270Medium.ttf</string>
+	</array>
 </dict>
 </plist>

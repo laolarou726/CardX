@@ -43,6 +43,6 @@ struct RandomWordWidget: Widget {
 struct RandomWordWidget_Previews: PreviewProvider {
     static var previews: some View {
         RandomWordWidgetEntryView(entry: RandomWordEntry(date: Date(), word: RandomWordModel(), configuration: ConfigurationIntent()))
-            .previewContext(WidgetPreviewContext(family: .systemSmall))
+            .previewContext(WidgetPreviewContext(family: .systemMedium))
     }
 }

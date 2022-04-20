@@ -78,7 +78,13 @@ struct RandomMusicWidget: Widget {
 
 struct RandomMusicWidget_Previews: PreviewProvider {
     static var previews: some View {
-        RandomMusicWidgetEntryView(entry: RandomMusicEntry(date: Date(), configuration: ConfigurationIntent()))
-            .previewContext(WidgetPreviewContext(family: .systemMedium))
+        Group {
+            RandomMusicWidgetEntryView(entry: RandomMusicEntry(date: Date(), configuration: ConfigurationIntent()))
+                .previewContext(WidgetPreviewContext(family: .systemMedium))
+            RandomMusicWidgetEntryView(entry: RandomMusicEntry(date: Date(), configuration: ConfigurationIntent()))
+                .previewContext(WidgetPreviewContext(family: .systemMedium))
+            RandomMusicWidgetEntryView(entry: RandomMusicEntry(date: Date(), configuration: ConfigurationIntent()))
+                .previewContext(WidgetPreviewContext(family: .systemMedium))
+        }
     }
 }

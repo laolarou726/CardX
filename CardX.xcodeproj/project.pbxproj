@@ -1023,9 +1023,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"CardX/Preview Content\"";
-				DEVELOPMENT_TEAM = X4QCHY7VK3;
+				DEVELOPMENT_TEAM = T4NCSDNZKJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CardX/Info.plist;
@@ -1040,7 +1040,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.CardX.CardX;
+				PRODUCT_BUNDLE_IDENTIFIER = com.laolarou.CardX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -1056,9 +1056,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"CardX/Preview Content\"";
-				DEVELOPMENT_TEAM = X4QCHY7VK3;
+				DEVELOPMENT_TEAM = T4NCSDNZKJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CardX/Info.plist;
@@ -1073,7 +1073,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.CardX.CardX;
+				PRODUCT_BUNDLE_IDENTIFIER = com.laolarou.CardX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -1089,11 +1089,13 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = X4QCHY7VK3;
+				DEVELOPMENT_TEAM = T4NCSDNZKJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CardXWidgets/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = CardXWidgets;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Weather widget needs to acquire location information to display the locale weather.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Weather widget needs to acquire location information to display the locale weather.";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1101,7 +1103,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.CardX.CardX.CardXWidgets;
+				PRODUCT_BUNDLE_IDENTIFIER = com.laolarou.CardX.CardXWidgets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1118,11 +1120,13 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = X4QCHY7VK3;
+				DEVELOPMENT_TEAM = T4NCSDNZKJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CardXWidgets/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = CardXWidgets;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Weather widget needs to acquire location information to display the locale weather.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Weather widget needs to acquire location information to display the locale weather.";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1130,7 +1134,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.CardX.CardX.CardXWidgets;
+				PRODUCT_BUNDLE_IDENTIFIER = com.laolarou.CardX.CardXWidgets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
