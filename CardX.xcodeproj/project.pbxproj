@@ -67,11 +67,6 @@
 		42C0F58F2808A10600DEF9C4 /* RandomPhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C0F58E2808A10600DEF9C4 /* RandomPhotoModel.swift */; };
 		42C0F5912808A18500DEF9C4 /* ExifModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C0F5902808A18500DEF9C4 /* ExifModel.swift */; };
 		42C0F5932808BD0000DEF9C4 /* MultiProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C0F5922808BD0000DEF9C4 /* MultiProgressBar.swift */; };
-		42C0F5972808C69900DEF9C4 /* CovidDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C0F5962808C69900DEF9C4 /* CovidDataModel.swift */; };
-		42C0F5992808C6F400DEF9C4 /* ActualModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C0F5982808C6F400DEF9C4 /* ActualModel.swift */; };
-		42C0F59C2808C75E00DEF9C4 /* CovidDataWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C0F59B2808C75E00DEF9C4 /* CovidDataWidget.swift */; };
-		42C0F59E2808C76F00DEF9C4 /* CovidDataTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C0F59D2808C76F00DEF9C4 /* CovidDataTimelineProvider.swift */; };
-		42C0F5A02808C77B00DEF9C4 /* CovidDataEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C0F59F2808C77B00DEF9C4 /* CovidDataEntry.swift */; };
 		42C0F5A12808CDFA00DEF9C4 /* MultiProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C0F5922808BD0000DEF9C4 /* MultiProgressBar.swift */; };
 		42DE98E928078938007F4DC7 /* SunnyShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4228F17727A3661D00C10336 /* SunnyShape.swift */; };
 		42DE98EA28078938007F4DC7 /* CloudyShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429D751D27A36F5900A71D27 /* CloudyShape.swift */; };
@@ -203,11 +198,6 @@
 		42C0F58E2808A10600DEF9C4 /* RandomPhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomPhotoModel.swift; sourceTree = "<group>"; };
 		42C0F5902808A18500DEF9C4 /* ExifModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExifModel.swift; sourceTree = "<group>"; };
 		42C0F5922808BD0000DEF9C4 /* MultiProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiProgressBar.swift; sourceTree = "<group>"; };
-		42C0F5962808C69900DEF9C4 /* CovidDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidDataModel.swift; sourceTree = "<group>"; };
-		42C0F5982808C6F400DEF9C4 /* ActualModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActualModel.swift; sourceTree = "<group>"; };
-		42C0F59B2808C75E00DEF9C4 /* CovidDataWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidDataWidget.swift; sourceTree = "<group>"; };
-		42C0F59D2808C76F00DEF9C4 /* CovidDataTimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidDataTimelineProvider.swift; sourceTree = "<group>"; };
-		42C0F59F2808C77B00DEF9C4 /* CovidDataEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidDataEntry.swift; sourceTree = "<group>"; };
 		42DE98F528078A00007F4DC7 /* WeatherWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherWidget.swift; sourceTree = "<group>"; };
 		42DE98F828078AC1007F4DC7 /* WeatherTimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTimelineProvider.swift; sourceTree = "<group>"; };
 		42DE98FA28078AF2007F4DC7 /* WeatherEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherEntry.swift; sourceTree = "<group>"; };
@@ -374,7 +364,6 @@
 		4278D19F27F585F800CFD523 /* CardXWidgets */ = {
 			isa = PBXGroup;
 			children = (
-				42C0F5942808C66E00DEF9C4 /* CovidDataWidget */,
 				42C0F58628089E7D00DEF9C4 /* RandomPhotoWidget */,
 				42C0F56C2808849F00DEF9C4 /* RandomMusicWidget */,
 				42C0F55B2807D44600DEF9C4 /* TodayInHistoryWidget */,
@@ -528,26 +517,6 @@
 			children = (
 				42C0F58E2808A10600DEF9C4 /* RandomPhotoModel.swift */,
 				42C0F5902808A18500DEF9C4 /* ExifModel.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		42C0F5942808C66E00DEF9C4 /* CovidDataWidget */ = {
-			isa = PBXGroup;
-			children = (
-				42C0F5952808C68100DEF9C4 /* Models */,
-				42C0F59B2808C75E00DEF9C4 /* CovidDataWidget.swift */,
-				42C0F59D2808C76F00DEF9C4 /* CovidDataTimelineProvider.swift */,
-				42C0F59F2808C77B00DEF9C4 /* CovidDataEntry.swift */,
-			);
-			path = CovidDataWidget;
-			sourceTree = "<group>";
-		};
-		42C0F5952808C68100DEF9C4 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				42C0F5962808C69900DEF9C4 /* CovidDataModel.swift */,
-				42C0F5982808C6F400DEF9C4 /* ActualModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -828,11 +797,9 @@
 				42DE99182807B969007F4DC7 /* UselessFactsTimelineProvider.swift in Sources */,
 				42C0F56B2807D64200DEF9C4 /* TodayInHistoryTimelineProvider.swift in Sources */,
 				4278D1A127F585F800CFD523 /* CardXWidgets.swift in Sources */,
-				42C0F5972808C69900DEF9C4 /* CovidDataModel.swift in Sources */,
 				42429AED27F618E600E8C21D /* RandomQuoteTimelineProvider.swift in Sources */,
 				42DE99122807B856007F4DC7 /* UselessFactsModel.swift in Sources */,
 				42C0F5632807D5C100DEF9C4 /* HistoryDataModel.swift in Sources */,
-				42C0F59C2808C75E00DEF9C4 /* CovidDataWidget.swift in Sources */,
 				42429AE327F6180200E8C21D /* RandomQuoteModel.swift in Sources */,
 				4278D1B327F586EF00CFD523 /* BriefTextControl.swift in Sources */,
 				42DE98F328078946007F4DC7 /* CloudModel.swift in Sources */,
@@ -855,7 +822,6 @@
 				4278D1B027F586D800CFD523 /* RandomWordModel.swift in Sources */,
 				42C0F572280884D800DEF9C4 /* RandomMusicTimelineProvider.swift in Sources */,
 				42DE98FD28078D42007F4DC7 /* WidgetLocationManager.swift in Sources */,
-				42C0F5A02808C77B00DEF9C4 /* CovidDataEntry.swift in Sources */,
 				42C0F56E280884B800DEF9C4 /* RandomMusicWidget.swift in Sources */,
 				42DE99162807B95B007F4DC7 /* UselessFactsEntry.swift in Sources */,
 				42DE98FE28078E7E007F4DC7 /* WeatherHelper.swift in Sources */,
@@ -879,10 +845,8 @@
 				42DE98F728078A92007F4DC7 /* WeatherWidget.swift in Sources */,
 				4278D1B527F5870A00CFD523 /* RandomWordWidget.swift in Sources */,
 				42C0F57B28088ABC00DEF9C4 /* RandomMusicModel.swift in Sources */,
-				42C0F59E2808C76F00DEF9C4 /* CovidDataTimelineProvider.swift in Sources */,
 				42429AE427F6180200E8C21D /* ContentModel.swift in Sources */,
 				42C0F5A12808CDFA00DEF9C4 /* MultiProgressBar.swift in Sources */,
-				42C0F5992808C6F400DEF9C4 /* ActualModel.swift in Sources */,
 				42DE98F428078946007F4DC7 /* WeatherResponseModel.swift in Sources */,
 				42DE98FB28078AF2007F4DC7 /* WeatherEntry.swift in Sources */,
 			);
