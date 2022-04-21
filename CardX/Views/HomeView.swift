@@ -31,8 +31,7 @@ struct HomeView: View {
     
     let supportedWidgetsModel: [HomePageSupportedWidgetsModel] = [
         HomePageSupportedWidgetsModel("Environment", [
-            "Weather Widget",
-            "Covid Data Widget"]),
+            "Weather Widget"]),
         HomePageSupportedWidgetsModel("Random things", [
             "Random Music Widget",
             "Movie Recommend Widget",
