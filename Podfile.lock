@@ -1,6 +1,6 @@
 PODS:
-  - Alamofire (5.5.0)
-  - ExytePopupView (1.0.7)
+  - Alamofire (5.6.1)
+  - ExytePopupView (1.1.0)
   - HandyJSON (5.0.2)
 
 DEPENDENCIES:
@@ -15,10 +15,10 @@ SPEC REPOS:
     - HandyJSON
 
 SPEC CHECKSUMS:
-  Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
-  ExytePopupView: 2a0d2744f356589aad8a4d138f690231b210eba0
+  Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
+  ExytePopupView: bc5c3d9154a6fd8c07c6fb6e9d29d6245e327fc6
   HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
 
 PODFILE CHECKSUM: d20095193f08c9baf88d764c1266004d9ef6fcf5
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.11.3

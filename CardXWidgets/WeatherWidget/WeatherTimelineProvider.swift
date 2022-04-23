@@ -18,21 +18,30 @@ struct WeatherTimelineProvider: IntentTimelineProvider {
     fileprivate var lastLon: Double = 0
     
     func placeholder(in context: Context) -> WeatherEntry {
-        WeatherEntry(date: Date(), configuration: ConfigurationIntent())
+        WeatherEntry(date: Date(), configuration: WeatherSettingsIntent())
     }
 
-    func getSnapshot(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (WeatherEntry) -> ()) {
+    func getSnapshot(for configuration: WeatherSettingsIntent, in context: Context, completion: @escaping (WeatherEntry) -> ()) {
         let entry = WeatherEntry(date: Date(), configuration: configuration)
         completion(entry)
     }
 
-    func getTimeline(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Timeline<WeatherEntry>) -> ()) {
+    func getTimeline(for configuration: WeatherSettingsIntent, in context: Context, completion: @escaping (Timeline<WeatherEntry>) -> ()) {
         widgetLocationManager.fetchLocation(handler: { location in
-            print(location)
-            
             let lat = location.coordinate.latitude
             let lon = location.coordinate.longitude
-            let reqUrl = "https://api.openweathermap.org/data/2.5/weather?lat=\(Int(lat))&lon=\(Int(lon))&units=metric&appid=\(API_KEY)"
+            var lang = ""
+            
+            switch(configuration.language){
+            case .cn:
+                lang = "&lang=zh_cn"
+            case .en:
+                lang = "&lang=en"
+            default:
+                lang = ""
+            }
+            
+            let reqUrl = "https://api.openweathermap.org/data/2.5/weather?lat=\(Int(lat))&lon=\(Int(lon))\(lang)&units=metric&appid=\(API_KEY)"
             
             var resultEntry = WeatherEntry(date: Date(), configuration: configuration)
             

@@ -12,16 +12,25 @@ import Alamofire
 
 struct MovieRecommendTimelineProvider: IntentTimelineProvider {
     func placeholder(in context: Context) -> MovieRecommendEntry {
-        MovieRecommendEntry(date: Date(), configuration: ConfigurationIntent())
+        MovieRecommendEntry(date: Date(), configuration: MovieRecommandSettingsIntent())
     }
 
-    func getSnapshot(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (MovieRecommendEntry) -> ()) {
+    func getSnapshot(for configuration: MovieRecommandSettingsIntent, in context: Context, completion: @escaping (MovieRecommendEntry) -> ()) {
         let entry = MovieRecommendEntry(date: Date(), configuration: configuration)
         completion(entry)
     }
 
-    func getTimeline(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Timeline<MovieRecommendEntry>) -> ()) {
-        AF.request("https://api.wmdb.tv/api/v1/top?type=Imdb&skip=0&limit=50&lang=En").responseData{
+    func getTimeline(for configuration: MovieRecommandSettingsIntent, in context: Context, completion: @escaping (Timeline<MovieRecommendEntry>) -> ()) {
+        var lang = "En"
+        
+        switch(configuration.language){
+        case .cn:
+            lang = "Cn"
+        default:
+            lang = "En"
+        }
+        
+        AF.request("https://api.wmdb.tv/api/v1/top?type=Imdb&skip=0&limit=50&lang=\(lang)").responseData{
             response in
             
             if(response.error != nil || response.response?.statusCode != 200)

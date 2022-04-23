@@ -11,7 +11,7 @@ import WidgetKit
 
 struct RandomPhotoEntry : TimelineEntry{
     var date: Date
-    var configuration: ConfigurationIntent
+    var configuration: RandomPhotoSettingsIntent
     
     var image: UIImage! = UIImage(imageLiteralResourceName: "Image")
     var exifName: String! = ""

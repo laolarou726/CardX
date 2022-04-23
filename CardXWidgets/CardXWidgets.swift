@@ -26,5 +26,14 @@ struct CardXWidgets2: WidgetBundle {
         TodayInHistoryWidget()
         RandomMusicWidget()
         RandomPhotoWidget()
+        CardXWidgets3().body
+    }
+}
+
+struct CardXWidgets3: WidgetBundle {
+    @WidgetBundleBuilder
+    var body: some Widget {
+        RandomMusicWidget()
+        RandomDogWidget()
     }
 }

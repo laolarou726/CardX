@@ -16,7 +16,7 @@ struct RandomPhotoWidgetEntryView : View {
     var body: some View {
         VStack{
             Spacer()
-            if(self.widgetFamily != .systemSmall){
+            if(self.widgetFamily != .systemSmall && (self.entry.configuration.hasBar?.boolValue ?? false)){
                 HStack(alignment: .bottom){
                     Rectangle()
                         .fill(Color(hex: self.entry.color))
@@ -53,7 +53,7 @@ struct RandomPhotoWidget: Widget {
     let kind: String = "RandomPhotoWidget"
 
     var body: some WidgetConfiguration {
-        IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: RandomPhotoTimelineProvider()) { entry in
+        IntentConfiguration(kind: kind, intent: RandomPhotoSettingsIntent.self, provider: RandomPhotoTimelineProvider()) { entry in
             RandomPhotoWidgetEntryView(entry: entry)
         }
         .supportedFamilies([.systemSmall, .systemMedium, .systemLarge, .systemExtraLarge])
@@ -64,7 +64,7 @@ struct RandomPhotoWidget: Widget {
 
 struct RandomPhotoWidget_Previews: PreviewProvider {
     static var previews: some View {
-        RandomPhotoWidgetEntryView(entry: RandomPhotoEntry(date: Date(), configuration: ConfigurationIntent()))
+        RandomPhotoWidgetEntryView(entry: RandomPhotoEntry(date: Date(), configuration: RandomPhotoSettingsIntent()))
             .previewContext(WidgetPreviewContext(family: .systemMedium))
     }
 }

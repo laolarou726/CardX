@@ -10,6 +10,7 @@ import WidgetKit
 import Intents
 
 struct MovieRecommendWidgetEntryView : View {
+    @Environment(\.widgetFamily) var widgetFamily
     var entry: MovieRecommendTimelineProvider.Entry
     
     var body: some View {
@@ -37,7 +38,9 @@ struct MovieRecommendWidgetEntryView : View {
                     Text(self.entry.description)
                         .font(.subheadline)
                         .foregroundColor(.secondary)
-                        .lineLimit(2)
+                        .if(self.widgetFamily == .systemMedium){
+                            $0.lineLimit(3)
+                        }
                     HStack{
                         Text(self.entry.time)
                             .font(.system(size: 10))
@@ -70,6 +73,17 @@ struct MovieRecommendWidgetEntryView : View {
                 Spacer()
             }
         }
+        .if(entry.configuration.hasBg?.boolValue ?? false){
+            $0.background(ZStack{
+                Image(uiImage: self.entry.movieImg)
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .blur(radius: 10)
+                Rectangle()
+                    .fill(Color(UIColor.systemBackground)
+                        .opacity(0.45))
+            })
+        }
     }
 }
 
@@ -77,10 +91,10 @@ struct MovieRecommendWidget: Widget {
     let kind: String = "MovieRecommendWidget"
 
     var body: some WidgetConfiguration {
-        IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: MovieRecommendTimelineProvider()) { entry in
+        IntentConfiguration(kind: kind, intent: MovieRecommandSettingsIntent.self, provider: MovieRecommendTimelineProvider()) { entry in
             MovieRecommendWidgetEntryView(entry: entry)
         }
-        .supportedFamilies([.systemMedium])
+        .supportedFamilies([.systemMedium, .systemLarge, .systemExtraLarge])
         .configurationDisplayName("Movie Recommend")
         .description("Display a random movie from IMDB recommandation database.")
     }
@@ -88,7 +102,7 @@ struct MovieRecommendWidget: Widget {
 
 struct MovieRecommendWidget_Previews: PreviewProvider {
     static var previews: some View {
-        MovieRecommendWidgetEntryView(entry: MovieRecommendEntry(date: Date(), configuration: ConfigurationIntent()))
-            .previewContext(WidgetPreviewContext(family: .systemMedium))
+        MovieRecommendWidgetEntryView(entry: MovieRecommendEntry(date: Date(), configuration: MovieRecommandSettingsIntent()))
+            .previewContext(WidgetPreviewContext(family: .systemExtraLarge))
     }
 }

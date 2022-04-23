@@ -42,7 +42,7 @@ struct RandomQuoteWidget: Widget {
         IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: RandomQuoteTimelineProvider()) { entry in
             RandomQuoteWidgetEntryView(entry: entry)
         }
-        .supportedFamilies([.systemMedium, .systemLarge])
+        .supportedFamilies([.systemMedium, .systemLarge, .systemExtraLarge])
         .configurationDisplayName("Random Quote")
         .description("Display a random quote from the web.")
     }

@@ -11,7 +11,7 @@ import WidgetKit
 
 struct MovieRecommendEntry : TimelineEntry{
     var date: Date
-    var configuration: ConfigurationIntent
+    var configuration: MovieRecommandSettingsIntent
     
     var movieImg: UIImage! = UIImage(imageLiteralResourceName: "Default_IMDB_Image")
     

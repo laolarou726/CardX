@@ -11,7 +11,7 @@ import UIKit
 
 struct WeatherEntry : TimelineEntry{
     var date: Date
-    var configuration: ConfigurationIntent
+    var configuration: WeatherSettingsIntent
     
     var weatherImg: UIImage! = UIImage(imageLiteralResourceName: "Default_Weather_Icon")
     var weatherType: WeatherTypes! = .Sunny

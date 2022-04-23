@@ -2,6 +2,17 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSUserActivityTypes</key>
+	<array>
+		<string>ConfigurationIntent</string>
+		<string>MovieRecommandIntentsIntent</string>
+		<string>MovieRecommandSettingsIntent</string>
+		<string>RandomAnimalSettingsIntent</string>
+		<string>RandomMusicSettingsIntent</string>
+		<string>RandomPhotoSettingsIntent</string>
+		<string>TodayInHistorySettingsIntent</string>
+		<string>WeatherSettingsIntent</string>
+	</array>
 	<key>UILaunchScreen</key>
 	<dict>
 		<key>UIColorName</key>
@@ -9,9 +20,5 @@
 		<key>UIImageName</key>
 		<string>LaunchScreenImage</string>
 	</dict>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Use location service to acquire locale weather info in widgets</string>
-	<key>NSLocationUsageDescription</key>
-	<string>Use location service to acquire locale weather info in widgets</string>
 </dict>
 </plist>

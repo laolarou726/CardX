@@ -12,15 +12,15 @@ import Alamofire
 
 struct TodayInHistoryTimelineProvider: IntentTimelineProvider {
     func placeholder(in context: Context) -> TodayInHistoryEntry {
-        TodayInHistoryEntry(date: Date(), configuration: ConfigurationIntent())
+        TodayInHistoryEntry(date: Date(), configuration: TodayInHistorySettingsIntent())
     }
 
-    func getSnapshot(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (TodayInHistoryEntry) -> ()) {
+    func getSnapshot(for configuration: TodayInHistorySettingsIntent, in context: Context, completion: @escaping (TodayInHistoryEntry) -> ()) {
         let entry = TodayInHistoryEntry(date: Date(), configuration: configuration)
         completion(entry)
     }
 
-    func getTimeline(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Timeline<TodayInHistoryEntry>) -> ()) {
+    func getTimeline(for configuration: TodayInHistorySettingsIntent, in context: Context, completion: @escaping (Timeline<TodayInHistoryEntry>) -> ()) {
         AF.request("https://history.muffinlabs.com/date").responseData{
             response in
             
@@ -34,13 +34,31 @@ struct TodayInHistoryTimelineProvider: IntentTimelineProvider {
                 let result = TodayInHistoryModel.deserialize(from: str)
                 
                 if (result != nil && !(result?.data?.isEmpty ?? true)){
-                    let randomData = result?.data?.randomElement()
+                    let re = result?.data?.randomElement()
+                    var randomDataKey = re?.key
+                    var randomDataValue = re?.value
                     
-                    if (randomData?.value.isEmpty ?? false){
+                    switch(configuration.historyType){
+                    case .event:
+                        randomDataKey = "Events"
+                        randomDataValue = result?.data?["Events"]
+                    case .birth:
+                        randomDataKey = "Births"
+                        randomDataValue = result?.data?["Births"]
+                    case .death:
+                        randomDataKey = "Deaths"
+                        randomDataValue = result?.data?["Deaths"]
+                    default:
+                        let ree = result?.data?.randomElement()
+                        randomDataKey = ree?.key
+                        randomDataValue =  ree?.value
+                    }
+                    
+                    if (randomDataValue?.isEmpty ?? false){
                         return
                     }
                     
-                    let randomHistory = randomData?.value.randomElement()
+                    let randomHistory = randomDataValue?.randomElement()
                     
                     if (randomHistory == nil){
                         return
@@ -48,7 +66,7 @@ struct TodayInHistoryTimelineProvider: IntentTimelineProvider {
                     
                     var entry = TodayInHistoryEntry(date: Date(), configuration: configuration)
                     
-                    entry.type = randomData?.key ?? "-"
+                    entry.type = randomDataKey ?? "-"
                     entry.year = randomHistory!.year
                     entry.history = randomHistory!.text
                     

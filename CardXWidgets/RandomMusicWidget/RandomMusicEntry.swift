@@ -11,10 +11,11 @@ import UIKit
 
 struct RandomMusicEntry : TimelineEntry{
     var date: Date
-    var configuration: ConfigurationIntent
+    var configuration: RandomMusicSettingsIntent
     
     var imgData: UIImage! = UIImage(imageLiteralResourceName: "Default_Cover")
     var name: String! = "-"
     var mark: String! = "Mark -"
     var pop: String! = "Popularity -"
+    var author: String! = "-"
 }

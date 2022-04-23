@@ -8,6 +8,13 @@
 import Foundation
 import HandyJSON
 
+class ArModel : HandyJSON{
+    var id: Int?
+    var name: String?
+    
+    required init() {}
+}
+
 class AlModel : HandyJSON{
     var id: Int?
     var name: String?
@@ -21,6 +28,7 @@ class AlModel : HandyJSON{
 class TrackModel : HandyJSON{
     var name: String?
     var al: AlModel?
+    var ar: [ArModel]?
     var pop: Int?
     var mark: Int?
     

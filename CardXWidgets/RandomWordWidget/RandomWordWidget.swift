@@ -34,7 +34,7 @@ struct RandomWordWidget: Widget {
         IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: RandomWordTimelineProvider()) { entry in
             RandomWordWidgetEntryView(entry: entry)
         }
-        .supportedFamilies([.systemSmall, .systemMedium])
+        .supportedFamilies([.systemSmall, .systemMedium, .systemLarge])
         .configurationDisplayName("Random word")
         .description("Display a random word from the web.")
     }

@@ -82,7 +82,7 @@ struct WeatherWidget: Widget {
     let kind: String = "WeatherWidget"
 
     var body: some WidgetConfiguration {
-        IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: WeatherTimelineProvider()) { entry in
+        IntentConfiguration(kind: kind, intent: WeatherSettingsIntent.self, provider: WeatherTimelineProvider()) { entry in
             WeatherWidgetEntryView(entry: entry)
         }
         .supportedFamilies([.systemMedium, .systemLarge])
@@ -93,7 +93,7 @@ struct WeatherWidget: Widget {
 
 struct WeatherWidget_Previews: PreviewProvider {
     static var previews: some View {
-        WeatherWidgetEntryView(entry: WeatherEntry(date: Date(), configuration: ConfigurationIntent()))
+        WeatherWidgetEntryView(entry: WeatherEntry(date: Date(), configuration: WeatherSettingsIntent()))
             .previewContext(WidgetPreviewContext(family: .systemMedium))
     }
 }

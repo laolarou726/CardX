@@ -26,8 +26,8 @@ struct RandomMusicWidgetEntryView : View {
                     .bold()
                     .padding(.trailing)
                     .blendMode(.overlay)
+                    .lineLimit(3)
                 HStack{
-                    Spacer()
                     ZStack{
                         Text(self.entry.mark)
                             .foregroundColor(.white)
@@ -50,6 +50,10 @@ struct RandomMusicWidgetEntryView : View {
                         .fill(.pink))
                     .padding([.trailing])
                 }
+                Text(self.entry.author)
+                    .font(.subheadline)
+                    .padding(.trailing)
+                    .blendMode(.overlay)
                 Spacer()
             }
             Spacer()
@@ -67,10 +71,10 @@ struct RandomMusicWidget: Widget {
     let kind: String = "RandomMusicWidget"
 
     var body: some WidgetConfiguration {
-        IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: RandomMusicTimelineProvider()) { entry in
+        IntentConfiguration(kind: kind, intent: RandomMusicSettingsIntent.self, provider: RandomMusicTimelineProvider()) { entry in
             RandomMusicWidgetEntryView(entry: entry)
         }
-        .supportedFamilies([.systemMedium, .systemLarge])
+        .supportedFamilies([.systemMedium, .systemLarge, .systemExtraLarge])
         .configurationDisplayName("Billboard Music")
         .description("Randomly pick a music from Billboard recommandation list.")
     }
@@ -79,12 +83,10 @@ struct RandomMusicWidget: Widget {
 struct RandomMusicWidget_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            RandomMusicWidgetEntryView(entry: RandomMusicEntry(date: Date(), configuration: ConfigurationIntent()))
+            RandomMusicWidgetEntryView(entry: RandomMusicEntry(date: Date(), configuration: RandomMusicSettingsIntent()))
                 .previewContext(WidgetPreviewContext(family: .systemMedium))
-            RandomMusicWidgetEntryView(entry: RandomMusicEntry(date: Date(), configuration: ConfigurationIntent()))
-                .previewContext(WidgetPreviewContext(family: .systemMedium))
-            RandomMusicWidgetEntryView(entry: RandomMusicEntry(date: Date(), configuration: ConfigurationIntent()))
-                .previewContext(WidgetPreviewContext(family: .systemMedium))
+            RandomMusicWidgetEntryView(entry: RandomMusicEntry(date: Date(), configuration: RandomMusicSettingsIntent()))
+                .previewContext(WidgetPreviewContext(family: .systemLarge))
         }
     }
 }

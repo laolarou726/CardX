@@ -37,6 +37,11 @@
 		4278D1B527F5870A00CFD523 /* RandomWordWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4278D1B427F5870A00CFD523 /* RandomWordWidget.swift */; };
 		4278D1B727F612A600CFD523 /* RandomWordEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4278D1B627F612A600CFD523 /* RandomWordEntry.swift */; };
 		4278D1B927F6130D00CFD523 /* RandomWordTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4278D1B827F6130D00CFD523 /* RandomWordTimelineProvider.swift */; };
+		427CAE1C2813B3BA008278F2 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427CAE1A2813B3BA008278F2 /* ViewExtension.swift */; };
+		427CAE1F2813B891008278F2 /* RandomAnimalPhotoEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427CAE1E2813B891008278F2 /* RandomAnimalPhotoEntry.swift */; };
+		427CAE212813B89D008278F2 /* RandomAnimalPhotoTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427CAE202813B89D008278F2 /* RandomAnimalPhotoTimelineProvider.swift */; };
+		427CAE232813B8A9008278F2 /* RandomAnimalPhotoWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427CAE222813B8A9008278F2 /* RandomAnimalPhotoWidget.swift */; };
+		427CAE252813BA98008278F2 /* RandomAnimalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427CAE242813BA98008278F2 /* RandomAnimalModel.swift */; };
 		428156F0280BCBD800DABD1C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428156EF280BCBD800DABD1C /* HomeView.swift */; };
 		428156F2280BCC0C00DABD1C /* UsageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428156F1280BCC0C00DABD1C /* UsageView.swift */; };
 		428156F4280BCC2900DABD1C /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428156F3280BCC2900DABD1C /* AboutView.swift */; };
@@ -165,6 +170,11 @@
 		4278D1B427F5870A00CFD523 /* RandomWordWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomWordWidget.swift; sourceTree = "<group>"; };
 		4278D1B627F612A600CFD523 /* RandomWordEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomWordEntry.swift; sourceTree = "<group>"; };
 		4278D1B827F6130D00CFD523 /* RandomWordTimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomWordTimelineProvider.swift; sourceTree = "<group>"; };
+		427CAE1A2813B3BA008278F2 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		427CAE1E2813B891008278F2 /* RandomAnimalPhotoEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomAnimalPhotoEntry.swift; sourceTree = "<group>"; };
+		427CAE202813B89D008278F2 /* RandomAnimalPhotoTimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomAnimalPhotoTimelineProvider.swift; sourceTree = "<group>"; };
+		427CAE222813B8A9008278F2 /* RandomAnimalPhotoWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomAnimalPhotoWidget.swift; sourceTree = "<group>"; };
+		427CAE242813BA98008278F2 /* RandomAnimalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomAnimalModel.swift; sourceTree = "<group>"; };
 		428156EF280BCBD800DABD1C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		428156F1280BCC0C00DABD1C /* UsageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsageView.swift; sourceTree = "<group>"; };
 		428156F3280BCC2900DABD1C /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
@@ -364,6 +374,7 @@
 		4278D19F27F585F800CFD523 /* CardXWidgets */ = {
 			isa = PBXGroup;
 			children = (
+				427CAE1D2813B864008278F2 /* RandomAnimalPhotoWidget */,
 				42C0F58628089E7D00DEF9C4 /* RandomPhotoWidget */,
 				42C0F56C2808849F00DEF9C4 /* RandomMusicWidget */,
 				42C0F55B2807D44600DEF9C4 /* TodayInHistoryWidget */,
@@ -393,6 +404,17 @@
 				4278D1B827F6130D00CFD523 /* RandomWordTimelineProvider.swift */,
 			);
 			path = RandomWordWidget;
+			sourceTree = "<group>";
+		};
+		427CAE1D2813B864008278F2 /* RandomAnimalPhotoWidget */ = {
+			isa = PBXGroup;
+			children = (
+				427CAE1E2813B891008278F2 /* RandomAnimalPhotoEntry.swift */,
+				427CAE202813B89D008278F2 /* RandomAnimalPhotoTimelineProvider.swift */,
+				427CAE222813B8A9008278F2 /* RandomAnimalPhotoWidget.swift */,
+				427CAE242813BA98008278F2 /* RandomAnimalModel.swift */,
+			);
+			path = RandomAnimalPhotoWidget;
 			sourceTree = "<group>";
 		};
 		428156EE280BCBC300DABD1C /* Views */ = {
@@ -448,6 +470,7 @@
 			isa = PBXGroup;
 			children = (
 				42C0F5582807C20100DEF9C4 /* ColorExtension.swift */,
+				427CAE1A2813B3BA008278F2 /* ViewExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -804,10 +827,12 @@
 				4278D1B327F586EF00CFD523 /* BriefTextControl.swift in Sources */,
 				42DE98F328078946007F4DC7 /* CloudModel.swift in Sources */,
 				42DE99142807B94B007F4DC7 /* UselessFactsWidget.swift in Sources */,
+				427CAE232813B8A9008278F2 /* RandomAnimalPhotoWidget.swift in Sources */,
 				42DE990E2807A26C007F4DC7 /* MovieModel.swift in Sources */,
 				42C0F581280893C500DEF9C4 /* TrackModel.swift in Sources */,
 				42DE98ED2807893E007F4DC7 /* WeatherTypes.swift in Sources */,
 				42429AE527F6180200E8C21D /* CopyRightModel.swift in Sources */,
+				427CAE252813BA98008278F2 /* RandomAnimalModel.swift in Sources */,
 				42DE98F128078946007F4DC7 /* SysModel.swift in Sources */,
 				42DE990628079E7F007F4DC7 /* MovieRecommendTimelineProvider.swift in Sources */,
 				4278D1B727F612A600CFD523 /* RandomWordEntry.swift in Sources */,
@@ -840,11 +865,14 @@
 				42DE98EF28078946007F4DC7 /* MainModel.swift in Sources */,
 				42DE98EB28078938007F4DC7 /* RainyShape.swift in Sources */,
 				42C0F58C28089EAF00DEF9C4 /* RandomPhotoWidget.swift in Sources */,
+				427CAE1C2813B3BA008278F2 /* ViewExtension.swift in Sources */,
 				42DE98F228078946007F4DC7 /* WindModel.swift in Sources */,
 				42C0F58A28089EA300DEF9C4 /* RandomPhotoTimelineProvider.swift in Sources */,
 				42DE98F728078A92007F4DC7 /* WeatherWidget.swift in Sources */,
 				4278D1B527F5870A00CFD523 /* RandomWordWidget.swift in Sources */,
 				42C0F57B28088ABC00DEF9C4 /* RandomMusicModel.swift in Sources */,
+				427CAE212813B89D008278F2 /* RandomAnimalPhotoTimelineProvider.swift in Sources */,
+				427CAE1F2813B891008278F2 /* RandomAnimalPhotoEntry.swift in Sources */,
 				42429AE427F6180200E8C21D /* ContentModel.swift in Sources */,
 				42C0F5A12808CDFA00DEF9C4 /* MultiProgressBar.swift in Sources */,
 				42DE98F428078946007F4DC7 /* WeatherResponseModel.swift in Sources */,
@@ -983,17 +1011,18 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4C72F282627C7898B2985075 /* Pods-CardX.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CardX/Preview Content\"";
 				DEVELOPMENT_TEAM = T4NCSDNZKJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CardX/Info.plist;
-				INFOPLIST_KEY_NSLocationUsageDescription = "";
+				INFOPLIST_KEY_NSLocationUsageDescription = "Use location service to acquire locale weather info in widgets";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Use location service to acquire locale weather info in widgets";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
@@ -1003,7 +1032,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.laolarou.CardX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1016,17 +1045,18 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F44970FBB2DE9F5668705927 /* Pods-CardX.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CardX/Preview Content\"";
 				DEVELOPMENT_TEAM = T4NCSDNZKJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CardX/Info.plist;
-				INFOPLIST_KEY_NSLocationUsageDescription = "";
+				INFOPLIST_KEY_NSLocationUsageDescription = "Use location service to acquire locale weather info in widgets";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Use location service to acquire locale weather info in widgets";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
@@ -1036,7 +1066,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.laolarou.CardX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1066,7 +1096,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.laolarou.CardX.CardXWidgets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -1097,7 +1127,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.laolarou.CardX.CardXWidgets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

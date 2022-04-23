@@ -61,7 +61,7 @@ struct TodayInHistoryWidget: Widget {
     let kind: String = "TodayInHistoryWidget"
 
     var body: some WidgetConfiguration {
-        IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: TodayInHistoryTimelineProvider()) { entry in
+        IntentConfiguration(kind: kind, intent: TodayInHistorySettingsIntent.self, provider: TodayInHistoryTimelineProvider()) { entry in
             TodayInHistoryWidgetEntryView(entry: entry)
         }
         .supportedFamilies([.systemMedium, .systemLarge, .systemExtraLarge])
@@ -72,7 +72,7 @@ struct TodayInHistoryWidget: Widget {
 
 struct TodayInHistoryWidget_Previews: PreviewProvider {
     static var previews: some View {
-        TodayInHistoryWidgetEntryView(entry: TodayInHistoryEntry(date: Date(), configuration: ConfigurationIntent()))
+        TodayInHistoryWidgetEntryView(entry: TodayInHistoryEntry(date: Date(), configuration: TodayInHistorySettingsIntent()))
             .previewContext(WidgetPreviewContext(family: .systemMedium))
     }
 }
