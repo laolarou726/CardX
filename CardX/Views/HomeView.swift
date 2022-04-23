@@ -32,10 +32,12 @@ struct HomeView: View {
     let supportedWidgetsModel: [HomePageSupportedWidgetsModel] = [
         HomePageSupportedWidgetsModel("Environment", [
             "Weather Widget"]),
+        HomePageSupportedWidgetsModel("Images", [
+            "Random Photo Widget",
+            "Random Animal Photo Widget"]),
         HomePageSupportedWidgetsModel("Random things", [
             "Random Music Widget",
             "Movie Recommend Widget",
-            "Random Photo Widget",
             "Random Word Widget",
             "Random Quote Widget"]),
         HomePageSupportedWidgetsModel("Knowledge", [
