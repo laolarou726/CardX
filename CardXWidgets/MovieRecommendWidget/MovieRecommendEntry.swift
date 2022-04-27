@@ -8,6 +8,7 @@
 import UIKit
 import Foundation
 import WidgetKit
+import HandyJSON
 
 struct MovieRecommendEntry : TimelineEntry{
     var date: Date
@@ -24,4 +25,6 @@ struct MovieRecommendEntry : TimelineEntry{
     var time: String! = "- mins"
     var imdbRating: String! = "IMDB -"
     var rottenRating: String! = "Rotten -"
+    
+    var jsonStr: String! = ""
 }

@@ -25,6 +25,16 @@
 		42429AEE27F618E900E8C21D /* RandomQuoteWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42429AE027F617BC00E8C21D /* RandomQuoteWidget.swift */; };
 		42485EF8280C85D9006E90A1 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42485EF7280C85D9006E90A1 /* BlurView.swift */; };
 		42485EFA280C86F5006E90A1 /* HomePageSupportedWidgetsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42485EF9280C86F5006E90A1 /* HomePageSupportedWidgetsModel.swift */; };
+		426569062818CD710058926B /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426569052818CD710058926B /* RootView.swift */; };
+		426569092818CD980058926B /* ViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426569082818CD980058926B /* ViewType.swift */; };
+		4265690C2818CECB0058926B /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4265690B2818CECB0058926B /* MovieDetailView.swift */; };
+		4265690F2818E9700058926B /* BindingExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4265690E2818E9700058926B /* BindingExtension.swift */; };
+		426569112818EA0A0058926B /* MovieJsonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426569102818EA0A0058926B /* MovieJsonModel.swift */; };
+		426569132818EA570058926B /* ImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426569122818EA570058926B /* ImageExtension.swift */; };
+		426569142818EA590058926B /* ImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426569122818EA570058926B /* ImageExtension.swift */; };
+		426569152818EA9E0058926B /* MovieJsonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426569102818EA0A0058926B /* MovieJsonModel.swift */; };
+		426569172818EBA10058926B /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426569162818EBA10058926B /* StringExtension.swift */; };
+		426569182818EBA10058926B /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426569162818EBA10058926B /* StringExtension.swift */; };
 		4278D19C27F585F800CFD523 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4278D19B27F585F800CFD523 /* WidgetKit.framework */; };
 		4278D19E27F585F800CFD523 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4278D19D27F585F800CFD523 /* SwiftUI.framework */; };
 		4278D1A127F585F800CFD523 /* CardXWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4278D1A027F585F800CFD523 /* CardXWidgets.swift */; };
@@ -160,6 +170,14 @@
 		42429AEA27F6186B00E8C21D /* RandomQuoteEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomQuoteEntry.swift; sourceTree = "<group>"; };
 		42485EF7280C85D9006E90A1 /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
 		42485EF9280C86F5006E90A1 /* HomePageSupportedWidgetsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageSupportedWidgetsModel.swift; sourceTree = "<group>"; };
+		426569052818CD710058926B /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		426569082818CD980058926B /* ViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewType.swift; sourceTree = "<group>"; };
+		4265690B2818CECB0058926B /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
+		4265690D2818E0BA0058926B /* CardX.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CardX.entitlements; sourceTree = "<group>"; };
+		4265690E2818E9700058926B /* BindingExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingExtension.swift; sourceTree = "<group>"; };
+		426569102818EA0A0058926B /* MovieJsonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieJsonModel.swift; sourceTree = "<group>"; };
+		426569122818EA570058926B /* ImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExtension.swift; sourceTree = "<group>"; };
+		426569162818EBA10058926B /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		4278D19A27F585F800CFD523 /* CardXWidgetsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CardXWidgetsExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		4278D19B27F585F800CFD523 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		4278D19D27F585F800CFD523 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
@@ -298,18 +316,20 @@
 		421DA1F127A22FFF0073A877 /* CardX */ = {
 			isa = PBXGroup;
 			children = (
+				4265690D2818E0BA0058926B /* CardX.entitlements */,
 				4231A1E0280F222C00D3276F /* Info.plist */,
 				4228F17227A363D100C10336 /* Cards */,
 				421DA1F227A22FFF0073A877 /* CardXApp.swift */,
-				421DA1F427A22FFF0073A877 /* ContentView.swift */,
+				426569072818CD8D0058926B /* Models */,
 				428156EE280BCBC300DABD1C /* Views */,
-				421DA1F627A230000073A877 /* Assets.xcassets */,
+				4265690A2818CEAA0058926B /* Pages */,
 				421DA1F827A230000073A877 /* Preview Content */,
 				4231A1A3280D065200D3276F /* Extensions */,
 				42C0F5922808BD0000DEF9C4 /* MultiProgressBar.swift */,
 				428156F5280BD92500DABD1C /* WebView.swift */,
 				42485EF7280C85D9006E90A1 /* BlurView.swift */,
 				4231A1A1280CF76F00D3276F /* DraggableCardView.swift */,
+				421DA1F627A230000073A877 /* Assets.xcassets */,
 			);
 			path = CardX;
 			sourceTree = "<group>";
@@ -346,6 +366,7 @@
 			isa = PBXGroup;
 			children = (
 				4231A1A4280D065E00D3276F /* ViewExtension.swift */,
+				4265690E2818E9700058926B /* BindingExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -369,6 +390,24 @@
 				421BA58E27CF050300F3C264 /* CopyRightModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		426569072818CD8D0058926B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				426569082818CD980058926B /* ViewType.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4265690A2818CEAA0058926B /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				421DA1F427A22FFF0073A877 /* ContentView.swift */,
+				426569052818CD710058926B /* RootView.swift */,
+				4265690B2818CECB0058926B /* MovieDetailView.swift */,
+			);
+			path = Pages;
 			sourceTree = "<group>";
 		};
 		4278D19F27F585F800CFD523 /* CardXWidgets */ = {
@@ -471,6 +510,8 @@
 			children = (
 				42C0F5582807C20100DEF9C4 /* ColorExtension.swift */,
 				427CAE1A2813B3BA008278F2 /* ViewExtension.swift */,
+				426569122818EA570058926B /* ImageExtension.swift */,
+				426569162818EBA10058926B /* StringExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -573,6 +614,7 @@
 			children = (
 				42DE990B2807A1DC007F4DC7 /* MovieDataModel.swift */,
 				42DE990D2807A26C007F4DC7 /* MovieModel.swift */,
+				426569102818EA0A0058926B /* MovieJsonModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -789,22 +831,29 @@
 			files = (
 				428156F6280BD92500DABD1C /* WebView.swift in Sources */,
 				428156F0280BCBD800DABD1C /* HomeView.swift in Sources */,
+				426569112818EA0A0058926B /* MovieJsonModel.swift in Sources */,
 				42A3119727ACADB900DA096A /* CountDownCard.swift in Sources */,
 				42485EF8280C85D9006E90A1 /* BlurView.swift in Sources */,
 				4231A1A5280D065E00D3276F /* ViewExtension.swift in Sources */,
 				428156F4280BCC2900DABD1C /* AboutView.swift in Sources */,
+				4265690C2818CECB0058926B /* MovieDetailView.swift in Sources */,
+				426569172818EBA10058926B /* StringExtension.swift in Sources */,
 				42485EFA280C86F5006E90A1 /* HomePageSupportedWidgetsModel.swift in Sources */,
 				428156F2280BCC0C00DABD1C /* UsageView.swift in Sources */,
 				4231A1A7280D091300D3276F /* WidgetDetailView.swift in Sources */,
 				421DA1F527A22FFF0073A877 /* ContentView.swift in Sources */,
+				426569062818CD710058926B /* RootView.swift in Sources */,
 				4231A1A2280CF76F00D3276F /* DraggableCardView.swift in Sources */,
 				42A3119927ACAE2200DA096A /* CountDownTexts.swift in Sources */,
 				42A3119027AC9F1900DA096A /* BriefTextControl.swift in Sources */,
+				426569132818EA570058926B /* ImageExtension.swift in Sources */,
 				42C0F5932808BD0000DEF9C4 /* MultiProgressBar.swift in Sources */,
 				4278D1A727F585FA00CFD523 /* CardXWidgets.intentdefinition in Sources */,
 				421DA1F327A22FFF0073A877 /* CardXApp.swift in Sources */,
 				42A3119227ACA03B00DA096A /* CountDownText.swift in Sources */,
 				42C0F5592807C20100DEF9C4 /* ColorExtension.swift in Sources */,
+				4265690F2818E9700058926B /* BindingExtension.swift in Sources */,
+				426569092818CD980058926B /* ViewType.swift in Sources */,
 				428156F9280BEE8B00DABD1C /* HomePageCardModel.swift in Sources */,
 				4231A1A0280CEA1700D3276F /* StartupView.swift in Sources */,
 				EC4ED35427A8A55B00E32232 /* TimeCard.swift in Sources */,
@@ -852,6 +901,7 @@
 				42DE98FE28078E7E007F4DC7 /* WeatherHelper.swift in Sources */,
 				42429AEC27F618E200E8C21D /* RandomQuoteEntry.swift in Sources */,
 				4278D1B927F6130D00CFD523 /* RandomWordTimelineProvider.swift in Sources */,
+				426569182818EBA10058926B /* StringExtension.swift in Sources */,
 				42DE990728079E81007F4DC7 /* MovieRecommendWidget.swift in Sources */,
 				42DE98EE28078946007F4DC7 /* WeatherModel.swift in Sources */,
 				42C0F5672807D61700DEF9C4 /* TodayInHistoryWidget.swift in Sources */,
@@ -867,11 +917,13 @@
 				42C0F58C28089EAF00DEF9C4 /* RandomPhotoWidget.swift in Sources */,
 				427CAE1C2813B3BA008278F2 /* ViewExtension.swift in Sources */,
 				42DE98F228078946007F4DC7 /* WindModel.swift in Sources */,
+				426569142818EA590058926B /* ImageExtension.swift in Sources */,
 				42C0F58A28089EA300DEF9C4 /* RandomPhotoTimelineProvider.swift in Sources */,
 				42DE98F728078A92007F4DC7 /* WeatherWidget.swift in Sources */,
 				4278D1B527F5870A00CFD523 /* RandomWordWidget.swift in Sources */,
 				42C0F57B28088ABC00DEF9C4 /* RandomMusicModel.swift in Sources */,
 				427CAE212813B89D008278F2 /* RandomAnimalPhotoTimelineProvider.swift in Sources */,
+				426569152818EA9E0058926B /* MovieJsonModel.swift in Sources */,
 				427CAE1F2813B891008278F2 /* RandomAnimalPhotoEntry.swift in Sources */,
 				42429AE427F6180200E8C21D /* ContentModel.swift in Sources */,
 				42C0F5A12808CDFA00DEF9C4 /* MultiProgressBar.swift in Sources */,
@@ -1014,6 +1066,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CardX/CardX.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CardX/Preview Content\"";
@@ -1048,6 +1101,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CardX/CardX.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CardX/Preview Content\"";

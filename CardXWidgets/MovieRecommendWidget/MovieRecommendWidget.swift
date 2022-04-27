@@ -14,75 +14,77 @@ struct MovieRecommendWidgetEntryView : View {
     var entry: MovieRecommendTimelineProvider.Entry
     
     var body: some View {
-        ZStack{
-            HStack{
-                Spacer()
-                Image(uiImage: self.entry.movieImg)
-                    .resizable()
-                    .shadow(radius: 10)
-                    .cornerRadius(8)
-                    .frame(width: 84.25, height: 125)
-                VStack(alignment: .leading){
+        Link(destination: URL(string: "widget-deeplink://\(entry.jsonStr ?? "-")")!) {
+            ZStack{
+                HStack{
                     Spacer()
-                    HStack{
-                        Text(self.entry.typeAndCountry)
-                            .font(.footnote)
+                    Image(uiImage: self.entry.movieImg)
+                        .resizable()
+                        .shadow(radius: 10)
+                        .cornerRadius(8)
+                        .frame(width: 84.25, height: 125)
+                    VStack(alignment: .leading){
                         Spacer()
-                        Text(self.entry.year)
-                            .font(.footnote)
+                        HStack{
+                            Text(self.entry.typeAndCountry)
+                                .font(.footnote)
+                            Spacer()
+                            Text(self.entry.year)
+                                .font(.footnote)
+                                .padding([.trailing])
+                        }
+                        Text(self.entry.title)
+                            .bold()
+                            .lineLimit(2)
+                        Text(self.entry.description)
+                            .font(.subheadline)
+                            .foregroundColor(.secondary)
+                            .if(self.widgetFamily == .systemMedium){
+                                $0.lineLimit(3)
+                            }
+                        HStack{
+                            Text(self.entry.time)
+                                .font(.system(size: 10))
+                            Spacer()
+                            ZStack{
+                                Text(self.entry.imdbRating)
+                                    .foregroundColor(.white)
+                                    .font(.system(size: 10))
+                                    .padding([.leading, .trailing], 4)
+                                    .padding([.top, .bottom], 1)
+                            }
+                            .background(
+                                RoundedRectangle(cornerRadius: 5)
+                                .fill(.blue))
+                            ZStack{
+                                Text(self.entry.rottenRating)
+                                    .foregroundColor(.white)
+                                    .font(.system(size: 10))
+                                    .padding([.leading, .trailing], 4)
+                                    .padding([.top, .bottom], 1)
+                            }
+                            .background(
+                                RoundedRectangle(cornerRadius: 5)
+                                .fill(.pink))
                             .padding([.trailing])
-                    }
-                    Text(self.entry.title)
-                        .bold()
-                        .lineLimit(2)
-                    Text(self.entry.description)
-                        .font(.subheadline)
-                        .foregroundColor(.secondary)
-                        .if(self.widgetFamily == .systemMedium){
-                            $0.lineLimit(3)
                         }
-                    HStack{
-                        Text(self.entry.time)
-                            .font(.system(size: 10))
                         Spacer()
-                        ZStack{
-                            Text(self.entry.imdbRating)
-                                .foregroundColor(.white)
-                                .font(.system(size: 10))
-                                .padding([.leading, .trailing], 4)
-                                .padding([.top, .bottom], 1)
-                        }
-                        .background(
-                            RoundedRectangle(cornerRadius: 5)
-                            .fill(.blue))
-                        ZStack{
-                            Text(self.entry.rottenRating)
-                                .foregroundColor(.white)
-                                .font(.system(size: 10))
-                                .padding([.leading, .trailing], 4)
-                                .padding([.top, .bottom], 1)
-                        }
-                        .background(
-                            RoundedRectangle(cornerRadius: 5)
-                            .fill(.pink))
-                        .padding([.trailing])
                     }
+                    .padding([.horizontal], 4)
                     Spacer()
                 }
-                .padding([.horizontal], 4)
-                Spacer()
             }
-        }
-        .if(entry.configuration.hasBg?.boolValue ?? false){
-            $0.background(ZStack{
-                Image(uiImage: self.entry.movieImg)
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .blur(radius: 10)
-                Rectangle()
-                    .fill(Color(UIColor.systemBackground)
-                        .opacity(0.45))
-            })
+            .if(entry.configuration.hasBg?.boolValue ?? false){
+                $0.background(ZStack{
+                    Image(uiImage: self.entry.movieImg)
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .blur(radius: 10)
+                    Rectangle()
+                        .fill(Color(UIColor.systemBackground)
+                            .opacity(0.45))
+                })
+            }
         }
     }
 }

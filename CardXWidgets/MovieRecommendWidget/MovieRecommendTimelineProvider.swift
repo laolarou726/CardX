@@ -46,15 +46,30 @@ struct MovieRecommendTimelineProvider: IntentTimelineProvider {
                 if (randomMovie != nil && !(randomMovie?!.data?.isEmpty ?? false)){
                     let firstData = randomMovie!?.data![0]
                     var entry = MovieRecommendEntry(date: Date(), configuration: configuration)
+                    var jsonModel = MovieJsonModel()
                     
                     entry.typeAndCountry = "\(randomMovie?!.type ?? "-") | \(firstData?.lang ?? "-")"
+                    jsonModel.typeAndCountry  = entry.typeAndCountry
+                    
                     entry.year = randomMovie?!.year ?? "-"
+                    jsonModel.year = entry.year
+                    
                     entry.title = firstData?.name ?? "-"
+                    jsonModel.title = entry.title
+                    
                     entry.time = "\(Int((randomMovie?!.duration ?? 0) / 60)) mins"
+                    jsonModel.time = entry.time
+                    
                     entry.description = firstData?.description ?? "-"
+                    jsonModel.description = entry.description
                     
                     entry.imdbRating = "IMDB \(randomMovie?!.imdbRating ?? "-")"
+                    jsonModel.imdbRating = entry.imdbRating
+                    
                     entry.rottenRating = "Rotten \(randomMovie?!.rottenRating ?? "-")%"
+                    jsonModel.rottenRating = entry.rottenRating
+                    
+                    jsonModel.imgUrl = firstData?.poster
                     
                     AF.request(firstData?.poster ?? "").responseData {
                         response in
@@ -68,6 +83,8 @@ struct MovieRecommendTimelineProvider: IntentTimelineProvider {
 
                         if let res = response.data{
                             entry.movieImg = UIImage(data: res) ?? UIImage(imageLiteralResourceName: "Default_IMDB_Image")
+                            entry.jsonStr = jsonModel.toJSONString()?.toBase64()
+                            
                             let timeline = Timeline(entries: [entry], policy: .atEnd)
                             completion(timeline)
                         }
