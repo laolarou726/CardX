@@ -32,6 +32,9 @@ struct RootView: View {
                 .tag(ViewType.quoteDetail)
         }
         .environmentObject(tabController)
+        .onAppear{
+            UITabBar.appearance().isHidden = true
+        }
     }
 }
 

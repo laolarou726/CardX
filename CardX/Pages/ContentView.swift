@@ -41,6 +41,7 @@ struct ContentView: View {
         })
         .onAppear{
             self.isPresented = true
+            UITabBar.appearance().isHidden = false
             
             DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
                 withAnimation(.easeInOut(duration: 0.45)){
