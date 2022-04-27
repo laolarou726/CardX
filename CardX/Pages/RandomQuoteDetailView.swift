@@ -9,6 +9,7 @@ import SwiftUI
 import SwiftUIVisualEffects
 
 struct RandomQuoteDetailView: View {
+    @EnvironmentObject private var tabController: TabController
     @Binding var model: RandomQuoteJsonModel?
     
     var body: some View {
@@ -23,6 +24,20 @@ struct RandomQuoteDetailView: View {
                         .fontWeight(.black)
                         .vibrancyEffect()
                     Spacer()
+                    
+                    HStack{
+                        Spacer()
+                        
+                        Button(action: {
+                            tabController.open(.home)
+                        }) {
+                            Image(systemName: "arrowshape.turn.up.backward.2.fill")
+                        }
+                        .buttonStyle(GrowingButton())
+                        .shadow(radius: 10)
+                        
+                        Spacer()
+                    }
                 }
                 .padding()
                 .padding(.horizontal)

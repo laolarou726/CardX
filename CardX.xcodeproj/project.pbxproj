@@ -13,6 +13,8 @@
 		421DA1F527A22FFF0073A877 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421DA1F427A22FFF0073A877 /* ContentView.swift */; };
 		421DA1F727A230000073A877 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 421DA1F627A230000073A877 /* Assets.xcassets */; };
 		421DA1FA27A230000073A877 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 421DA1F927A230000073A877 /* Preview Assets.xcassets */; };
+		421E34782819D5DC007C3D88 /* TabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421E34772819D5DC007C3D88 /* TabController.swift */; };
+		421E347A2819DE86007C3D88 /* GrowingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421E34792819DE86007C3D88 /* GrowingButton.swift */; };
 		4231A1A0280CEA1700D3276F /* StartupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4231A19F280CEA1700D3276F /* StartupView.swift */; };
 		4231A1A2280CF76F00D3276F /* DraggableCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4231A1A1280CF76F00D3276F /* DraggableCardView.swift */; };
 		4231A1A5280D065E00D3276F /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4231A1A4280D065E00D3276F /* ViewExtension.swift */; };
@@ -171,6 +173,8 @@
 		421DA1F427A22FFF0073A877 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		421DA1F627A230000073A877 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		421DA1F927A230000073A877 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		421E34772819D5DC007C3D88 /* TabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabController.swift; sourceTree = "<group>"; };
+		421E34792819DE86007C3D88 /* GrowingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrowingButton.swift; sourceTree = "<group>"; };
 		4228F17727A3661D00C10336 /* SunnyShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunnyShape.swift; sourceTree = "<group>"; };
 		4231A19F280CEA1700D3276F /* StartupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupView.swift; sourceTree = "<group>"; };
 		4231A1A1280CF76F00D3276F /* DraggableCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggableCardView.swift; sourceTree = "<group>"; };
@@ -348,6 +352,7 @@
 				42485EF7280C85D9006E90A1 /* BlurView.swift */,
 				4231A1A1280CF76F00D3276F /* DraggableCardView.swift */,
 				421DA1F627A230000073A877 /* Assets.xcassets */,
+				421E34772819D5DC007C3D88 /* TabController.swift */,
 			);
 			path = CardX;
 			sourceTree = "<group>";
@@ -415,6 +420,7 @@
 			isa = PBXGroup;
 			children = (
 				426569082818CD980058926B /* ViewType.swift */,
+				421E34792819DE86007C3D88 /* GrowingButton.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -855,6 +861,7 @@
 			files = (
 				428156F6280BD92500DABD1C /* WebView.swift in Sources */,
 				4265691E2819BE320058926B /* TodayInHistoryJsonModel.swift in Sources */,
+				421E347A2819DE86007C3D88 /* GrowingButton.swift in Sources */,
 				428156F0280BCBD800DABD1C /* HomeView.swift in Sources */,
 				426569112818EA0A0058926B /* MovieJsonModel.swift in Sources */,
 				42A3119727ACADB900DA096A /* CountDownCard.swift in Sources */,
@@ -870,6 +877,7 @@
 				421DA1F527A22FFF0073A877 /* ContentView.swift in Sources */,
 				4265692C2819C63D0058926B /* RandomQuoteDetailView.swift in Sources */,
 				426569062818CD710058926B /* RootView.swift in Sources */,
+				421E34782819D5DC007C3D88 /* TabController.swift in Sources */,
 				4231A1A2280CF76F00D3276F /* DraggableCardView.swift in Sources */,
 				4265692A2819C5060058926B /* ContentModel.swift in Sources */,
 				42A3119927ACAE2200DA096A /* CountDownTexts.swift in Sources */,

@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct UselessFactsDetailView: View {
+    @EnvironmentObject private var tabController: TabController
     @Binding var model: UselessFactsJsonModel?
     
     var body: some View {
@@ -21,6 +22,14 @@ struct UselessFactsDetailView: View {
                 }
                 
                 Spacer()
+                
+                Button(action: {
+                    tabController.open(.home)
+                }) {
+                    Image(systemName: "arrowshape.turn.up.backward.2.fill")
+                }
+                .buttonStyle(GrowingButton())
+                .shadow(radius: 10)
             }
             .background(LinearGradient(gradient: Gradient(colors: [Color("WordCardGradient_2_1"), Color("WordCardGradient_2_2")]), startPoint: .topLeading, endPoint: .bottomTrailing))
             .navigationTitle("Do you know?")

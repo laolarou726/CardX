@@ -10,6 +10,7 @@ import SwiftUIVisualEffects
 import Alamofire
 
 struct MovieDetailView: View {
+    @EnvironmentObject private var tabController: TabController
     @Binding var model: MovieJsonModel?
     
     var body: some View {
@@ -92,6 +93,14 @@ struct MovieDetailView: View {
                 .padding(.horizontal, 4)
                 
                 Spacer()
+                
+                Button(action: {
+                    tabController.open(.home)
+                }) {
+                    Image(systemName: "arrowshape.turn.up.backward.2.fill")
+                }
+                .buttonStyle(GrowingButton())
+                .shadow(radius: 10)
             }
             .background(
                 ZStack{

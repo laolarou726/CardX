@@ -8,30 +8,35 @@
 import SwiftUI
 
 struct RootView: View {
+    @EnvironmentObject private var tabController: TabController
     @Binding var quote: RandomQuoteJsonModel?
     @Binding var uf: UselessFactsJsonModel?
     @Binding var tih: TodayInHistoryJsonModel?
     @Binding var movie: MovieJsonModel?
-    @Binding var viewType: ViewType
     
     var body: some View {
-        switch(viewType){
-        case .home:
+        TabView(selection: $tabController.activeTab){
             ContentView()
-        case .movieDetail:
+                .tag(ViewType.home)
+            
             MovieDetailView(model: $movie)
-        case .todayInHistory:
+                .tag(ViewType.movieDetail)
+            
             TodayInHistoryDetailView(model: $tih)
-        case .uselessFacts:
+                .tag(ViewType.todayInHistory)
+            
             UselessFactsDetailView(model: $uf)
-        case .quoteDetail:
+                .tag(ViewType.uselessFacts)
+            
             RandomQuoteDetailView(model: $quote)
+                .tag(ViewType.quoteDetail)
         }
+        .environmentObject(tabController)
     }
 }
 
 struct RootView_Previews: PreviewProvider {
     static var previews: some View {
-        RootView(quote: .constant(nil), uf: .constant(nil), tih: .constant(nil), movie: .constant(nil), viewType: .constant(.home))
+        RootView(quote: .constant(nil), uf: .constant(nil), tih: .constant(nil), movie: .constant(nil))
     }
 }

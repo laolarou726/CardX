@@ -9,6 +9,7 @@ import SwiftUI
 import SwiftUIVisualEffects
 
 struct TodayInHistoryDetailView: View {
+    @EnvironmentObject private var tabController: TabController
     @Binding var model: TodayInHistoryJsonModel?
     
     var body: some View {
@@ -58,6 +59,20 @@ struct TodayInHistoryDetailView: View {
                 .padding([.horizontal], 4)
                 
                 Spacer()
+                
+                HStack{
+                    Spacer()
+                    
+                    Button(action: {
+                        tabController.open(.home)
+                    }) {
+                        Image(systemName: "arrowshape.turn.up.backward.2.fill")
+                    }
+                    .buttonStyle(GrowingButton())
+                    .shadow(radius: 10)
+                    
+                    Spacer()
+                }
             }
             
             Spacer()
