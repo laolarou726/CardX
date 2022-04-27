@@ -46,7 +46,7 @@ struct MovieRecommendTimelineProvider: IntentTimelineProvider {
                 if (randomMovie != nil && !(randomMovie?!.data?.isEmpty ?? false)){
                     let firstData = randomMovie!?.data![0]
                     var entry = MovieRecommendEntry(date: Date(), configuration: configuration)
-                    var jsonModel = MovieJsonModel()
+                    let jsonModel = MovieJsonModel()
                     
                     entry.typeAndCountry = "\(randomMovie?!.type ?? "-") | \(firstData?.lang ?? "-")"
                     jsonModel.typeAndCountry  = entry.typeAndCountry

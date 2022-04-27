@@ -35,6 +35,18 @@
 		426569152818EA9E0058926B /* MovieJsonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426569102818EA0A0058926B /* MovieJsonModel.swift */; };
 		426569172818EBA10058926B /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426569162818EBA10058926B /* StringExtension.swift */; };
 		426569182818EBA10058926B /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426569162818EBA10058926B /* StringExtension.swift */; };
+		4265691C2819BBA00058926B /* TodayInHistoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4265691B2819BBA00058926B /* TodayInHistoryDetailView.swift */; };
+		4265691E2819BE320058926B /* TodayInHistoryJsonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4265691D2819BE320058926B /* TodayInHistoryJsonModel.swift */; };
+		4265691F2819BE320058926B /* TodayInHistoryJsonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4265691D2819BE320058926B /* TodayInHistoryJsonModel.swift */; };
+		426569212819C2160058926B /* UselessFactsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426569202819C2160058926B /* UselessFactsDetailView.swift */; };
+		426569232819C2E90058926B /* UselessFactsJsonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426569222819C2E90058926B /* UselessFactsJsonModel.swift */; };
+		426569242819C2E90058926B /* UselessFactsJsonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426569222819C2E90058926B /* UselessFactsJsonModel.swift */; };
+		426569262819C4DB0058926B /* RandomQuoteJsonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426569252819C4DB0058926B /* RandomQuoteJsonModel.swift */; };
+		426569272819C4DB0058926B /* RandomQuoteJsonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426569252819C4DB0058926B /* RandomQuoteJsonModel.swift */; };
+		426569282819C5060058926B /* RandomQuoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421BA58A27CF037E00F3C264 /* RandomQuoteModel.swift */; };
+		426569292819C5060058926B /* CopyRightModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421BA58E27CF050300F3C264 /* CopyRightModel.swift */; };
+		4265692A2819C5060058926B /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421BA58C27CF03D700F3C264 /* ContentModel.swift */; };
+		4265692C2819C63D0058926B /* RandomQuoteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4265692B2819C63D0058926B /* RandomQuoteDetailView.swift */; };
 		4278D19C27F585F800CFD523 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4278D19B27F585F800CFD523 /* WidgetKit.framework */; };
 		4278D19E27F585F800CFD523 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4278D19D27F585F800CFD523 /* SwiftUI.framework */; };
 		4278D1A127F585F800CFD523 /* CardXWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4278D1A027F585F800CFD523 /* CardXWidgets.swift */; };
@@ -178,6 +190,12 @@
 		426569102818EA0A0058926B /* MovieJsonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieJsonModel.swift; sourceTree = "<group>"; };
 		426569122818EA570058926B /* ImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExtension.swift; sourceTree = "<group>"; };
 		426569162818EBA10058926B /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		4265691B2819BBA00058926B /* TodayInHistoryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayInHistoryDetailView.swift; sourceTree = "<group>"; };
+		4265691D2819BE320058926B /* TodayInHistoryJsonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayInHistoryJsonModel.swift; sourceTree = "<group>"; };
+		426569202819C2160058926B /* UselessFactsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UselessFactsDetailView.swift; sourceTree = "<group>"; };
+		426569222819C2E90058926B /* UselessFactsJsonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UselessFactsJsonModel.swift; sourceTree = "<group>"; };
+		426569252819C4DB0058926B /* RandomQuoteJsonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomQuoteJsonModel.swift; sourceTree = "<group>"; };
+		4265692B2819C63D0058926B /* RandomQuoteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomQuoteDetailView.swift; sourceTree = "<group>"; };
 		4278D19A27F585F800CFD523 /* CardXWidgetsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CardXWidgetsExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		4278D19B27F585F800CFD523 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		4278D19D27F585F800CFD523 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
@@ -388,6 +406,7 @@
 				421BA58A27CF037E00F3C264 /* RandomQuoteModel.swift */,
 				421BA58C27CF03D700F3C264 /* ContentModel.swift */,
 				421BA58E27CF050300F3C264 /* CopyRightModel.swift */,
+				426569252819C4DB0058926B /* RandomQuoteJsonModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -406,6 +425,9 @@
 				421DA1F427A22FFF0073A877 /* ContentView.swift */,
 				426569052818CD710058926B /* RootView.swift */,
 				4265690B2818CECB0058926B /* MovieDetailView.swift */,
+				4265691B2819BBA00058926B /* TodayInHistoryDetailView.swift */,
+				426569202819C2160058926B /* UselessFactsDetailView.swift */,
+				4265692B2819C63D0058926B /* RandomQuoteDetailView.swift */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -533,6 +555,7 @@
 				42C0F55D2807D4BE00DEF9C4 /* TodayInHistoryModel.swift */,
 				42C0F55F2807D52F00DEF9C4 /* HistoryDataModel.swift */,
 				42C0F5612807D5B300DEF9C4 /* LinkModel.swift */,
+				4265691D2819BE320058926B /* TodayInHistoryJsonModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -634,6 +657,7 @@
 				42DE99132807B94A007F4DC7 /* UselessFactsWidget.swift */,
 				42DE99152807B95B007F4DC7 /* UselessFactsEntry.swift */,
 				42DE99172807B969007F4DC7 /* UselessFactsTimelineProvider.swift */,
+				426569222819C2E90058926B /* UselessFactsJsonModel.swift */,
 			);
 			path = UselessFactsWidget;
 			sourceTree = "<group>";
@@ -830,11 +854,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				428156F6280BD92500DABD1C /* WebView.swift in Sources */,
+				4265691E2819BE320058926B /* TodayInHistoryJsonModel.swift in Sources */,
 				428156F0280BCBD800DABD1C /* HomeView.swift in Sources */,
 				426569112818EA0A0058926B /* MovieJsonModel.swift in Sources */,
 				42A3119727ACADB900DA096A /* CountDownCard.swift in Sources */,
 				42485EF8280C85D9006E90A1 /* BlurView.swift in Sources */,
 				4231A1A5280D065E00D3276F /* ViewExtension.swift in Sources */,
+				426569262819C4DB0058926B /* RandomQuoteJsonModel.swift in Sources */,
 				428156F4280BCC2900DABD1C /* AboutView.swift in Sources */,
 				4265690C2818CECB0058926B /* MovieDetailView.swift in Sources */,
 				426569172818EBA10058926B /* StringExtension.swift in Sources */,
@@ -842,19 +868,26 @@
 				428156F2280BCC0C00DABD1C /* UsageView.swift in Sources */,
 				4231A1A7280D091300D3276F /* WidgetDetailView.swift in Sources */,
 				421DA1F527A22FFF0073A877 /* ContentView.swift in Sources */,
+				4265692C2819C63D0058926B /* RandomQuoteDetailView.swift in Sources */,
 				426569062818CD710058926B /* RootView.swift in Sources */,
 				4231A1A2280CF76F00D3276F /* DraggableCardView.swift in Sources */,
+				4265692A2819C5060058926B /* ContentModel.swift in Sources */,
 				42A3119927ACAE2200DA096A /* CountDownTexts.swift in Sources */,
 				42A3119027AC9F1900DA096A /* BriefTextControl.swift in Sources */,
 				426569132818EA570058926B /* ImageExtension.swift in Sources */,
 				42C0F5932808BD0000DEF9C4 /* MultiProgressBar.swift in Sources */,
+				426569212819C2160058926B /* UselessFactsDetailView.swift in Sources */,
 				4278D1A727F585FA00CFD523 /* CardXWidgets.intentdefinition in Sources */,
+				426569232819C2E90058926B /* UselessFactsJsonModel.swift in Sources */,
 				421DA1F327A22FFF0073A877 /* CardXApp.swift in Sources */,
 				42A3119227ACA03B00DA096A /* CountDownText.swift in Sources */,
 				42C0F5592807C20100DEF9C4 /* ColorExtension.swift in Sources */,
 				4265690F2818E9700058926B /* BindingExtension.swift in Sources */,
+				426569292819C5060058926B /* CopyRightModel.swift in Sources */,
 				426569092818CD980058926B /* ViewType.swift in Sources */,
 				428156F9280BEE8B00DABD1C /* HomePageCardModel.swift in Sources */,
+				4265691C2819BBA00058926B /* TodayInHistoryDetailView.swift in Sources */,
+				426569282819C5060058926B /* RandomQuoteModel.swift in Sources */,
 				4231A1A0280CEA1700D3276F /* StartupView.swift in Sources */,
 				EC4ED35427A8A55B00E32232 /* TimeCard.swift in Sources */,
 			);
@@ -889,6 +922,7 @@
 				42429AEE27F618E900E8C21D /* RandomQuoteWidget.swift in Sources */,
 				42DE98F028078946007F4DC7 /* CoordinateModel.swift in Sources */,
 				42C0F58828089E9000DEF9C4 /* RandomPhotoEntry.swift in Sources */,
+				4265691F2819BE320058926B /* TodayInHistoryJsonModel.swift in Sources */,
 				42C0F5912808A18500DEF9C4 /* ExifModel.swift in Sources */,
 				42C0F55A2807C22800DEF9C4 /* ColorExtension.swift in Sources */,
 				42DE990928079E96007F4DC7 /* MovieRecommendEntry.swift in Sources */,
@@ -906,6 +940,7 @@
 				42DE98EE28078946007F4DC7 /* WeatherModel.swift in Sources */,
 				42C0F5672807D61700DEF9C4 /* TodayInHistoryWidget.swift in Sources */,
 				4278D1A627F585FA00CFD523 /* CardXWidgets.intentdefinition in Sources */,
+				426569272819C4DB0058926B /* RandomQuoteJsonModel.swift in Sources */,
 				42C0F5692807D63100DEF9C4 /* TodayInHistoryEntry.swift in Sources */,
 				42DE98EA28078938007F4DC7 /* CloudyShape.swift in Sources */,
 				42C0F570280884C400DEF9C4 /* RandomMusicEntry.swift in Sources */,
@@ -928,6 +963,7 @@
 				42429AE427F6180200E8C21D /* ContentModel.swift in Sources */,
 				42C0F5A12808CDFA00DEF9C4 /* MultiProgressBar.swift in Sources */,
 				42DE98F428078946007F4DC7 /* WeatherResponseModel.swift in Sources */,
+				426569242819C2E90058926B /* UselessFactsJsonModel.swift in Sources */,
 				42DE98FB28078AF2007F4DC7 /* WeatherEntry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

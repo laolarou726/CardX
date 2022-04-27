@@ -13,5 +13,6 @@ struct RandomQuoteEntry : TimelineEntry{
     var date: Date
     var quote: RandomQuoteModel
     var imgData: UIImage
+    var jsonStr: String! = "-"
     var configuration: ConfigurationIntent
 }

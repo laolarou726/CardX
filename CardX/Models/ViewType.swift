@@ -10,4 +10,7 @@ import Foundation
 enum ViewType{
     case home
     case movieDetail
+    case todayInHistory
+    case uselessFacts
+    case quoteDetail
 }

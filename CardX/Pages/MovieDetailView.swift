@@ -11,7 +11,6 @@ import Alamofire
 
 struct MovieDetailView: View {
     @Binding var model: MovieJsonModel?
-    @State var navigate: Bool = false
     
     var body: some View {
         NavigationView{
@@ -90,7 +89,7 @@ struct MovieDetailView: View {
                     Spacer()
                 }
                 .padding()
-                .padding([.horizontal], 4)
+                .padding(.horizontal, 4)
                 
                 Spacer()
             }

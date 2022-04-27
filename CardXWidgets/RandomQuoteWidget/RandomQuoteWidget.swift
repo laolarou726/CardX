@@ -13,25 +13,27 @@ struct RandomQuoteWidgetEntryView : View {
     var entry: RandomQuoteTimelineProvider.Entry
     
     var body: some View {
-        HStack{
-            Spacer()
-            VStack(alignment: .leading) {
+        Link(destination: URL(string: "widget-deeplink://quote/\(entry.jsonStr ?? "-")")!){
+            HStack{
                 Spacer()
-                Text((self.entry.quote.contents?.quotes?[0].author) ?? "unknown")
-                    .font(.footnote)
-                Text((self.entry.quote.contents?.quotes?[0].date) ?? "1970-00-00")
-                    .font(.footnote)
-                Text((self.entry.quote.contents?.quotes?[0].quote) ?? "hmm...I can't find any quote.")
-                    .fontWeight(.black)
-                    .blendMode(.overlay)
+                VStack(alignment: .leading) {
+                    Spacer()
+                    Text((self.entry.quote.contents?.quotes?[0].author) ?? "unknown")
+                        .font(.footnote)
+                    Text((self.entry.quote.contents?.quotes?[0].date) ?? "1970-00-00")
+                        .font(.footnote)
+                    Text((self.entry.quote.contents?.quotes?[0].quote) ?? "hmm...I can't find any quote.")
+                        .fontWeight(.black)
+                        .blendMode(.overlay)
+                    Spacer()
+                }
                 Spacer()
             }
-            Spacer()
+            .background(Image(uiImage: self.entry.imgData)
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .blur(radius: 10))
         }
-        .background(Image(uiImage: self.entry.imgData)
-            .resizable()
-            .aspectRatio(contentMode: .fill)
-            .blur(radius: 10))
     }
 }
 

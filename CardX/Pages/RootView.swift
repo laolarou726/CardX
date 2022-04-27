@@ -8,7 +8,10 @@
 import SwiftUI
 
 struct RootView: View {
-    @Binding var host: MovieJsonModel?
+    @Binding var quote: RandomQuoteJsonModel?
+    @Binding var uf: UselessFactsJsonModel?
+    @Binding var tih: TodayInHistoryJsonModel?
+    @Binding var movie: MovieJsonModel?
     @Binding var viewType: ViewType
     
     var body: some View {
@@ -16,13 +19,19 @@ struct RootView: View {
         case .home:
             ContentView()
         case .movieDetail:
-            MovieDetailView(model: $host)
+            MovieDetailView(model: $movie)
+        case .todayInHistory:
+            TodayInHistoryDetailView(model: $tih)
+        case .uselessFacts:
+            UselessFactsDetailView(model: $uf)
+        case .quoteDetail:
+            RandomQuoteDetailView(model: $quote)
         }
     }
 }
 
 struct RootView_Previews: PreviewProvider {
     static var previews: some View {
-        RootView(host: .constant(MovieJsonModel()), viewType: .constant(.home))
+        RootView(quote: .constant(nil), uf: .constant(nil), tih: .constant(nil), movie: .constant(nil), viewType: .constant(.home))
     }
 }

@@ -33,9 +33,13 @@ struct UselessFactsTimelineProvider: IntentTimelineProvider {
                 let str = String(data: res, encoding: .utf8)
                 let result = UselessFactsModel.deserialize(from: str)
                 if (result != nil){
+                    let jsonModel = UselessFactsJsonModel()
                     var entry = UselessFactsEntry(date: Date(), configuration: configuration)
                     
                     entry.facts = result?.text ?? "The facts is there is no any facts."
+                    jsonModel.facts = entry.facts
+                    
+                    entry.jsonStr = jsonModel.toJSONString()?.toBase64()
 
                     let timeline = Timeline(entries: [entry], policy: .atEnd)
                     completion(timeline)

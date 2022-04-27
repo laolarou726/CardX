@@ -14,7 +14,7 @@ struct MovieRecommendWidgetEntryView : View {
     var entry: MovieRecommendTimelineProvider.Entry
     
     var body: some View {
-        Link(destination: URL(string: "widget-deeplink://\(entry.jsonStr ?? "-")")!) {
+        Link(destination: URL(string: "widget-deeplink://movie/\(entry.jsonStr ?? "-")")!) {
             ZStack{
                 HStack{
                     Spacer()

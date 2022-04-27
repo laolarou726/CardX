@@ -64,11 +64,19 @@ struct TodayInHistoryTimelineProvider: IntentTimelineProvider {
                         return
                     }
                     
+                    let jsonModel = TodayInHistoryJsonModel()
                     var entry = TodayInHistoryEntry(date: Date(), configuration: configuration)
                     
                     entry.type = randomDataKey ?? "-"
+                    jsonModel.type = entry.type
+                    
                     entry.year = randomHistory!.year
+                    jsonModel.year = entry.year
+                    
                     entry.history = randomHistory!.text
+                    jsonModel.history = entry.history
+                    
+                    entry.jsonStr = jsonModel.toJSONString()?.toBase64()
                     
                     let timeline = Timeline(entries: [entry], policy: .atEnd)
                     completion(timeline)

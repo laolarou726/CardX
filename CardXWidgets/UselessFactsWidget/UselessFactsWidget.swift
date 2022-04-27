@@ -13,20 +13,22 @@ struct UselessFactsWidgetEntryView : View {
     var entry: UselessFactsTimelineProvider.Entry
     
     var body: some View {
-        HStack{
-            Spacer()
-            VStack(alignment: .leading){
+        Link(destination: URL(string: "widget-deeplink://uf/\(entry.jsonStr ?? "-")")!){
+            HStack{
                 Spacer()
-                Text("Do you know that")
-                    .font(.footnote)
-                    .foregroundColor(.secondary)
-                Text(self.entry.facts)
-                    .bold()
+                VStack(alignment: .leading){
+                    Spacer()
+                    Text("Do you know that")
+                        .font(.footnote)
+                        .foregroundColor(.secondary)
+                    Text(self.entry.facts)
+                        .bold()
+                    Spacer()
+                }
                 Spacer()
             }
-            Spacer()
+            .background(LinearGradient(gradient: Gradient(colors: [Color("WordCardGradient_2_1"), Color("WordCardGradient_2_2")]), startPoint: .topLeading, endPoint: .bottomTrailing))
         }
-        .background(LinearGradient(gradient: Gradient(colors: [Color("WordCardGradient_2_1"), Color("WordCardGradient_2_2")]), startPoint: .topLeading, endPoint: .bottomTrailing))
     }
 }
 

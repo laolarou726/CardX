@@ -13,52 +13,54 @@ struct TodayInHistoryWidgetEntryView : View {
     var entry: TodayInHistoryTimelineProvider.Entry
     
     var body: some View {
-        VStack(alignment: .leading){
-            Spacer()
-            HStack{
-                Text("Today")
-                    .fontWeight(.heavy)
-                    .foregroundColor(.white)
-                    .padding(.horizontal, 5)
-                    .background(.pink)
-                Text("In")
-                    .bold()
-                Text("History")
-                    .bold()
-            }
-            .padding(.leading)
+        Link(destination: URL(string: "widget-deeplink://tih/\(entry.jsonStr ?? "-")")!){
             VStack(alignment: .leading){
-                Text("\(self.entry.year) | \(self.entry.type)")
-                    .font(.footnote)
-                    .bold()
-                    .padding(.leading)
-                    .padding(.top, 3)
-                    .blendMode(.overlay)
-                Text(self.entry.history)
-                    .font(.subheadline)
-                    .fontWeight(.heavy)
-                    .blendMode(.overlay)
-                    .padding(.horizontal)
+                Spacer()
+                HStack{
+                    Text("Today")
+                        .fontWeight(.heavy)
+                        .foregroundColor(.white)
+                        .padding(.horizontal, 5)
+                        .background(.pink)
+                    Text("In")
+                        .bold()
+                    Text("History")
+                        .bold()
+                }
+                .padding(.leading)
+                VStack(alignment: .leading){
+                    Text("\(self.entry.year) | \(self.entry.type)")
+                        .font(.footnote)
+                        .bold()
+                        .padding(.leading)
+                        .padding(.top, 3)
+                        .blendMode(.overlay)
+                    Text(self.entry.history)
+                        .font(.subheadline)
+                        .fontWeight(.heavy)
+                        .blendMode(.overlay)
+                        .padding(.horizontal)
+                }
+                Spacer()
             }
-            Spacer()
+            .background(
+                ZStack{
+                    Image("Image-1")
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .padding(-40)
+                        .blur(radius: 10)
+                    Rectangle()
+                        .fill(.black)
+                        .opacity(0.3)
+                        .padding(-40)
+                })
         }
-        .background(
-            ZStack{
-                Image("Image-1")
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .padding(-40)
-                    .blur(radius: 10)
-                Rectangle()
-                    .fill(.black)
-                    .opacity(0.3)
-                    .padding(-40)
-            })
     }
 }
 
 struct TodayInHistoryWidget: Widget {
-    let kind: String = "TodayInHistoryWidget"
+    let kind: String = "TIHWidget"
 
     var body: some WidgetConfiguration {
         IntentConfiguration(kind: kind, intent: TodayInHistorySettingsIntent.self, provider: TodayInHistoryTimelineProvider()) { entry in

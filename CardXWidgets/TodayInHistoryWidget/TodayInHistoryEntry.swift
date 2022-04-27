@@ -15,4 +15,5 @@ struct TodayInHistoryEntry : TimelineEntry{
     var type: String! = "UNKNOWN"
     var year: String! = "-"
     var history: String! = "-"
+    var jsonStr: String! = "-"
 }

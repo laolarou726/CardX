@@ -13,4 +13,5 @@ struct UselessFactsEntry : TimelineEntry{
     var configuration: ConfigurationIntent
     
     var facts: String! = "-"
+    var jsonStr: String! = "-"
 }

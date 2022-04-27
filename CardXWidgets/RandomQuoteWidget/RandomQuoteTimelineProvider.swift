@@ -34,8 +34,15 @@ struct RandomQuoteTimelineProvider: IntentTimelineProvider {
                 let result = RandomQuoteModel.deserialize(from: str)
                 
                 if (result != nil){
+                    let jsonModel = RandomQuoteJsonModel()
+                    
                     var entry = RandomQuoteEntry(date: Date(), quote: result!, imgData: UIImage(imageLiteralResourceName: "Image"), configuration: configuration)
                     let imgUrl = result?.contents?.quotes?[0].background
+                    
+                    jsonModel.quote  = result!
+                    jsonModel.imgUrl = imgUrl
+                    
+                    entry.jsonStr = jsonModel.toJSONString()?.toBase64()
                     
                     AF.request(imgUrl ?? "-").responseData {
                         response in

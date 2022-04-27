@@ -9,20 +9,58 @@ import SwiftUI
 
 @main
 struct CardXApp: App {
-    @State var jsonModel: MovieJsonModel?
+    @State var quoteJsonModel: RandomQuoteJsonModel?
+    @State var ufJsonModel: UselessFactsJsonModel?
+    @State var tihJsonModel: TodayInHistoryJsonModel?
+    @State var movieJsonModel: MovieJsonModel?
     @State var viewType: ViewType = .home
+    
+    let moviePrefix = "widget-deeplink://movie/"
+    let tihPrefix = "widget-deeplink://tih/"
+    let ufPrefix = "widget-deeplink://uf/"
+    let quotePrefix = "widget-deeplink://quote/"
     
     var body: some Scene {
         WindowGroup {
-            RootView(host: $jsonModel, viewType: $viewType)
+            RootView(quote: $quoteJsonModel, uf: $ufJsonModel, tih: $tihJsonModel, movie: $movieJsonModel, viewType: $viewType)
                 .onOpenURL { (url) in
-                    if url.absoluteString.starts(with: "widget-deeplink://"){
+                    if url.absoluteString.starts(with: moviePrefix){
                         self.viewType = .movieDetail
-                        self.jsonModel = MovieJsonModel.deserialize(from: url.host?.fromBase64())
+                        
+                        let base64Str = url.absoluteString.substring(from: moviePrefix.count)
+                        self.movieJsonModel = MovieJsonModel.deserialize(from: base64Str.fromBase64())
+                        
+                        return
                     }
-                    else{
-                        self.viewType = .home
+                    
+                    if url.absoluteString.starts(with: tihPrefix){
+                        self.viewType = .todayInHistory
+                        
+                        let base64Str = url.absoluteString.substring(from: tihPrefix.count)
+                        self.tihJsonModel = TodayInHistoryJsonModel.deserialize(from: base64Str.fromBase64())
+                        
+                        return
                     }
+                    
+                    if url.absoluteString.starts(with: ufPrefix){
+                        self.viewType = .uselessFacts
+                        
+                        let base64Str = url.absoluteString.substring(from: ufPrefix.count)
+                        self.ufJsonModel = UselessFactsJsonModel.deserialize(from: base64Str.fromBase64())
+                        
+                        return
+                    }
+                    
+                    if url.absoluteString.starts(with: quotePrefix){
+                        self.viewType = .quoteDetail
+                        
+                        let base64Str = url.absoluteString.substring(from: quotePrefix.count)
+                        self.quoteJsonModel = RandomQuoteJsonModel.deserialize(from: base64Str.fromBase64())
+                        
+                        return
+                    }
+                    
+                    self.viewType = .home
                 }
         }
     }
