@@ -27,11 +27,13 @@ struct MovieDetailView: View {
                             .cornerRadius(8)
                             .frame(width: 84.25, height: 125)
                     }, placeholder: {
-                        Image("Default_IMDB_Image_1")
-                            .resizable()
-                            .shadow(radius: 10)
-                            .cornerRadius(8)
-                            .frame(width: 84.25, height: 125)
+                        ZStack{
+                            Rectangle()
+                                .fill(.background)
+                            ProgressView()
+                        }
+                        .cornerRadius(10)
+                        .frame(width: 84.25, height: 125)
                     })
                     VStack(alignment: .leading){
                         HStack{
@@ -101,9 +103,8 @@ struct MovieDetailView: View {
                             .blurEffect()
                             .blurEffectStyle(.regular)
                     }, placeholder: {
-                        Image("Default_IMDB_Image_1")
-                            .blurEffect()
-                            .blurEffectStyle(.regular)
+                        Rectangle()
+                            .fill(.background)
                     })
                 })
             .navigationTitle("Movie")
