@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var isShowed = false
     @State var isPresented = false
     @State var isVisible = true
-    @State private var selectedTab = 0;
+    @State private var selectedTab = 0
     
     var body: some View {
         TabView(selection: $selectedTab){
@@ -40,13 +41,18 @@ struct ContentView: View {
             StartupView()
         })
         .onAppear{
-            self.isPresented = true
+            if(self.isShowed){
+                return
+            }
+            
+            self.isShowed = true
+            self.isPresented.toggle()
             UITabBar.appearance().isHidden = false
             
             DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
                 withAnimation(.easeInOut(duration: 0.45)){
-                    self.isPresented = false
                     self.isVisible = false
+                    self.isPresented = false
                 }
             }
         }
