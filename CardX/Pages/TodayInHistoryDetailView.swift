@@ -79,8 +79,10 @@ struct TodayInHistoryDetailView: View {
         }
         .background(
             Image("Image-11")
+                .resizable()
                 .blurEffect()
-                .blurEffectStyle(.regular))
+                .blurEffectStyle(.regular)
+                .ignoresSafeArea(.all))
     }
 }
 
