@@ -60,7 +60,7 @@ struct TodayInHistoryWidgetEntryView : View {
 }
 
 struct TodayInHistoryWidget: Widget {
-    let kind: String = "TIHWidget"
+    let kind: String = "TodayInHistoryWidget"
 
     var body: some WidgetConfiguration {
         IntentConfiguration(kind: kind, intent: TodayInHistorySettingsIntent.self, provider: TodayInHistoryTimelineProvider()) { entry in

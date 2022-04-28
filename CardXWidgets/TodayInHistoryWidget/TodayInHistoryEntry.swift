@@ -12,7 +12,7 @@ struct TodayInHistoryEntry : TimelineEntry{
     var date: Date
     var configuration: TodayInHistorySettingsIntent
     
-    var type: String! = "UNKNOWN"
+    var type: String! = "-"
     var year: String! = "-"
     var history: String! = "-"
     var jsonStr: String! = "-"
