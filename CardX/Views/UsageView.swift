@@ -17,7 +17,7 @@ struct UsageView: View {
                         .foregroundColor(.secondary)
                         .padding()
                 }
-                WebView(url: URL(string: "https://support.apple.com/en-il/HT207122")!)
+                WebView(url: URL(string: LocalizedStringKey("https://support.apple.com/en-us/HT207122").stringValue())!)
                     .background(.clear)
             }
             .navigationTitle("How to use")

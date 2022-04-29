@@ -108,8 +108,10 @@ struct MovieDetailView: View {
                         image in
                         
                         image
+                            .resizable()
                             .blurEffect()
                             .blurEffectStyle(.regular)
+                            .ignoresSafeArea(.all)
                     }, placeholder: {
                         Rectangle()
                             .fill(.background)

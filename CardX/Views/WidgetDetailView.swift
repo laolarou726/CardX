@@ -18,11 +18,11 @@ struct WidgetDetailView: View {
                 
                 VStack(alignment: .center){
                     Spacer()
-                    Image("\(widgetName)Preview")
+                    Image("\(widgetName.filter({!$0.isWhitespace}))Preview")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .shadow(radius: 10)
-                    Text(widgetName)
+                    Text(LocalizedStringKey(widgetName).stringValue())
                         .font(.title)
                         .bold()
                         .padding()

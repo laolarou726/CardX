@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="CardX/en.lproj/InfoPlist.strings" datatype="plaintext" source-language="en" target-language="zh-Hans">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.3.1" build-num="13E500a"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName" xml:space="preserve">
+        <source>CardX</source>
+        <note>Bundle name</note>
+      </trans-unit>
+      <trans-unit id="NSLocationUsageDescription" xml:space="preserve">
+        <source>Use location service to acquire locale weather info in widgets</source>
+        <target>我们需要使用定位服务来获取天气数据。</target>
+        <note>Privacy - Location Usage Description</note>
+      </trans-unit>
+      <trans-unit id="NSLocationWhenInUseUsageDescription" xml:space="preserve">
+        <source>Use location service to acquire locale weather info in widgets</source>
+        <target>我们需要使用定位服务来获取天气数据。</target>
+        <note>Privacy - Location When In Use Usage Description</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="CardX/en.lproj/Localizable.strings" datatype="plaintext" source-language="en" target-language="zh-Hans">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.3.1" build-num="13E500a"/>
+    </header>
+    <body>
+      <trans-unit id="A lightweight widget library for iPhone and iPad" xml:space="preserve">
+        <source>A lightweight widget library for iPhone and iPad</source>
+        <target>一个为 iPhone 和 Ipad 设计的轻量化小组件库。</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="API Usage" xml:space="preserve">
+        <source>API Usage</source>
+        <target>API 使用</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="APP Icon Designer" xml:space="preserve">
+        <source>APP Icon Designer</source>
+        <target>图标设计</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="About" xml:space="preserve">
+        <source>About</source>
+        <target>关于</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Authors" xml:space="preserve">
+        <source>Authors</source>
+        <target>作者</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="CardX" xml:space="preserve">
+        <source>CardX</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Description" xml:space="preserve">
+        <source>Description</source>
+        <target>详情</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Do you know?" xml:space="preserve">
+        <source>Do you know?</source>
+        <target>你知道吗？</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Event Type" xml:space="preserve">
+        <source>Event Type</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="FAQ" xml:space="preserve">
+        <source>FAQ</source>
+        <target>常见问题</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Here is the list of the widgets we are currently supported:" xml:space="preserve">
+        <source>Here is the list of the widgets we are currently supported:</source>
+        <target>这是我们目前支持的所有小组件的列表：</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="History" xml:space="preserve">
+        <source>History</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Home" xml:space="preserve">
+        <source>Home</source>
+        <target>主页</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="How to use" xml:space="preserve">
+        <source>How to use</source>
+        <target>如何使用</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="If you are still feeling confused after read the intro card. You can take a look at the FAQ page created by Widgetsmith!" xml:space="preserve">
+        <source>If you are still feeling confused after read the intro card. You can take a look at the FAQ page created by Widgetsmith!</source>
+        <target>如果你在阅读了教程卡片之后依旧感到困惑；您可以继续阅读由 Widgetsmith 创建的常见问题页面！</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="In" xml:space="preserve">
+        <source>In</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Leah Li" xml:space="preserve">
+        <source>Leah Li</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Meet with Paul" xml:space="preserve">
+        <source>Meet with Paul</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Movie" xml:space="preserve">
+        <source>Movie</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Special Thanks" xml:space="preserve">
+        <source>Special Thanks</source>
+        <target>特别感谢</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Supported" xml:space="preserve">
+        <source>Supported</source>
+        <target>受支持的</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="This is only the preview for this widget." xml:space="preserve">
+        <source>This is only the preview for this widget.</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Today" xml:space="preserve">
+        <source>Today</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Today's quote" xml:space="preserve">
+        <source>Today's quote</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Usage" xml:space="preserve">
+        <source>Usage</source>
+        <target>用法</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Widgets" xml:space="preserve">
+        <source>Widgets</source>
+        <target>小组件</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Year" xml:space="preserve">
+        <source>Year</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="loading" xml:space="preserve">
+        <source>loading</source>
+        <target>加载中</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="CardXWidgets/en.lproj/InfoPlist.strings" datatype="plaintext" source-language="en" target-language="zh-Hans">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.3.1" build-num="13E500a"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleDisplayName" xml:space="preserve">
+        <source>CardXWidgets</source>
+        <note>Bundle display name</note>
+      </trans-unit>
+      <trans-unit id="CFBundleName" xml:space="preserve">
+        <source>CardXWidgetsExtension</source>
+        <note>Bundle name</note>
+      </trans-unit>
+      <trans-unit id="NSHumanReadableCopyright" xml:space="preserve">
+        <source/>
+        <note>Copyright (human-readable)</note>
+      </trans-unit>
+      <trans-unit id="NSLocationAlwaysAndWhenInUseUsageDescription" xml:space="preserve">
+        <source>Weather widget needs to acquire location information to display the locale weather.</source>
+        <note>Privacy - Location Always and When In Use Usage Description</note>
+      </trans-unit>
+      <trans-unit id="NSLocationWhenInUseUsageDescription" xml:space="preserve">
+        <source>Weather widget needs to acquire location information to display the locale weather.</source>
+        <note>Privacy - Location When In Use Usage Description</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="CardXWidgets/en.lproj/Localizable.strings" datatype="plaintext" source-language="en" target-language="zh-Hans">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.3.1" build-num="13E500a"/>
+    </header>
+    <body>
+      <trans-unit id="%.1f %%" xml:space="preserve">
+        <source>%.1f %%</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%.1f m/s" xml:space="preserve">
+        <source>%.1f m/s</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%.1f °C" xml:space="preserve">
+        <source>%.1f °C</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%@ | %@" xml:space="preserve">
+        <source>%@ | %@</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="(%.1f / %.1f)" xml:space="preserve">
+        <source>(%.1f / %.1f)</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Animal Photos" xml:space="preserve">
+        <source>Animal Photos</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Billboard Music" xml:space="preserve">
+        <source>Billboard Music</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Current Weather" xml:space="preserve">
+        <source>Current Weather</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Display a random animal photo from the web." xml:space="preserve">
+        <source>Display a random animal photo from the web.</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Display a random movie from IMDB recommandation database." xml:space="preserve">
+        <source>Display a random movie from IMDB recommandation database.</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Display a random photo from the Unsplash." xml:space="preserve">
+        <source>Display a random photo from the Unsplash.</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Display a random quote from the web." xml:space="preserve">
+        <source>Display a random quote from the web.</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Display a random word from the web." xml:space="preserve">
+        <source>Display a random word from the web.</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Display today's weather." xml:space="preserve">
+        <source>Display today's weather.</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Do you know that" xml:space="preserve">
+        <source>Do you know that</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="History" xml:space="preserve">
+        <source>History</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="In" xml:space="preserve">
+        <source>In</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Movie Recommend" xml:space="preserve">
+        <source>Movie Recommend</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Random Quote" xml:space="preserve">
+        <source>Random Quote</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Random word" xml:space="preserve">
+        <source>Random word</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Randomly pick a music from Billboard recommandation list." xml:space="preserve">
+        <source>Randomly pick a music from Billboard recommandation list.</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Some fun facts from the web!" xml:space="preserve">
+        <source>Some fun facts from the web!</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Today" xml:space="preserve">
+        <source>Today</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Today In History" xml:space="preserve">
+        <source>Today In History</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Today in history!" xml:space="preserve">
+        <source>Today in history!</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Unsplash Photos" xml:space="preserve">
+        <source>Unsplash Photos</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Useless Facts" xml:space="preserve">
+        <source>Useless Facts</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="|" xml:space="preserve">
+        <source>|</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

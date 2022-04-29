@@ -71,6 +71,9 @@
 		428156F4280BCC2900DABD1C /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428156F3280BCC2900DABD1C /* AboutView.swift */; };
 		428156F6280BD92500DABD1C /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428156F5280BD92500DABD1C /* WebView.swift */; };
 		428156F9280BEE8B00DABD1C /* HomePageCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428156F8280BEE8B00DABD1C /* HomePageCardModel.swift */; };
+		42A05D5C281C5CE10086D1FC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42A05D5A281C5CE10086D1FC /* Localizable.strings */; };
+		42A05D5F281C5E4B0086D1FC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42A05D5D281C5E4B0086D1FC /* InfoPlist.strings */; };
+		42A05D61281C603E0086D1FC /* LocalizedStringKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A05D60281C603E0086D1FC /* LocalizedStringKey.swift */; };
 		42A3119027AC9F1900DA096A /* BriefTextControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A3118F27AC9F1900DA096A /* BriefTextControl.swift */; };
 		42A3119227ACA03B00DA096A /* CountDownText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A3119127ACA03B00DA096A /* CountDownText.swift */; };
 		42A3119727ACADB900DA096A /* CountDownCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A3119627ACADB900DA096A /* CountDownCard.swift */; };
@@ -225,6 +228,10 @@
 		429D752027A3733600A71D27 /* WeatherTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTypes.swift; sourceTree = "<group>"; };
 		429D752227A3769D00A71D27 /* RainyShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainyShape.swift; sourceTree = "<group>"; };
 		429D752527A376BE00A71D27 /* RandomHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomHelper.swift; sourceTree = "<group>"; };
+		42A05D5B281C5CE10086D1FC /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		42A05D5E281C5E4B0086D1FC /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		42A05D60281C603E0086D1FC /* LocalizedStringKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedStringKey.swift; sourceTree = "<group>"; };
+		42A05D63281C67DC0086D1FC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		42A3118F27AC9F1900DA096A /* BriefTextControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BriefTextControl.swift; sourceTree = "<group>"; };
 		42A3119127ACA03B00DA096A /* CountDownText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownText.swift; sourceTree = "<group>"; };
 		42A3119627ACADB900DA096A /* CountDownCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownCard.swift; sourceTree = "<group>"; };
@@ -340,6 +347,8 @@
 			children = (
 				4265690D2818E0BA0058926B /* CardX.entitlements */,
 				4231A1E0280F222C00D3276F /* Info.plist */,
+				42A05D5D281C5E4B0086D1FC /* InfoPlist.strings */,
+				42A05D5A281C5CE10086D1FC /* Localizable.strings */,
 				4228F17227A363D100C10336 /* Cards */,
 				421DA1F227A22FFF0073A877 /* CardXApp.swift */,
 				426569072818CD8D0058926B /* Models */,
@@ -390,6 +399,7 @@
 			children = (
 				4231A1A4280D065E00D3276F /* ViewExtension.swift */,
 				4265690E2818E9700058926B /* BindingExtension.swift */,
+				42A05D60281C603E0086D1FC /* LocalizedStringKey.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -753,6 +763,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 421DA1E627A22FFF0073A877;
 			packageReferences = (
@@ -774,8 +785,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				421DA1FA27A230000073A877 /* Preview Assets.xcassets in Resources */,
+				42A05D5C281C5CE10086D1FC /* Localizable.strings in Resources */,
 				421DA1F727A230000073A877 /* Assets.xcassets in Resources */,
 				42C0F58528089D8000DEF9C4 /* 3270Medium.ttf in Resources */,
+				42A05D5F281C5E4B0086D1FC /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -893,6 +906,7 @@
 				4265690F2818E9700058926B /* BindingExtension.swift in Sources */,
 				426569292819C5060058926B /* CopyRightModel.swift in Sources */,
 				426569092818CD980058926B /* ViewType.swift in Sources */,
+				42A05D61281C603E0086D1FC /* LocalizedStringKey.swift in Sources */,
 				428156F9280BEE8B00DABD1C /* HomePageCardModel.swift in Sources */,
 				4265691C2819BBA00058926B /* TodayInHistoryDetailView.swift in Sources */,
 				426569282819C5060058926B /* RandomQuoteModel.swift in Sources */,
@@ -985,6 +999,26 @@
 			targetProxy = 4278D1A827F585FA00CFD523 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		42A05D5A281C5CE10086D1FC /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42A05D5B281C5CE10086D1FC /* zh-Hans */,
+				42A05D63281C67DC0086D1FC /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		42A05D5D281C5E4B0086D1FC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42A05D5E281C5E4B0086D1FC /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		421DA21127A230000073A877 /* Debug */ = {

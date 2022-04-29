@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="CardX/en.lproj/InfoPlist.strings" source-language="en" target-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.3.1" build-num="13E500a"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName" xml:space="preserve">
+        <source>CardX</source>
+        <target>CardX</target>
+        <note>Bundle name</note>
+      </trans-unit>
+      <trans-unit id="NSLocationUsageDescription" xml:space="preserve">
+        <source>Use location service to acquire locale weather info in widgets</source>
+        <target>Use location service to acquire locale weather info in widgets</target>
+        <note>Privacy - Location Usage Description</note>
+      </trans-unit>
+      <trans-unit id="NSLocationWhenInUseUsageDescription" xml:space="preserve">
+        <source>Use location service to acquire locale weather info in widgets</source>
+        <target>Use location service to acquire locale weather info in widgets</target>
+        <note>Privacy - Location When In Use Usage Description</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="CardX/en.lproj/Localizable.strings" source-language="en" target-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.3.1" build-num="13E500a"/>
+    </header>
+    <body>
+      <trans-unit id="A lightweight widget library for iPhone and iPad" xml:space="preserve">
+        <source>A lightweight widget library for iPhone and iPad</source>
+        <target>A lightweight widget library for iPhone and iPad</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="API Usage" xml:space="preserve">
+        <source>API Usage</source>
+        <target>API Usage</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="APP Icon Designer" xml:space="preserve">
+        <source>APP Icon Designer</source>
+        <target>APP Icon Designer</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="About" xml:space="preserve">
+        <source>About</source>
+        <target>About</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Authors" xml:space="preserve">
+        <source>Authors</source>
+        <target>Authors</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="CardX" xml:space="preserve">
+        <source>CardX</source>
+        <target>CardX</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Description" xml:space="preserve">
+        <source>Description</source>
+        <target>Description</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Do you know?" xml:space="preserve">
+        <source>Do you know?</source>
+        <target>Do you know?</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Event Type" xml:space="preserve">
+        <source>Event Type</source>
+        <target>Event Type</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="FAQ" xml:space="preserve">
+        <source>FAQ</source>
+        <target>FAQ</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Here is the list of the widgets we are currently supported:" xml:space="preserve">
+        <source>Here is the list of the widgets we are currently supported:</source>
+        <target>Here is the list of the widgets we are currently supported:</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="History" xml:space="preserve">
+        <source>History</source>
+        <target>History</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Home" xml:space="preserve">
+        <source>Home</source>
+        <target>Home</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="How to use" xml:space="preserve">
+        <source>How to use</source>
+        <target>How to use</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="If you are still feeling confused after read the intro card. You can take a look at the FAQ page created by Widgetsmith!" xml:space="preserve">
+        <source>If you are still feeling confused after read the intro card. You can take a look at the FAQ page created by Widgetsmith!</source>
+        <target>If you are still feeling confused after read the intro card. You can take a look at the FAQ page created by Widgetsmith!</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="In" xml:space="preserve">
+        <source>In</source>
+        <target>In</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Leah Li" xml:space="preserve">
+        <source>Leah Li</source>
+        <target>Leah Li</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Meet with Paul" xml:space="preserve">
+        <source>Meet with Paul</source>
+        <target>Meet with Paul</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Movie" xml:space="preserve">
+        <source>Movie</source>
+        <target>Movie</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Special Thanks" xml:space="preserve">
+        <source>Special Thanks</source>
+        <target>Special Thanks</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Supported" xml:space="preserve">
+        <source>Supported</source>
+        <target>Supported</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="This is only the preview for this widget." xml:space="preserve">
+        <source>This is only the preview for this widget.</source>
+        <target>This is only the preview for this widget.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Today" xml:space="preserve">
+        <source>Today</source>
+        <target>Today</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Today's quote" xml:space="preserve">
+        <source>Today's quote</source>
+        <target>Today's quote</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Usage" xml:space="preserve">
+        <source>Usage</source>
+        <target>Usage</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Widgets" xml:space="preserve">
+        <source>Widgets</source>
+        <target>Widgets</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Year" xml:space="preserve">
+        <source>Year</source>
+        <target>Year</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="loading" xml:space="preserve">
+        <source>loading</source>
+        <target>loading</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="CardXWidgets/en.lproj/InfoPlist.strings" source-language="en" target-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.3.1" build-num="13E500a"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleDisplayName" xml:space="preserve">
+        <source>CardXWidgets</source>
+        <target>CardXWidgets</target>
+        <note>Bundle display name</note>
+      </trans-unit>
+      <trans-unit id="CFBundleName" xml:space="preserve">
+        <source>CardXWidgetsExtension</source>
+        <target>CardXWidgetsExtension</target>
+        <note>Bundle name</note>
+      </trans-unit>
+      <trans-unit id="NSHumanReadableCopyright" xml:space="preserve">
+        <source/>
+        <target/>
+        <note>Copyright (human-readable)</note>
+      </trans-unit>
+      <trans-unit id="NSLocationAlwaysAndWhenInUseUsageDescription" xml:space="preserve">
+        <source>Weather widget needs to acquire location information to display the locale weather.</source>
+        <target>Weather widget needs to acquire location information to display the locale weather.</target>
+        <note>Privacy - Location Always and When In Use Usage Description</note>
+      </trans-unit>
+      <trans-unit id="NSLocationWhenInUseUsageDescription" xml:space="preserve">
+        <source>Weather widget needs to acquire location information to display the locale weather.</source>
+        <target>Weather widget needs to acquire location information to display the locale weather.</target>
+        <note>Privacy - Location When In Use Usage Description</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="CardXWidgets/en.lproj/Localizable.strings" source-language="en" target-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.3.1" build-num="13E500a"/>
+    </header>
+    <body>
+      <trans-unit id="%.1f %%" xml:space="preserve">
+        <source>%.1f %%</source>
+        <target>%.1f %%</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%.1f m/s" xml:space="preserve">
+        <source>%.1f m/s</source>
+        <target>%.1f m/s</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%.1f °C" xml:space="preserve">
+        <source>%.1f °C</source>
+        <target>%.1f °C</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%@ | %@" xml:space="preserve">
+        <source>%@ | %@</source>
+        <target>%@ | %@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="(%.1f / %.1f)" xml:space="preserve">
+        <source>(%.1f / %.1f)</source>
+        <target>(%.1f / %.1f)</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Animal Photos" xml:space="preserve">
+        <source>Animal Photos</source>
+        <target>Animal Photos</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Billboard Music" xml:space="preserve">
+        <source>Billboard Music</source>
+        <target>Billboard Music</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Current Weather" xml:space="preserve">
+        <source>Current Weather</source>
+        <target>Current Weather</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Display a random animal photo from the web." xml:space="preserve">
+        <source>Display a random animal photo from the web.</source>
+        <target>Display a random animal photo from the web.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Display a random movie from IMDB recommandation database." xml:space="preserve">
+        <source>Display a random movie from IMDB recommandation database.</source>
+        <target>Display a random movie from IMDB recommandation database.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Display a random photo from the Unsplash." xml:space="preserve">
+        <source>Display a random photo from the Unsplash.</source>
+        <target>Display a random photo from the Unsplash.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Display a random quote from the web." xml:space="preserve">
+        <source>Display a random quote from the web.</source>
+        <target>Display a random quote from the web.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Display a random word from the web." xml:space="preserve">
+        <source>Display a random word from the web.</source>
+        <target>Display a random word from the web.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Display today's weather." xml:space="preserve">
+        <source>Display today's weather.</source>
+        <target>Display today's weather.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Do you know that" xml:space="preserve">
+        <source>Do you know that</source>
+        <target>Do you know that</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="History" xml:space="preserve">
+        <source>History</source>
+        <target>History</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="In" xml:space="preserve">
+        <source>In</source>
+        <target>In</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Movie Recommend" xml:space="preserve">
+        <source>Movie Recommend</source>
+        <target>Movie Recommend</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Random Quote" xml:space="preserve">
+        <source>Random Quote</source>
+        <target>Random Quote</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Random word" xml:space="preserve">
+        <source>Random word</source>
+        <target>Random word</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Randomly pick a music from Billboard recommandation list." xml:space="preserve">
+        <source>Randomly pick a music from Billboard recommandation list.</source>
+        <target>Randomly pick a music from Billboard recommandation list.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Some fun facts from the web!" xml:space="preserve">
+        <source>Some fun facts from the web!</source>
+        <target>Some fun facts from the web!</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Today" xml:space="preserve">
+        <source>Today</source>
+        <target>Today</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Today In History" xml:space="preserve">
+        <source>Today In History</source>
+        <target>Today In History</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Today in history!" xml:space="preserve">
+        <source>Today in history!</source>
+        <target>Today in history!</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Unsplash Photos" xml:space="preserve">
+        <source>Unsplash Photos</source>
+        <target>Unsplash Photos</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Useless Facts" xml:space="preserve">
+        <source>Useless Facts</source>
+        <target>Useless Facts</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="|" xml:space="preserve">
+        <source>|</source>
+        <target>|</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

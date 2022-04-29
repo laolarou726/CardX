@@ -1,0 +1,6 @@
+/* Bundle name */
+"CFBundleName" = "CardX";
+/* Privacy - Location Usage Description */
+"NSLocationUsageDescription" = "Use location service to acquire locale weather info in widgets";
+/* Privacy - Location When In Use Usage Description */
+"NSLocationWhenInUseUsageDescription" = "Use location service to acquire locale weather info in widgets";

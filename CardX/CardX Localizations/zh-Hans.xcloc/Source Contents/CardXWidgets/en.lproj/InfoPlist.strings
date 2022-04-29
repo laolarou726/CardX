@@ -1,0 +1,10 @@
+/* Bundle display name */
+"CFBundleDisplayName" = "CardXWidgets";
+/* Bundle name */
+"CFBundleName" = "CardXWidgetsExtension";
+/* Copyright (human-readable) */
+"NSHumanReadableCopyright" = "";
+/* Privacy - Location Always and When In Use Usage Description */
+"NSLocationAlwaysAndWhenInUseUsageDescription" = "Weather widget needs to acquire location information to display the locale weather.";
+/* Privacy - Location When In Use Usage Description */
+"NSLocationWhenInUseUsageDescription" = "Weather widget needs to acquire location information to display the locale weather.";

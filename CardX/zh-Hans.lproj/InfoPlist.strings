@@ -1,0 +1,6 @@
+/* Privacy - Location Usage Description */
+"NSLocationUsageDescription" = "我们需要使用定位服务来获取天气数据。";
+
+/* Privacy - Location When In Use Usage Description */
+"NSLocationWhenInUseUsageDescription" = "我们需要使用定位服务来获取天气数据。";
+

@@ -16,31 +16,31 @@ struct HomeView: View {
     
     let cardModels: [HomePageCardModel] = [
         HomePageCardModel("star.fill",
-                          ["Intro", "to", "widget"],
+                          [String(localized: "Intro to widget")],
                           [.yellow, .orange],
-                          "https://support.apple.com/en-us/HT207122"),
+                          String(localized: "https://support.apple.com/en-us/HT207122")),
         HomePageCardModel("ipad",
-                          ["Use", "on", "iPad"],
+                          [String(localized: "Use on iPad")],
                           [.green, .cyan],
-                          "https://support.apple.com/en-us/HT211328"),
+                          String(localized: "https://support.apple.com/en-us/HT211328")),
         HomePageCardModel("square.stack",
-                          ["Widget", "features"],
+                          [String(localized: "Widget features")],
                           [.pink, .red],
-                          "https://eshop.macsales.com/blog/78194-ios-15-feature-roundup-widgets/")
+                          String(localized: "https://eshop.macsales.com/blog/78194-ios-15-feature-roundup-widgets/"))
     ]
     
     let supportedWidgetsModel: [HomePageSupportedWidgetsModel] = [
-        HomePageSupportedWidgetsModel("Environment", [
+        HomePageSupportedWidgetsModel(String(localized: "Environment"), [
             "Weather Widget"]),
-        HomePageSupportedWidgetsModel("Images", [
+        HomePageSupportedWidgetsModel(String(localized: "Images"), [
             "Random Photo Widget",
             "Random Animal Photo Widget"]),
-        HomePageSupportedWidgetsModel("Random things", [
+        HomePageSupportedWidgetsModel(String(localized: "Random things"), [
             "Random Music Widget",
             "Movie Recommend Widget",
             "Random Word Widget",
             "Random Quote Widget"]),
-        HomePageSupportedWidgetsModel("Knowledge", [
+        HomePageSupportedWidgetsModel(String(localized: "Knowledge"), [
             "Today In History Widget",
             "Useless Facts Widget"])
     ]
@@ -149,10 +149,10 @@ struct HomeView: View {
                                                 
                                                 let widget  = item.items[i]
                                                 
-                                                Text(widget)
+                                                Text(LocalizedStringKey(widget).stringValue())
                                                     .onTapGesture{
                                                         self.isPopupOpen = true
-                                                        self.widgetName = widget.filter({!$0.isWhitespace})
+                                                        self.widgetName = widget
                                                     }
                                             }
                                         }
@@ -194,5 +194,6 @@ struct HomeView: View {
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
+            .environment(\.locale, .init(identifier: "en"))
     }
 }
