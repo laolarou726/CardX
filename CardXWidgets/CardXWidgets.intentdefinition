@@ -222,6 +222,8 @@
 		<dict>
 			<key>INIntentCategory</key>
 			<string>information</string>
+			<key>INIntentDescription</key>
+			<string>Configuration for CardX widgets</string>
 			<key>INIntentDescriptionID</key>
 			<string>tVvJ9c</string>
 			<key>INIntentEligibleForWidgets</key>
@@ -258,6 +260,8 @@
 		<dict>
 			<key>INIntentCategory</key>
 			<string>information</string>
+			<key>INIntentDescription</key>
+			<string>Settings for Movie Recommand widget</string>
 			<key>INIntentDescriptionID</key>
 			<string>6KOQUv</string>
 			<key>INIntentEligibleForWidgets</key>
@@ -401,6 +405,8 @@
 		<dict>
 			<key>INIntentCategory</key>
 			<string>information</string>
+			<key>INIntentDescription</key>
+			<string>Settings for Random Music widget</string>
 			<key>INIntentDescriptionID</key>
 			<string>d3eXgW</string>
 			<key>INIntentEligibleForWidgets</key>
@@ -497,6 +503,8 @@
 		<dict>
 			<key>INIntentCategory</key>
 			<string>information</string>
+			<key>INIntentDescription</key>
+			<string>Settings for Today In History widget</string>
 			<key>INIntentDescriptionID</key>
 			<string>0VU4ur</string>
 			<key>INIntentEligibleForWidgets</key>
@@ -598,6 +606,8 @@
 		<dict>
 			<key>INIntentCategory</key>
 			<string>information</string>
+			<key>INIntentDescription</key>
+			<string>Settings for Random Photo widget</string>
 			<key>INIntentDescriptionID</key>
 			<string>4lPiET</string>
 			<key>INIntentEligibleForWidgets</key>
@@ -782,6 +792,8 @@
 		<dict>
 			<key>INIntentCategory</key>
 			<string>information</string>
+			<key>INIntentDescription</key>
+			<string>Settings for Weather widget</string>
 			<key>INIntentDescriptionID</key>
 			<string>CA0Cs9</string>
 			<key>INIntentEligibleForWidgets</key>
@@ -878,6 +890,8 @@
 		<dict>
 			<key>INIntentCategory</key>
 			<string>generic</string>
+			<key>INIntentDescription</key>
+			<string>Settings for Random Animal Photo widget</string>
 			<key>INIntentDescriptionID</key>
 			<string>x2HyWQ</string>
 			<key>INIntentEligibleForWidgets</key>
