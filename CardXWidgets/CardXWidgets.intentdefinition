@@ -206,6 +206,129 @@
 				</dict>
 			</array>
 		</dict>
+		<dict>
+			<key>INEnumDisplayName</key>
+			<string>Pokemon Languages</string>
+			<key>INEnumDisplayNameID</key>
+			<string>dZHfY0</string>
+			<key>INEnumGeneratesHeader</key>
+			<true/>
+			<key>INEnumName</key>
+			<string>PokemonLanguages</string>
+			<key>INEnumType</key>
+			<string>Regular</string>
+			<key>INEnumValues</key>
+			<array>
+				<dict>
+					<key>INEnumValueDisplayName</key>
+					<string>English</string>
+					<key>INEnumValueDisplayNameID</key>
+					<string>pyNrvn</string>
+					<key>INEnumValueName</key>
+					<string>unknown</string>
+				</dict>
+				<dict>
+					<key>INEnumValueDisplayName</key>
+					<string>Simplified Chinese</string>
+					<key>INEnumValueDisplayNameID</key>
+					<string>OF8mK0</string>
+					<key>INEnumValueIndex</key>
+					<integer>1</integer>
+					<key>INEnumValueName</key>
+					<string>Simplified_Chinese</string>
+				</dict>
+				<dict>
+					<key>INEnumValueDisplayName</key>
+					<string>Japanese</string>
+					<key>INEnumValueDisplayNameID</key>
+					<string>8x1Wr3</string>
+					<key>INEnumValueIndex</key>
+					<integer>2</integer>
+					<key>INEnumValueName</key>
+					<string>Japanese</string>
+				</dict>
+				<dict>
+					<key>INEnumValueDisplayName</key>
+					<string>English</string>
+					<key>INEnumValueDisplayNameID</key>
+					<string>px8v7Y</string>
+					<key>INEnumValueIndex</key>
+					<integer>3</integer>
+					<key>INEnumValueName</key>
+					<string>English</string>
+				</dict>
+				<dict>
+					<key>INEnumValueDisplayName</key>
+					<string>Spanish</string>
+					<key>INEnumValueDisplayNameID</key>
+					<string>wDoa7x</string>
+					<key>INEnumValueIndex</key>
+					<integer>4</integer>
+					<key>INEnumValueName</key>
+					<string>Spanish</string>
+				</dict>
+				<dict>
+					<key>INEnumValueDisplayName</key>
+					<string>German</string>
+					<key>INEnumValueDisplayNameID</key>
+					<string>yMVRL3</string>
+					<key>INEnumValueIndex</key>
+					<integer>5</integer>
+					<key>INEnumValueName</key>
+					<string>German</string>
+				</dict>
+				<dict>
+					<key>INEnumValueDisplayName</key>
+					<string>French</string>
+					<key>INEnumValueDisplayNameID</key>
+					<string>M3gr5m</string>
+					<key>INEnumValueIndex</key>
+					<integer>6</integer>
+					<key>INEnumValueName</key>
+					<string>French</string>
+				</dict>
+				<dict>
+					<key>INEnumValueDisplayName</key>
+					<string>Traditional Chinese</string>
+					<key>INEnumValueDisplayNameID</key>
+					<string>4Iu4PT</string>
+					<key>INEnumValueIndex</key>
+					<integer>7</integer>
+					<key>INEnumValueName</key>
+					<string>Traditional_Chinese</string>
+				</dict>
+				<dict>
+					<key>INEnumValueDisplayName</key>
+					<string>Korean</string>
+					<key>INEnumValueDisplayNameID</key>
+					<string>BeQxGm</string>
+					<key>INEnumValueIndex</key>
+					<integer>8</integer>
+					<key>INEnumValueName</key>
+					<string>Korean</string>
+				</dict>
+				<dict>
+					<key>INEnumValueDisplayName</key>
+					<string>Roomaji</string>
+					<key>INEnumValueDisplayNameID</key>
+					<string>h1ZEFT</string>
+					<key>INEnumValueIndex</key>
+					<integer>9</integer>
+					<key>INEnumValueName</key>
+					<string>Roomaji</string>
+				</dict>
+				<dict>
+					<key>INEnumValueDisplayName</key>
+					<string>Japanese in kana</string>
+					<key>INEnumValueDisplayNameID</key>
+					<string>Q23juA</string>
+					<key>INEnumValueIndex</key>
+					<integer>10</integer>
+					<key>INEnumValueName</key>
+					<string>Japanese_kana</string>
+				</dict>
+			</array>
+		</dict>
 	</array>
 	<key>INIntentDefinitionModelVersion</key>
 	<string>1.2</string>
@@ -889,7 +1012,7 @@
 		</dict>
 		<dict>
 			<key>INIntentCategory</key>
-			<string>generic</string>
+			<string>information</string>
 			<key>INIntentDescription</key>
 			<string>Settings for Random Animal Photo widget</string>
 			<key>INIntentDescriptionID</key>
@@ -983,7 +1106,105 @@
 			<key>INIntentType</key>
 			<string>Custom</string>
 			<key>INIntentVerb</key>
-			<string>Do</string>
+			<string>View</string>
+		</dict>
+		<dict>
+			<key>INIntentCategory</key>
+			<string>information</string>
+			<key>INIntentDescription</key>
+			<string>Settings for Random Pokemon Widget</string>
+			<key>INIntentDescriptionID</key>
+			<string>iXFdrq</string>
+			<key>INIntentEligibleForWidgets</key>
+			<true/>
+			<key>INIntentIneligibleForSuggestions</key>
+			<true/>
+			<key>INIntentLastParameterTag</key>
+			<integer>2</integer>
+			<key>INIntentName</key>
+			<string>PokemonSettings</string>
+			<key>INIntentParameters</key>
+			<array>
+				<dict>
+					<key>INIntentParameterConfigurable</key>
+					<true/>
+					<key>INIntentParameterDisplayName</key>
+					<string>Language</string>
+					<key>INIntentParameterDisplayNameID</key>
+					<string>4G8fDA</string>
+					<key>INIntentParameterDisplayPriority</key>
+					<integer>1</integer>
+					<key>INIntentParameterEnumType</key>
+					<string>PokemonLanguages</string>
+					<key>INIntentParameterEnumTypeNamespace</key>
+					<string>88xZPY</string>
+					<key>INIntentParameterName</key>
+					<string>language</string>
+					<key>INIntentParameterPromptDialogs</key>
+					<array>
+						<dict>
+							<key>INIntentParameterPromptDialogCustom</key>
+							<true/>
+							<key>INIntentParameterPromptDialogType</key>
+							<string>Configuration</string>
+						</dict>
+						<dict>
+							<key>INIntentParameterPromptDialogCustom</key>
+							<true/>
+							<key>INIntentParameterPromptDialogType</key>
+							<string>Primary</string>
+						</dict>
+						<dict>
+							<key>INIntentParameterPromptDialogCustom</key>
+							<true/>
+							<key>INIntentParameterPromptDialogFormatString</key>
+							<string>There are ${count} options matching ‘${language}’.</string>
+							<key>INIntentParameterPromptDialogFormatStringID</key>
+							<string>Ifr8Rs</string>
+							<key>INIntentParameterPromptDialogType</key>
+							<string>DisambiguationIntroduction</string>
+						</dict>
+						<dict>
+							<key>INIntentParameterPromptDialogCustom</key>
+							<true/>
+							<key>INIntentParameterPromptDialogFormatString</key>
+							<string>Just to confirm, you wanted ‘${language}’?</string>
+							<key>INIntentParameterPromptDialogFormatStringID</key>
+							<string>k1TJkU</string>
+							<key>INIntentParameterPromptDialogType</key>
+							<string>Confirmation</string>
+						</dict>
+					</array>
+					<key>INIntentParameterTag</key>
+					<integer>2</integer>
+					<key>INIntentParameterType</key>
+					<string>Integer</string>
+				</dict>
+			</array>
+			<key>INIntentResponse</key>
+			<dict>
+				<key>INIntentResponseCodes</key>
+				<array>
+					<dict>
+						<key>INIntentResponseCodeName</key>
+						<string>success</string>
+						<key>INIntentResponseCodeSuccess</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>INIntentResponseCodeName</key>
+						<string>failure</string>
+					</dict>
+				</array>
+			</dict>
+			<key>INIntentTitle</key>
+			<string>Pokemon Settings</string>
+			<key>INIntentTitleID</key>
+			<string>ir34K1</string>
+			<key>INIntentType</key>
+			<string>Custom</string>
+			<key>INIntentVerb</key>
+			<string>View</string>
 		</dict>
 	</array>
 	<key>INTypes</key>

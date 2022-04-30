@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct MultiProgressBar: View {
+    @State var showTags: Bool = true
     var values: [(Double, Color, String)]
     
-    init(_ values: [(Double, Color, String)]){
+    init(_ values: [(Double, Color, String)], _ showTags: Bool = true){
+        self.showTags = showTags;
+        
         let sum = values.map({$0.0}).reduce(0, +)
         let temp = values
             .map({($0.0 / sum, $0.1, $0.2)})
@@ -47,19 +50,21 @@ struct MultiProgressBar: View {
             .cornerRadius(5)
             .frame(height: 10)
             
-            LazyHStack(spacing: 10) {
-                ForEach(0..<self.values.count, id: \.self) {
-                    index in
-                    
-                    let value = self.values[index]
-                    
-                    HStack{
-                        Rectangle()
-                            .fill(value.1)
-                            .cornerRadius(2)
-                            .frame(width: 10, height: 10)
-                        Text(value.2)
-                            .font(.footnote)
+            if(showTags){
+                LazyHStack(spacing: 10) {
+                    ForEach(0..<self.values.count, id: \.self) {
+                        index in
+                        
+                        let value = self.values[index]
+                        
+                        HStack{
+                            Rectangle()
+                                .fill(value.1)
+                                .cornerRadius(2)
+                                .frame(width: 10, height: 10)
+                            Text(value.2)
+                                .font(.footnote)
+                        }
                     }
                 }
             }

@@ -7,6 +7,7 @@
 		<string>ConfigurationIntent</string>
 		<string>MovieRecommandIntentsIntent</string>
 		<string>MovieRecommandSettingsIntent</string>
+		<string>PokemonSettingsIntent</string>
 		<string>RandomAnimalSettingsIntent</string>
 		<string>RandomMusicSettingsIntent</string>
 		<string>RandomPhotoSettingsIntent</string>

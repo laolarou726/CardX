@@ -35,5 +35,6 @@ struct CardXWidgets3: WidgetBundle {
     var body: some Widget {
         RandomMusicWidget()
         RandomDogWidget()
+        RandomPokemonWidget()
     }
 }
