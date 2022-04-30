@@ -36,6 +36,7 @@ struct HomeView: View {
             "Random Photo Widget",
             "Random Animal Photo Widget"]),
         HomePageSupportedWidgetsModel(String(localized: "Random things"), [
+            "Random Pokemon Widget",
             "Random Music Widget",
             "Movie Recommend Widget",
             "Random Word Widget",
