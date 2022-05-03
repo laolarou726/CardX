@@ -30,7 +30,9 @@ struct MovieRecommendTimelineProvider: IntentTimelineProvider {
             lang = "En"
         }
         
-        AF.request("https://api.wmdb.tv/api/v1/top?type=Imdb&skip=0&limit=50&lang=\(lang)").responseData{
+        let randomSkip = Int.random(in: 0...200)
+        
+        AF.request("https://api.wmdb.tv/api/v1/top?type=Imdb&skip=\(randomSkip)&limit=50&lang=\(lang)").responseData{
             response in
             
             if(response.error != nil || response.response?.statusCode != 200)

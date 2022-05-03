@@ -13,4 +13,5 @@ enum ViewType{
     case todayInHistory
     case uselessFacts
     case quoteDetail
+    case pokemonDetail
 }

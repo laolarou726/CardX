@@ -37,6 +37,7 @@ struct RandomPokemonTimelineProvider: IntentTimelineProvider {
                 
                 if (linkResult != nil){
                     var entry = RandomPokemonEntry(date: Date(), configuration: configuration)
+                    let jsonModel = PokemonJsonModel()
                     let randomLink = linkResult?.results?.randomElement()
                     
                     if(randomLink == nil){
@@ -57,7 +58,10 @@ struct RandomPokemonTimelineProvider: IntentTimelineProvider {
                             
                             if (result != nil){
                                 entry.weight = "\(Double(result?.weight ?? 0) / 10) kg"
+                                jsonModel.weight = entry.weight
+                                
                                 entry.height = "\(Double(result?.height ?? 0) / 10) m"
+                                jsonModel.height  = entry.height
                                 
                                 var types: [String] = []
                                 for type in (result?.types ?? []){
@@ -67,15 +71,21 @@ struct RandomPokemonTimelineProvider: IntentTimelineProvider {
                                 }
                                 
                                 entry.types = types
+                                jsonModel.types = entry.types
                                 
-                                var stats: [(String, Int)] = []
+                                var stats: [StatModel] = []
                                 for stat in (result?.stats ?? []){
                                     if let statName = stat.stat?.name{
-                                        stats.append((statName, stat.base_stat ?? 0))
+                                        let sm = StatModel()
+                                        sm.key = statName
+                                        sm.value = stat.base_stat ?? 0
+                                        
+                                        stats.append(sm)
                                     }
                                 }
                                 
                                 entry.stats = stats
+                                jsonModel.stats = entry.stats
                                 
                                 AF.request("https://pokeapi.co/api/v2/pokemon-species/\(result?.id ?? -1)/").responseData{
                                     response in
@@ -119,9 +129,15 @@ struct RandomPokemonTimelineProvider: IntentTimelineProvider {
                                         let localName = result?.names?.first(where: {$0.language?.name == language})?.name ?? result?.name ?? "-"
                                         
                                         entry.backgroundColor = ColorHelper.getColor(color)
-                                        entry.name = localName
+                                        jsonModel.backgroundColor = color
                                         
-                                        AF.request("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/\(result?.id ?? 0).png").responseData {
+                                        entry.name = localName
+                                        jsonModel.name = entry.name
+                                        jsonModel.imageUrl = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/\(result?.id ?? 0).png"
+                                        
+                                        entry.jsonStr = jsonModel.toJSONString()?.toBase64()
+                                        
+                                        AF.request(jsonModel.imageUrl).responseData {
                                             response in
                                             if(response.error != nil || response.response?.statusCode != 200)
                                             {

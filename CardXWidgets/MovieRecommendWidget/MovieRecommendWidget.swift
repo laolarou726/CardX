@@ -82,7 +82,7 @@ struct MovieRecommendWidgetEntryView : View {
                         .blur(radius: 10)
                     Rectangle()
                         .fill(Color(UIColor.systemBackground)
-                            .opacity(0.45))
+                            .opacity(0.2))
                 })
             }
         }

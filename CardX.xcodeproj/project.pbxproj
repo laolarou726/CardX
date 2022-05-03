@@ -88,6 +88,11 @@
 		42A3119227ACA03B00DA096A /* CountDownText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A3119127ACA03B00DA096A /* CountDownText.swift */; };
 		42A3119727ACADB900DA096A /* CountDownCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A3119627ACADB900DA096A /* CountDownCard.swift */; };
 		42A3119927ACAE2200DA096A /* CountDownTexts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A3119827ACAE2200DA096A /* CountDownTexts.swift */; };
+		42AFC0D32821D65100565B0D /* RandomPokemonDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AFC0D22821D65100565B0D /* RandomPokemonDetailView.swift */; };
+		42AFC0D52821D8F800565B0D /* PokemonJsonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AFC0D42821D8F800565B0D /* PokemonJsonModel.swift */; };
+		42AFC0D62821D8F800565B0D /* PokemonJsonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AFC0D42821D8F800565B0D /* PokemonJsonModel.swift */; };
+		42AFC0D92821E66900565B0D /* WrappingHStack in Frameworks */ = {isa = PBXBuildFile; productRef = 42AFC0D82821E66900565B0D /* WrappingHStack */; };
+		42AFC0DA2821ED7D00565B0D /* ColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A05D79281CE5780086D1FC /* ColorHelper.swift */; };
 		42C0F5592807C20100DEF9C4 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C0F5582807C20100DEF9C4 /* ColorExtension.swift */; };
 		42C0F55A2807C22800DEF9C4 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C0F5582807C20100DEF9C4 /* ColorExtension.swift */; };
 		42C0F5632807D5C100DEF9C4 /* HistoryDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C0F55F2807D52F00DEF9C4 /* HistoryDataModel.swift */; };
@@ -256,6 +261,8 @@
 		42A3119127ACA03B00DA096A /* CountDownText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownText.swift; sourceTree = "<group>"; };
 		42A3119627ACADB900DA096A /* CountDownCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownCard.swift; sourceTree = "<group>"; };
 		42A3119827ACAE2200DA096A /* CountDownTexts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownTexts.swift; sourceTree = "<group>"; };
+		42AFC0D22821D65100565B0D /* RandomPokemonDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomPokemonDetailView.swift; sourceTree = "<group>"; };
+		42AFC0D42821D8F800565B0D /* PokemonJsonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonJsonModel.swift; sourceTree = "<group>"; };
 		42C0F5582807C20100DEF9C4 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		42C0F55D2807D4BE00DEF9C4 /* TodayInHistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayInHistoryModel.swift; sourceTree = "<group>"; };
 		42C0F55F2807D52F00DEF9C4 /* HistoryDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDataModel.swift; sourceTree = "<group>"; };
@@ -300,6 +307,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				36A56189C5B47474E748F0D6 /* Pods_CardX.framework in Frameworks */,
+				42AFC0D92821E66900565B0D /* WrappingHStack in Frameworks */,
 				421BA58827CF004400F3C264 /* SwiftUIVisualEffects in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -464,6 +472,7 @@
 				4265691B2819BBA00058926B /* TodayInHistoryDetailView.swift */,
 				426569202819C2160058926B /* UselessFactsDetailView.swift */,
 				4265692B2819C63D0058926B /* RandomQuoteDetailView.swift */,
+				42AFC0D22821D65100565B0D /* RandomPokemonDetailView.swift */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -576,6 +585,7 @@
 				42A05D72281C9C0F0086D1FC /* PokemonSpeciesModel.swift */,
 				42A05D74281C9C6B0086D1FC /* PokemonNameModel.swift */,
 				42A05D76281C9CEC0086D1FC /* PokemontTypeModel.swift */,
+				42AFC0D42821D8F800565B0D /* PokemonJsonModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -767,6 +777,7 @@
 			name = CardX;
 			packageProductDependencies = (
 				421BA58727CF004400F3C264 /* SwiftUIVisualEffects */,
+				42AFC0D82821E66900565B0D /* WrappingHStack */,
 			);
 			productName = CardX;
 			productReference = 421DA1EF27A22FFF0073A877 /* CardX.app */;
@@ -822,6 +833,7 @@
 			mainGroup = 421DA1E627A22FFF0073A877;
 			packageReferences = (
 				421BA58627CF004400F3C264 /* XCRemoteSwiftPackageReference "swiftui-visual-effects" */,
+				42AFC0D72821E66900565B0D /* XCRemoteSwiftPackageReference "WrappingHStack" */,
 			);
 			productRefGroup = 421DA1F027A22FFF0073A877 /* Products */;
 			projectDirPath = "";
@@ -943,15 +955,18 @@
 				4231A1A7280D091300D3276F /* WidgetDetailView.swift in Sources */,
 				421DA1F527A22FFF0073A877 /* ContentView.swift in Sources */,
 				4265692C2819C63D0058926B /* RandomQuoteDetailView.swift in Sources */,
+				42AFC0D32821D65100565B0D /* RandomPokemonDetailView.swift in Sources */,
 				426569062818CD710058926B /* RootView.swift in Sources */,
 				421E34782819D5DC007C3D88 /* TabController.swift in Sources */,
 				4231A1A2280CF76F00D3276F /* DraggableCardView.swift in Sources */,
 				4265692A2819C5060058926B /* ContentModel.swift in Sources */,
 				42A3119927ACAE2200DA096A /* CountDownTexts.swift in Sources */,
+				42AFC0DA2821ED7D00565B0D /* ColorHelper.swift in Sources */,
 				42A3119027AC9F1900DA096A /* BriefTextControl.swift in Sources */,
 				426569132818EA570058926B /* ImageExtension.swift in Sources */,
 				42C0F5932808BD0000DEF9C4 /* MultiProgressBar.swift in Sources */,
 				426569212819C2160058926B /* UselessFactsDetailView.swift in Sources */,
+				42AFC0D52821D8F800565B0D /* PokemonJsonModel.swift in Sources */,
 				4278D1A727F585FA00CFD523 /* CardXWidgets.intentdefinition in Sources */,
 				426569232819C2E90058926B /* UselessFactsJsonModel.swift in Sources */,
 				421DA1F327A22FFF0073A877 /* CardXApp.swift in Sources */,
@@ -1040,6 +1055,7 @@
 				42C0F58A28089EA300DEF9C4 /* RandomPhotoTimelineProvider.swift in Sources */,
 				42DE98F728078A92007F4DC7 /* WeatherWidget.swift in Sources */,
 				4278D1B527F5870A00CFD523 /* RandomWordWidget.swift in Sources */,
+				42AFC0D62821D8F800565B0D /* PokemonJsonModel.swift in Sources */,
 				42A05D66281C991A0086D1FC /* RandomPokemonTimelineProvider.swift in Sources */,
 				42C0F57B28088ABC00DEF9C4 /* RandomMusicModel.swift in Sources */,
 				427CAE212813B89D008278F2 /* RandomAnimalPhotoTimelineProvider.swift in Sources */,
@@ -1374,6 +1390,14 @@
 				kind = branch;
 			};
 		};
+		42AFC0D72821E66900565B0D /* XCRemoteSwiftPackageReference "WrappingHStack" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dkk/WrappingHStack";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1381,6 +1405,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 421BA58627CF004400F3C264 /* XCRemoteSwiftPackageReference "swiftui-visual-effects" */;
 			productName = SwiftUIVisualEffects;
+		};
+		42AFC0D82821E66900565B0D /* WrappingHStack */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42AFC0D72821E66900565B0D /* XCRemoteSwiftPackageReference "WrappingHStack" */;
+			productName = WrappingHStack;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

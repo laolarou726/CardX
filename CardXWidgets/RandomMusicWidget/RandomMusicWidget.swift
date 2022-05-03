@@ -59,11 +59,16 @@ struct RandomMusicWidgetEntryView : View {
             Spacer()
         }
         .background(
-            Image(uiImage: self.entry.imgData)
-            .resizable()
-            .aspectRatio(contentMode: .fill)
-            .padding(-80)
-            .blur(radius: 20))
+            ZStack{
+                Image(uiImage: self.entry.imgData)
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .padding(-80)
+                .blur(radius: 20)
+                Rectangle()
+                    .fill(Color(UIColor.systemBackground)
+                        .opacity(0.2))
+            })
     }
 }
 

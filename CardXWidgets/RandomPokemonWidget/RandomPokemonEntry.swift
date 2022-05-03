@@ -18,7 +18,8 @@ struct RandomPokemonEntry : TimelineEntry{
     var height: String! = "- m"
     var weight: String! = "- kg"
     var types: [String]! = ["-"]
-    var stats: [(String, Int)]! = []
+    var stats: [StatModel]! = []
     var backgroundColor: Color! = .yellow
     var image: UIImage! = UIImage(imageLiteralResourceName: "Pokemon")
+    var jsonStr: String! = "-"
 }

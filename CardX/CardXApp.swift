@@ -14,15 +14,17 @@ struct CardXApp: App {
     @State var ufJsonModel: UselessFactsJsonModel?
     @State var tihJsonModel: TodayInHistoryJsonModel?
     @State var movieJsonModel: MovieJsonModel?
+    @State var pokemonJsonModel: PokemonJsonModel?
     
     let moviePrefix = "widget-deeplink://movie/"
     let tihPrefix = "widget-deeplink://tih/"
     let ufPrefix = "widget-deeplink://uf/"
     let quotePrefix = "widget-deeplink://quote/"
+    let pokemonPrefix = "widget-deeplink://pokemon/"
     
     var body: some Scene {
         WindowGroup {
-            RootView(quote: $quoteJsonModel, uf: $ufJsonModel, tih: $tihJsonModel, movie: $movieJsonModel)
+            RootView(quote: $quoteJsonModel, uf: $ufJsonModel, tih: $tihJsonModel, movie: $movieJsonModel, pokemon: $pokemonJsonModel)
                 .onOpenURL { (url) in
                     if url.absoluteString.starts(with: moviePrefix){
                         tabController.open(.movieDetail)
@@ -56,6 +58,15 @@ struct CardXApp: App {
                         
                         let base64Str = url.absoluteString.substring(from: quotePrefix.count)
                         self.quoteJsonModel = RandomQuoteJsonModel.deserialize(from: base64Str.fromBase64())
+                        
+                        return
+                    }
+                    
+                    if url.absoluteString.starts(with: pokemonPrefix){
+                        tabController.open(.pokemonDetail)
+                        
+                        let base64Str = url.absoluteString.substring(from: pokemonPrefix.count)
+                        self.pokemonJsonModel = PokemonJsonModel.deserialize(from: base64Str.fromBase64())
                         
                         return
                     }
