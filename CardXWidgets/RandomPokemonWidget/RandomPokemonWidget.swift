@@ -109,6 +109,7 @@ struct RandomPokemonWidgetEntryView : View {
                 }
             }
         }
+        .widgetURL(URL(string: "widget-deeplink://pokemon/\(entry.jsonStr ?? "-")")!)
     }
 }
 
