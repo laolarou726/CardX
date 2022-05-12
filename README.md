@@ -3,6 +3,18 @@
 
 This is a lightweight widgets library for iOS and iPad.
 
+### Features
+
+|Widget Name|Description|
+|:---------:|:---------:|
+|Random Photo Widget|Display a random photo from Unsplash API|
+|Random Movie Widget|Display a random movie recommandation using IMDB database|
+|Random Quote Widget|Display a random quote on the widget|
+|Random Word Widget|Display a random word and its description on the widget|
+|Random Pokemon Widget|Display a random Pokemon and its properites on the widget|
+|Today In History Widget|Display today's history on the widget|
+|Random Music Widget| Display a random music using Netease Music API|
+
 ## Stats
 
 ![Alt](https://repobeats.axiom.co/api/embed/ca36f5d2913e3cde651383b0fdc6bc33262b54de.svg "Repobeats analytics image")
