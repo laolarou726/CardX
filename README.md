@@ -3,6 +3,10 @@
 
 This is a lightweight widgets library for iOS and iPad.
 
+## Stats
+
+![Alt](https://repobeats.axiom.co/api/embed/ca36f5d2913e3cde651383b0fdc6bc33262b54de.svg "Repobeats analytics image")
+
 ## Screenshots
 
 ![400x800bb](https://user-images.githubusercontent.com/25716486/168143443-017a892b-21a5-4988-8b44-1440ffcad4e1.png)
